@@ -1,0 +1,19 @@
+Enable Full pvp means: Icon in game client (Red hand) for pvp, will no block pvp.
+
+To enable free pvp elsewhere, depending on protection level just find:
+
+
+RETURNVALUE_TURNSECUREMODETOATTACKUNMARKEDPLAYERS
+
+And change it to:
+
+RETURNVALUE_NOERROR
+
+
+Files to change:
+
+combat.cpp
+spells.cpp
+And data/events/scripts/creature.lua
+
+Others Don't touch.
