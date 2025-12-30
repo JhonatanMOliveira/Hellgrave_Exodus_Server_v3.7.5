@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vocations>
-	<vocation id="0" clientid="0" name="None" description="none" gaincap="10" gainhp="5" gainmana="5" gainhpticks="6" gainhpamount="1" gainmanaticks="6" gainmanaamount="1" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="120" allowPvp="0" fromvoc="0">
+	<vocation id="0" clientid="0" name="None" description="none" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="1" gainmanaticks="1" gainmanaamount="1" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
-		<skill id="0" multiplier="1.5" />
-		<skill id="1" multiplier="2.0" />
-		<skill id="2" multiplier="2.0" />
-		<skill id="3" multiplier="2.0" />
-		<skill id="4" multiplier="2.0" />
-		<skill id="5" multiplier="1.5" />
-		<skill id="6" multiplier="1.1" />
-		<skill id="7" multiplier="1.1" />
-		<skill id="8" multiplier="1.1" />
-		<skill id="9" multiplier="1.1" />
-		<skill id="10" multiplier="1.1" />
-		<skill id="11" multiplier="1.1" />
-		<skill id="12" multiplier="1.1" />
-		<skill id="13" multiplier="1.1" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
 	</vocation>
 	<vocation id="1" clientid="3" name="Sorcerer" description="a sorcerer" gaincap="10" gainhp="5" gainmana="30" gainhpticks="6" gainhpamount="5" gainmanaticks="3" gainmanaamount="5" manamultiplier="1.1" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="1" noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -51,7 +51,7 @@
 		<skill id="12" multiplier="1.1" />
 		<skill id="13" multiplier="1.1" />
 	</vocation>
-	<vocation id="3" clientid="2" name="Paladin" description="a paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="4" gainhpamount="5" gainmanaticks="4" gainmanaamount="5" manamultiplier="1.4" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="3" noPongKickTime="50">
+	<vocation id="3" clientid="2" name="Paladin" description="a paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="4" gainhpamount="5" gainmanaticks="4" gainmanaamount="5" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="120" fromvoc="3" noPongKickTime="50">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<skill id="0" multiplier="1.2" />
 		<skill id="1" multiplier="1.2" />
@@ -119,7 +119,7 @@
 		<skill id="12" multiplier="1.1" />
 		<skill id="13" multiplier="1.1" />
 	</vocation>
-	<vocation id="7" clientid="2" name="Royal Paladin" description="a royal paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="3" gainhpamount="10" gainmanaticks="3" gainmanaamount="10" manamultiplier="1.4" attackspeed="2000" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="3" noPongKickTime="50">
+	<vocation id="7" clientid="2" name="Royal Paladin" description="a royal paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="3" gainhpamount="10" gainmanaticks="3" gainmanaamount="10" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="200" gainsoulticks="15" fromvoc="3" noPongKickTime="50">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<skill id="0" multiplier="1.2" />
 		<skill id="1" multiplier="1.2" />
@@ -186,5 +186,295 @@
 		<skill id="11" multiplier="1.1" />
 		<skill id="12" multiplier="1.1" />
 		<skill id="13" multiplier="1.1" />
+	</vocation>
+	<!-- ceu 1.6// fantasma 1.5,1900// bronze 1.4,1800// prata 1.3,1700// ouro 1.2,1600// divino 1.1,1500  -->
+		<vocation id="11" clientid="11" name="Cavaleiro" description="a cavaleiro" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="1" gainmanaticks="1" gainmanaamount="1" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="12" clientid="12" name="Aco Ceu" description="Cavaleiro de Aco Ceu" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="2" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="13" clientid="13" name="Aco Mar" description="Cavaleiro de Aco Mar" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="2" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="14" clientid="14" name="Aco Terra" description="Cavaleiro de Aco Terra" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="2" manamultiplier="4.0" attackspeed="2000" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="15" clientid="15" name="Fantasma Golfinho" description="Cavaleiro de Fantasma Golfinho" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="3" gainmanaticks="1" gainmanaamount="3" manamultiplier="4.0" attackspeed="1900" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="16" clientid="16" name="Fantasma Vampiro" description="Cavaleiro de Fantasma Vampiro" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="3" gainmanaticks="1" gainmanaamount="3" manamultiplier="4.0" attackspeed="1900" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="17" clientid="17" name="Fantasma Medusa" description="Cavaleiro de Fantasma Medusa" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="3" gainmanaticks="1" gainmanaamount="3" manamultiplier="4.0" attackspeed="1900" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="18" clientid="18" name="Fantasma SerpenteM" description="Cavaleiro de Fantasma SerpenteM" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="3" gainmanaticks="1" gainmanaamount="3" manamultiplier="4.0" attackspeed="1900" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="19" clientid="19" name="Bronze Leao Menor" description="Cavaleiro de Bronze Leao Menor" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="20" clientid="20" name="Bronze Lobo" description="Cavaleiro de Bronze Lobo" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="21" clientid="21" name="Bronze Fornalha" description="Cavaleiro de Bronze Fornalha" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="22" clientid="22" name="Bronze Unicornio" description="Cavaleiro de Bronze Unicornio" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="23" clientid="23" name="Bronze Andromeda" description="Cavaleiro de Bronze Andromeda" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="24" clientid="24" name="Bronze Cisne" description="Cavaleiro de Bronze Cisne" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="25" clientid="25" name="Bronze Dragao" description="Cavaleiro de Bronze Dragao" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="26" clientid="26" name="Bronze Pegasus" description="Cavaleiro de Bronze Pegasus" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
+	</vocation>
+	<vocation id="27" clientid="27" name="Bronze Fenix" description="Cavaleiro de Bronze Fenix" gaincap="25" gainhp="15" gainmana="10" gainhpticks="1" gainhpamount="4" gainmanaticks="1" gainmanaamount="4" manamultiplier="4.0" attackspeed="1800" basespeed="220" soulmax="100" gainsoulticks="220" fromvoc="11" noPongKickTime="40">
+		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
+		<skill id="0" multiplier="1.1" /> <!-- Fist Fighting  -->
+		<skill id="1" multiplier="1.1" /> <!-- Sword   -->
+		<skill id="2" multiplier="1.1" /> <!-- Axe  -->
+		<skill id="3" multiplier="1.1" /> <!-- Club  -->
+		<skill id="4" multiplier="1.1" /> <!-- Distance Fighting  -->
+		<skill id="5" multiplier="1.1" /> <!-- Shielding  -->
+		<skill id="6" multiplier="1.1" /> <!-- Fishing  -->
+		<skill id="7" multiplier="1.1" /> <!--   -->
+		<skill id="8" multiplier="1.1" /> <!--   -->
+		<skill id="9" multiplier="1.1" /> <!--   -->
+		<skill id="10" multiplier="1.1" /> <!--   -->
+		<skill id="11" multiplier="1.1" /> <!--   -->
+		<skill id="12" multiplier="1.1" /> <!--   -->
+		<skill id="13" multiplier="1.1" /> <!--   -->
 	</vocation>
 </vocations>

@@ -2,21 +2,21 @@ print(">> Upgrade System Loaded")
 local conf = {
     ["level"] = {
         [0] = {successPercent = 1, downgradeLevel = 0, levelItem = 10},
-        [1] = {successPercent = 95, downgradeLevel = 0, levelItem = 10},
-        [2] = {successPercent = 80, downgradeLevel = 1, levelItem = 20},
-        [3] = {successPercent = 70, downgradeLevel = 2, levelItem = 30},
-        [4] = {successPercent = 60, downgradeLevel = 3, levelItem = 40},
-        [5] = {successPercent = 50, downgradeLevel = 4, levelItem = 50},
-        [6] = {successPercent = 45, downgradeLevel = 5, levelItem = 60},
-        [7] = {successPercent = 40, downgradeLevel = 6, levelItem = 70},
-        [8] = {successPercent = 35, downgradeLevel = 7, levelItem = 80},
-        [9] = {successPercent = 30, downgradeLevel = 8, levelItem = 90},
-        [10] = {successPercent = 24, downgradeLevel = 9, levelItem = 100},
-        [11] = {successPercent = 16, downgradeLevel = 10, levelItem = 110},
-        [12] = {successPercent = 12, downgradeLevel = 11, levelItem = 120},
-        [13] = {successPercent = 9, downgradeLevel = 12, levelItem = 130},
-        [14] = {successPercent = 7, downgradeLevel = 13, levelItem = 140},
-        [15] = {successPercent = 3, downgradeLevel = 14, levelItem = 150},
+        [1] = {successPercent = 100, downgradeLevel = 0, levelItem = 10},
+        [2] = {successPercent = 100, downgradeLevel = 1, levelItem = 20},
+        [3] = {successPercent = 100, downgradeLevel = 2, levelItem = 30},
+        [4] = {successPercent = 100, downgradeLevel = 3, levelItem = 40},
+        [5] = {successPercent = 100, downgradeLevel = 4, levelItem = 50},
+        [6] = {successPercent = 100, downgradeLevel = 5, levelItem = 60},
+        [7] = {successPercent = 100, downgradeLevel = 6, levelItem = 70},
+        [8] = {successPercent = 100, downgradeLevel = 7, levelItem = 80},
+        [9] = {successPercent = 100, downgradeLevel = 8, levelItem = 90},
+        [10] = {successPercent = 100, downgradeLevel = 9, levelItem = 100},
+        [11] = {successPercent = 100, downgradeLevel = 10, levelItem = 110},
+        [12] = {successPercent = 100, downgradeLevel = 11, levelItem = 120},
+        [13] = {successPercent = 100, downgradeLevel = 12, levelItem = 130},
+        [14] = {successPercent = 100, downgradeLevel = 13, levelItem = 140},
+        [15] = {successPercent = 100, downgradeLevel = 14, levelItem = 150},
     },
     
     ["upgrade"] = {
@@ -359,7 +359,7 @@ local itemUpgrader = Action()
 function itemUpgrader.onUse(player, item, fromPosition, itemEx, toPosition)
     local playerId = player:getId()
     local currentTime = os.time()
-    if upgradeCooldown[playerId] and currentTime - upgradeCooldown[playerId] < 5 then
+    if upgradeCooldown[playerId] and currentTime - upgradeCooldown[playerId] < 1 then
         player:sendTextMessage(MESSAGE_INFO_DESCR, "You need to wait a few seconds before upgrading again.")
         return false
     end

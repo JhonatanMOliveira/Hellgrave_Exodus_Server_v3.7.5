@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <outfits>
 	<!-- Female outfits -->
+	<outfit type="0" looktype="1457" name="Shun" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="1450" name="teste" premium="no" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="136" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="137" name="Hunter" premium="no" unlocked="yes" enabled="yes" />
 	<outfit type="0" looktype="138" name="Mage" premium="no" unlocked="yes" enabled="yes" />
@@ -105,7 +107,27 @@
 	<outfit type="0" looktype="1372" name="Fiend Slayer" premium="no" unlocked="no" enabled="yes" />
 
 	<!-- Male outfits -->
-	<outfit type="1" looktype="128" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1457" name="Cavaleiro" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="1457" name="Shun" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="1458" name="Ikki" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="1459" name="Seiya" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="1460" name="Yoga" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="1461" name="Shiryu" premium="no" unlocked="no" enabled="yes" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<outfit type="1" looktype="128" name="Citizen" premium="no" unlocked="no" enabled="yes" />
 	<outfit type="1" looktype="129" name="Hunter" premium="no" unlocked="yes" enabled="yes" />
 	<outfit type="1" looktype="130" name="Mage" premium="no" unlocked="yes" enabled="yes" />
 	<outfit type="1" looktype="131" name="Knight" premium="no" unlocked="yes" enabled="yes" />

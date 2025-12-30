@@ -98,10 +98,15 @@ local category10 = addCategory({
 category1.addItem(50, 28084, 10, "10 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
 category1.addItem(220, 28084, 50, "50 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
 category1.addItem(399, 28084, 100, "100 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
+category1.addItem(1, 1988, 1, "BACKPACK ID", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
+
 
 --- Category 2: Outfits ---
-category2.addOutfit(750, {storage = 535968, mount = 0, feet = 114, legs = 114, body = 116, type = 909, auxType = 0, addons = 2, head = 2, rotating = true, name = "Shadowlotus Outfit",}, "Shadowlotus Outfit", "Full Shadowlotus Outfit with addons.")
-category2.addOutfit(750, {storage = 535969, mount = 0, feet = 114, legs = 114, body = 116, type = 1237, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
+category2.addOutfit(50, {storage = 535968, mount = 0, feet = 114, legs = 114, body = 116, type = 1457, auxType = 0, addons = 2, head = 2, rotating = true, name = "Shadowlotus Outfit",}, "Shadowlotus Outfit", "Full Shadowlotus Outfit with addons.")
+category2.addOutfit(50, {storage = 535969, mount = 0, feet = 114, legs = 114, body = 116, type = 1458, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
+category2.addOutfit(50, {storage = 535970, mount = 0, feet = 114, legs = 114, body = 116, type = 1459, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
+category2.addOutfit(50, {storage = 535971, mount = 0, feet = 114, legs = 114, body = 116, type = 1460, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
+category2.addOutfit(50, {storage = 535972, mount = 0, feet = 114, legs = 114, body = 116, type = 1461, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
 
 --- Category 3: Mounts ---
 category3.addOutfit(50, {storage = 535983, mount = 104, feet = 0, legs = 0, body = 0, type = 928, auxType = 0, addons = 0, head = 2, rotating = true, name = "Spirit of Purity"}, "Spirit of Purity", "Spirit of Purity mount.")

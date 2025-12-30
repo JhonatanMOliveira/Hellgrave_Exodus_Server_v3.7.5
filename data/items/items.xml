@@ -49905,4 +49905,932 @@
 	<item id="29926" article="a" name="Dawnforged Emblem">
 		<attribute key="weight" value="150" />
 	</item>
+
+	
+	<!--                         BOX URNA                   -->
+	<item id="29927" article="a" name="Box Urna Aco">
+	    <attribute key="description" value="Exchange it with shiny bunny." />
+	    <attribute key="weight" value="200" />
+	</item>
+	<item id="29928" article="a" name="Box Urna Fantasma">
+	    <attribute key="description" value="Exchange it with shiny bunny." />
+	    <attribute key="weight" value="200" />
+	</item>
+	<item id="29929" article="a" name="Box Urna Bronze">
+	    <attribute key="description" value="Exchange it with shiny bunny." />
+	    <attribute key="weight" value="200" />
+	</item>
+	<item id="29930" article="a" name="Box Urna Prata">
+	    <attribute key="description" value="Exchange it with shiny bunny." />
+	    <attribute key="weight" value="200" />
+	</item>
+	<item id="29931" article="a" name="Box Urna Ouro">
+	    <attribute key="description" value="Exchange it with shiny bunny." />
+	    <attribute key="weight" value="200" />
+	</item>
+	<!--                         BOX URNA                   -->
+
+		<!--                         CEU                   -->
+	<item id="29932" article="a" name="Urna Furacao">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="containerSize" value="8" />
+		<attribute key="description" value="Urna Aco do Ceu." />
+	</item>
+	<item id="29933" article="a" name="Furacao Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29934" article="a" name="Furacao Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29935" name="Furacao Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29936" name="Furacao Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29937" article="a" name="Furacao Shield">
+		<attribute key="weight" value="10" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="29938" article="a" name="Manopla do Furacao">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<!--                         CEU                   -->
+
+
+	<!--                         MAR                   -->
+	<item id="29939" article="a" name="Urna Redemoinho">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Aco do Mar." />
+	</item>
+	<item id="29940" article="a" name="Redemoinho Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29941" article="a" name="Redemoinho Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29942" name="Redemoinho Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29943" name="Redemoinho Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29944" article="a" name="Redemoinho Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="10" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="-10" />		
+	</item>
+	<item id="29945" article="a" name="Manopla do Redemoinho">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="10" />
+		<attribute key="maxHitChance" value="100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="shootType" value="prismaticbolt"/>
+		<attribute key="range" value="4" />
+	</item>
+	<!--                         MAR                   -->
+
+
+
+	<!--                         TERRA                   -->
+	<item id="29946" article="a" name="Urna Terremoto">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Aco da Terra." />
+	</item>
+	<item id="29947" article="a" name="Terremoto Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29948" article="a" name="Terremoto Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29949" name="Terremoto Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29950" name="Terremoto Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="3" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29951" article="a" name="Terremoto Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="10" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="29952" article="a" name="Manopla do Terremoto">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<!--                         TERRA                   -->
+
+		<!--                         GOLFINHO                   -->
+	<item id="29953" article="a" name="Urna Fantasma Golfinho">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Fantasma de Golfinho." />
+	</item>
+	<item id="29954" article="a" name="Golfinho Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29955" article="a" name="Golfinho Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29956" name="Golfinho Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29957" name="Golfinho Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="29958" article="a" name="Golfinho Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="29959" article="a" name="Manopla do Golfinho">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<!--                         GOLFINHO                   -->
+
+		<!--                         MEDUSA                   -->
+	<item id="29960" article="a" name="Urna Fantasma Medusa">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Fantasma de Medusa." />
+	</item>
+	<item id="29961" article="a" name="Medusa Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29962" article="a" name="Medusa Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29963" name="Medusa Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29964" name="Medusa Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29965" article="a" name="Medusa Broquel">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="-10" />
+	</item>
+	<item id="29966" article="a" name="Manopla da Medusa">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="20" />
+		<attribute key="maxHitChance" value="100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="shootType" value="prismaticbolt"/>
+		<attribute key="range" value="4" />
+	</item>
+	<!--                         MEDUSA                   -->
+
+			<!--                         SERPENTE MARINHA                   -->
+	<item id="29967" article="a" name="Urna Fantasma Serpente Marinha">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Fantasma de Serpente Marinha." />
+	</item>
+	<item id="29968" article="a" name="Serpente Marinha Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="29969" article="a" name="Serpente Marinha Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="29970" name="Serpente Marinha Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="29971" name="Serpente Marinha Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="29972" article="a" name="Serpente Marinha Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="29973" article="a" name="Manopla Serpente Marinha">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<!--                         SERPENTE MARINHA                   -->
+
+		<!--                         VAMPIRO                   -->
+	<item id="29974" article="a" name="Urna Fantasma Vampiro">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Fantasma de Vampiro." />
+	</item>
+	<item id="29975" article="a" name="Vampiro Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29976" article="a" name="Vampiro Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29977" name="Vampiro Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29978" name="Vampiro Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="5" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29979" article="a" name="Vampiro Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="29980" article="a" name="Manopla do Vampiro">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="20" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+	<!--                         VAMPIRO                   -->
+
+		<!--                         PEGASUS                   -->
+	<item id="29981" article="a" name="Urna Bronze Pegasus">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Pegasus." />
+	</item>
+	<item id="29982" article="a" name="Pegasus Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29983" article="a" name="Pegasus Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29984" name="Pegasus Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29985" name="Pegasus Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29986" article="a" name="Pegasus Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="29987" article="a" name="Manopla de Pegasus">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>	
+	<!--                         PEGASUS                   -->
+
+			<!--                         CISNE                   -->
+	<item id="29988" article="a" name="Urna Bronze Cisne">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Cisne." />
+	</item>
+	<item id="29989" article="a" name="Cisne Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29990" article="a" name="Cisne Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29991" name="Cisne Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29992" name="Cisne Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="29993" article="a" name="Cisne Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />		
+	</item>
+	<item id="29994" article="a" name="Manopla de Cisne">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+<!--                         CISNE                   -->
+
+		<!--                         ANDROMEDA                   -->
+	<item id="29995" article="a" name="Urna Bronze Andromeda">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Andromeda." />
+	</item>
+	<item id="29996" article="a" name="Andromeda Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29997" article="a" name="Andromeda Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29998" name="Andromeda Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="29999" name="Andromeda Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="30000" article="a" name="Andromeda Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="-10" />
+	</item>
+	<item id="30001" article="a" name="Manopla de Andromeda">
+	    <attribute key="attack" value="30" />
+		<attribute key="maxHitChance" value="100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="shootType" value="prismaticbolt"/>
+		<attribute key="range" value="4" />
+	</item>
+	<!--                         ANDROMEDA                   -->
+
+
+
+
+	<!--                         DRAGAO                   -->
+	<item id="30002" article="a" name="Urna Bronze Dragao">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />	
+		<!--		
+				<attribute key="extradef" value="2" />
+
+
+-->
+<attribute key="attack" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="description" value="Urna Bronze de Dragao." />
+	</item>
+	<item id="30003" article="a" name="Dragao Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30004" article="a" name="Dragao Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30005" name="Dragao Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30006" name="Dragao Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30007" article="a" name="Dragao Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="30008" article="a" name="Manopla de Dragao">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+<!--                         DRAGAO                   -->
+
+<!--                         FENIX                   -->
+
+	<item id="30009" article="a" name="Urna Bronze Fenix">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="containerSize" value="20" />
+		<attribute key="description" value="Urna Bronze de Fenix." />
+	</item>
+	<item id="30010" article="a" name="Fenix Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30011" article="a" name="Fenix Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30012" name="Fenix Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30013" name="Fenix Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30014" article="a" name="Fenix Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="30015" article="a" name="Manopla de Fenix">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>	
+	<!--                         FENIX                   -->
+
+		<!--                         FORNALHA                   -->
+	<item id="30016" article="a" name="Urna Bronze Fornalha">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Fornalha." />
+	</item>
+	<item id="30017" article="a" name="Fornalha Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="30018" article="a" name="Fornalha Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="30019" name="Fornalha Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="30020" name="Fornalha Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="absorbPercentFire" value="-5" />
+	</item>
+	<item id="30021" article="a" name="Fornalha Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="-10" />
+	</item>
+	<item id="30022" article="a" name="Manopla de Fornalha">
+	    <attribute key="attack" value="30" />
+		<attribute key="maxHitChance" value="100" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="shootType" value="prismaticbolt"/>
+		<attribute key="range" value="4" />
+	</item>	
+	<!--                         FORNALHA                   -->
+
+
+	<!--                         LEAO MENOR                   -->
+	<item id="30023" article="a" name="Urna Bronze Leao Menor">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Leao Menor." />
+	</item>
+	<item id="30024" article="a" name="Leao Menor Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30025" article="a" name="Leao Menor Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30026" name="Leao Menor Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30027" name="Leao Menor Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentEnergy" value="5" />
+		<attribute key="absorbPercentIce" value="-5" />
+	</item>
+	<item id="30028" article="a" name="Leao Menor Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="30029" article="a" name="Manopla de Leao Menor">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>	
+	<!--                         LEAO MENOR                   -->
+
+	<!--                         LOBO                   -->
+	<item id="30030" article="a" name="Urna Bronze Lobo">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Lobo." />
+	</item>
+	<item id="30031" article="a" name="Lobo Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="30032" article="a" name="Lobo Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="30033" name="Lobo Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="30034" name="Lobo Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="absorbPercentEarth" value="-5" />
+	</item>
+	<item id="30035" article="a" name="Lobo Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+	</item>
+	<item id="30036" article="a" name="Manopla de Lobo">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>
+<!--                         LOBO                   -->
+
+		<!--                         UNICORNIO                   -->
+	<item id="30037" article="a" name="Urna Bronze Unicornio">
+		<attribute key="weight" value="1" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="description" value="Urna Bronze de Unicornio." />
+	</item>
+	<item id="30038" article="a" name="Unicornio Helmet">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="head" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30039" article="a" name="Unicornio Armor">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="body" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30040" name="Unicornio Legs">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="legs" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30041" name="Unicornio Boots">
+		<attribute key="weight" value="1" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentIce" value="5" />
+		<attribute key="absorbPercentEnergy" value="-5" />
+	</item>
+	<item id="30042" article="a" name="Unicornio Shield">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="30043" article="a" name="Manopla de Unicornio">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="30" />
+		<attribute key="weaponType" value="sword" />
+	</item>	
+	<!--                         UNICORNIO                   -->
+	<!--        
+    divino 60 atq 15x4 armor 60 shield 600 4
+	ouro 50 atq 12x4 armor 50 shield 350 3
+	prata 40 atq 10x4 armor 40 shield 200 2
+	bronze 30 atq 7x4 armor 30 shield 100 1
+	fantasma 20 atq 5x4 armor 20 shield lvl 50
+	aço 10 atq 3x4 armor 10 shield                   -->
+
+	
+	<!--                         AMULETOS TITÃ                   -->
+	<item id="30044" article="a" name="Amuleto de Vulcano">
+		<attribute key="description" value="It engulfs you in flames - fire against fire." />
+	    <attribute key="weight" value="700" />
+		<attribute key="slottype" value="necklace" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<item id="30045" article="a" name="Amuleto de Vulcano 2">
+		<attribute key="weight" value="500" />
+		<attribute key="slottype" value="necklace" />
+		<attribute key="magiclevelpoints" value="2" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<item id="30046" article="a" name="Amuleto de Vulcano 3">
+        <attribute key="description" value="It engulfs you in flames - fire against fire." />	
+		<attribute key="weight" value="500" />
+		<attribute key="slottype" value="necklace" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<!-- <item id="28600" article="a" name="Amuleto de Vulcano 4"> -->
+		<!-- <attribute key="description" value="It tickles your neck in a rather pleasant way and absorbs loads of damage." /> -->
+		<!-- <attribute key="weight" value="700" /> -->
+		<!-- <attribute key="slottype" value="necklace" /> -->
+		<!-- <attribute key="magiclevelpoints" value="4" /> -->
+		<!-- <attribute key="attackspeed" value="1800" /> -->
+		<!-- <attribute key="showattributes" value="1" /> -->
+	<!-- </item>  -->
+	<item id="30047" article="a" name="Amuleto de Gaia">
+		<attribute key="description" value="Its leaves stretch out to cover your whole body if you receive earth damage." />
+		<attribute key="weight" value="700" />
+		<attribute key="slottype" value="necklace" />
+		<attribute key="maxhitpoints" value="100" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<item id="30048" article="a" name="Amuleto de Gaia 2">
+		<attribute key="weight" value="500" />
+		<attribute key="slottype" value="necklace" />
+		<attribute key="maxhitpoints" value="200" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<item id="30049" article="a" name="Amuleto de Gaia 3">
+		<attribute key="weight" value="500" />
+		<attribute key="slottype" value="necklace" />
+		<attribute key="maxhitpoints" value="300" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<!-- <item id="28603" article="an" name="Amuleto de Gaia 4"> -->
+		<!-- <attribute key="weight" value="610" /> -->
+		<!-- <attribute key="slottype" value="necklace" /> -->
+		<!-- <attribute key="maxhitpoints" value="400" /> -->
+		<!-- <attribute key="attackspeed" value="1800" /> -->
+		<!-- <attribute key="showattributes" value="1" /> -->
+	<!-- </item> -->
+	<item id="30050" name="Amuleto de Leviathan">
+		<attribute key="description" value="It holds the last breath of Leviathan." />
+		<attribute key="weight" value="700" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="maxmanapoints" value="100" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<item id="30051" article="a" name="Amuleto de Leviathan 2">
+		<attribute key="weight" value="500" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="maxmanapoints" value="200" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<item id="30052" article="a" name="Amuleto de Leviathan 3">
+		<attribute key="weight" value="500" />
+		<attribute key="slotType" value="necklace" />
+		<attribute key="maxmanapoints" value="300" />
+		<attribute key="showattributes" value="1" />
+	</item>
+	<!-- <item id="28601" article="an" name="Amuleto de Leviathan 4"> -->
+		<!-- <attribute key="weight" value="610" /> -->
+		<!-- <attribute key="slotType" value="necklace" /> -->
+		<!-- <attribute key="maxmanapoints" value="400" /> -->
+		<!-- <attribute key="attackspeed" value="1800" /> -->
+		<!-- <attribute key="showattributes" value="1" /> -->
+	<!-- </item> -->
+	<!--                         AMULETO TITÃ                   -->
+
+
+	<item id="30053" article="a" name="Espada de Treinamento">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="sword" />
+	</item>	
+		<item id="30054" article="a" name="Escudo Fantasma">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="20" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="30055" article="a" name="Escudo de Bronze">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="30056" article="a" name="Escudo de Prata">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="30057" article="a" name="Escudo de Ouro">
+		<attribute key="weight" value="1" />
+		<attribute key="defense" value="30" />
+		<attribute key="weaponType" value="shield" />
+		<attribute key="absorbPercentPhysical" value="10" />
+	</item>
+	<item id="30058" article="a" name="Rosa Piranha">
+		<attribute key="weight" value="1" />
+		<attribute key="attack" value="10" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="shootType" value="snowball" />
+		<attribute key="range" value="6" />
+	</item>	
+
+
+
+
 </items>

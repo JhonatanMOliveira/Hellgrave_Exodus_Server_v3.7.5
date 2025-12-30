@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Dog" nameDescription="a dog" race="blood" experience="0" speed="124" manacost="220">
-	<health now="20" max="20" />
+	<health now="9999" max="9999" />
 	<look type="32" corpse="5971" />
 	<targetchange interval="4000" chance="0" />
 	<flags>
@@ -22,7 +22,7 @@
 	<script>
   		<event name="playerAttackSound"/>
 	</script>
-	<defenses armor="1" defense="1" />
+	<defenses armor="50" defense="50" />
 	<voices interval="5000" chance="10">
 		<voice sentence="Wuff wuff" />
 	</voices>

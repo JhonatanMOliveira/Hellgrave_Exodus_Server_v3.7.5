@@ -1,762 +1,5 @@
 Crafting.armorsmith = {
     {
-        id = 2457,
-        name = "Steel Helmet",
-        level = 10,
-        cost = 25,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 12435, count = 5},
-            {id = 12400, count = 2},
-        }
-    },
-    {
-        id = 2463,
-        name = "Plate Armor",
-        level = 10,
-        cost = 50,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 12435, count = 7}, 
-            {id = 12400, count = 4}, 
-        }
-    },
-    {
-        id = 2647,
-        name = "Plate Legs",
-        level = 10,
-        cost = 30,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 12435, count = 2}, 
-            {id = 12400, count = 1}, 
-        }
-    },
-    {
-        id = 2491,
-        name = "Crown Helmet",
-        level = 10,
-        cost = 400,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 11223, count = 2},
-            {id = 11229, count = 3},
-        }
-    },
-    {
-        id = 2487,
-        name = "Crown Armor",
-        level = 10,
-        cost = 550,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 11223, count = 12}, 
-            {id = 11229, count = 16}, 
-        }
-    },
-    {
-        id = 2488,
-        name = "Crown Legs",
-        level = 10,
-        cost = 420,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 11223, count = 12}, 
-            {id = 11229, count = 16}, 
-        }
-    },
-    {
-        id = 2475,
-        name = "Warrior Helmet",
-        level = 15,
-        cost = 350,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 11226, count = 2}, 
-            {id = 10611, count = 4},
-            {id = 11230, count = 1}, 
-            {id = 11199, count = 2}, 
-        }
-    },
-    {
-        id = 2476,
-        name = "Knight Armor",
-        level = 15,
-        cost = 500,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 11226, count = 1}, 
-            {id = 10611, count = 2}, 
-            {id = 11230, count = 2}, 
-            {id = 11199, count = 3}, 
-        }
-    },
-    {
-        id = 2477,
-        name = "Knight Legs",
-        level = 15,
-        cost = 430,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 11226, count = 3}, 
-            {id = 10611, count = 3}, 
-            {id = 11230, count = 2}, 
-            {id = 11199, count = 1}, 
-        }
-    },
-    {
-        id = 2498,
-        name = "Royal Helmet",
-        level = 15,
-        cost = 800,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 5882, count = 10},
-            {id = 5948, count = 10},
-            {id = 2491, count = 2}, 
-            {id = 2475, count = 2}, 
-        }
-    },
-    {
-        id = 2506,
-        name = "Dragon Scale Helmet",
-        level = 20,
-        cost = 300000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 5920, count = 100}, 
-            {id = 5882, count = 100}, 
-            {id = 10020, count = 1}, 
-            {id = 5919, count = 1}, 
-            {id = 28127, count = 4}, 
-        }
-    },
-    {
-        id = 2492,
-        name = "Dragon Scale Mail",
-        level = 20,
-        cost = 2500,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 5882, count = 10}, 
-            {id = 5948, count = 10}, 
-            {id = 2487, count = 2},
-            {id = 2476, count = 2},
-        }
-    },
-    {
-        id = 2469,
-        name = "Dragon Scale Legs",
-        level = 20,
-        cost = 500000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 5920, count = 200}, 
-            {id = 5882, count = 200}, 
-            {id = 10020, count = 2}, 
-            {id = 5919, count = 3}, 
-            {id = 28127, count = 6},
-        }
-    },
-    {
-        id = 28098,
-        name = "Embersage Helmet",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 10},
-            {id = 28121, count = 8},
-            {id = 28118, count = 10},
-            {id = 28123, count = 16},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28099,
-        name = "Embersage Plate",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 15},
-            {id = 28121, count = 12},
-            {id = 28118, count = 15},
-            {id = 28123, count = 10},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28100,
-        name = "Embersage Legs",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 10},
-            {id = 28121, count = 5},
-            {id = 28118, count = 14},
-            {id = 28123, count = 14},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28101,
-        name = "Embersage Boots",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 6},
-            {id = 28121, count = 5},
-            {id = 28118, count = 10},
-            {id = 28123, count = 8},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28106,
-        name = "Vigils Helmet",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 10},
-            {id = 28121, count = 8},
-            {id = 28118, count = 10},
-            {id = 28123, count = 16},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28107,
-        name = "Vigils Armor",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 15},
-            {id = 28121, count = 12},
-            {id = 28118, count = 15},
-            {id = 28123, count = 10},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28108,
-        name = "Vigils Legs",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 10},
-            {id = 28121, count = 5},
-            {id = 28118, count = 14},
-            {id = 28123, count = 14},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28109,
-        name = "Vigils Boots",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 6},
-            {id = 28121, count = 5},
-            {id = 28118, count = 10},
-            {id = 28123, count = 8},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28112,
-        name = "Shadewalker Helmet",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 10},
-            {id = 28121, count = 8},
-            {id = 28118, count = 10},
-            {id = 28123, count = 16},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28113,
-        name = "Shadewalker Armor",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 15},
-            {id = 28121, count = 12},
-            {id = 28118, count = 15},
-            {id = 28123, count = 10},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28114,
-        name = "Shadewalker Legs",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 10},
-            {id = 28121, count = 5},
-            {id = 28118, count = 14},
-            {id = 28123, count = 14},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28115,
-        name = "Shadewalker Boots",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28120, count = 6},
-            {id = 28121, count = 5},
-            {id = 28118, count = 10},
-            {id = 28123, count = 8},
-            {id = 26780, count = 30},
-        }
-    },
-    {
-        id = 28706,
-        name = "Candy Helmet",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28696, count = 50},
-            {id = 28695, count = 65},
-            {id = 28687, count = 45},
-            {id = 28698, count = 30},
-            {id = 28686, count = 80},
-        }
-    },
-    {
-        id = 28707,
-        name = "Candy Armor",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28696, count = 80},
-            {id = 28695, count = 100},
-            {id = 28687, count = 75},
-            {id = 28698, count = 50},
-            {id = 28686, count = 100},
-        }
-    },
-    {
-        id = 28708,
-        name = "Candy Legs",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28696, count = 65},
-            {id = 28695, count = 80},
-            {id = 28687, count = 60},
-            {id = 28698, count = 40},
-            {id = 28686, count = 90},
-        }
-    },
-    {
-        id = 28709,
-        name = "Pastry Helmet",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28696, count = 50},
-            {id = 28695, count = 65},
-            {id = 28687, count = 45},
-            {id = 28698, count = 30},
-            {id = 28686, count = 80},
-        }
-    },
-    {
-        id = 28710,
-        name = "Pastry Robe",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28696, count = 80},
-            {id = 28695, count = 100},
-            {id = 28687, count = 75},
-            {id = 28698, count = 50},
-            {id = 28686, count = 100},
-        }
-    },
-    {
-        id = 28711,
-        name = "Pastry Pants",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 28696, count = 65},
-            {id = 28695, count = 80},
-            {id = 28687, count = 60},
-            {id = 28698, count = 40},
-            {id = 28686, count = 90},
-        }
-    },
-    {
-        id = 29469,
-        name = "Maliceforged Helmet",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29455, count = 5},
-            {id = 29467, count = 8},
-            {id = 29465, count = 15},
-            {id = 29466, count = 15},
-            {id = 29468, count = 25},
-        }
-    },
-    {
-        id = 29470,
-        name = "Hellstalker Visor",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29455, count = 5},
-            {id = 29467, count = 8},
-            {id = 29465, count = 15},
-            {id = 29466, count = 15},
-            {id = 29468, count = 25},
-        }
-    },
-    {
-        id = 29471,
-        name = "Dreadfire Headpiece",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29455, count = 5},
-            {id = 29467, count = 8},
-            {id = 29465, count = 15},
-            {id = 29466, count = 15},
-            {id = 29468, count = 25},
-        }
-    },
-    {
-        id = 29472,
-        name = "Demonfang Mask",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29455, count = 5},
-            {id = 29467, count = 8},
-            {id = 29465, count = 15},
-            {id = 29466, count = 15},
-            {id = 29468, count = 25},
-        }
-    },
-    {
-        id = 29472,
-        name = "Demonfang Mask",
-        level = 25,
-        cost = 50000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29455, count = 5},
-            {id = 29467, count = 8},
-            {id = 29465, count = 15},
-            {id = 29466, count = 15},
-            {id = 29468, count = 25},
-        }
-    },
-    {
-        id = 29560,
-        name = "Deathlord Headguard",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 60},
-            {id = 29549, count = 3},
-            {id = 29579, count = 2},
-            {id = 29580, count = 6},
-            {id = 29581, count = 12},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29567,
-        name = "Haloed Coif",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 60},
-            {id = 29549, count = 3},
-            {id = 29579, count = 2},
-            {id = 29580, count = 6},
-            {id = 29581, count = 12},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29573,
-        name = "Soulbinder Mask",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 60},
-            {id = 29549, count = 3},
-            {id = 29579, count = 2},
-            {id = 29580, count = 6},
-            {id = 29581, count = 12},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29561,
-        name = "Deathlord Cuirass",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 80},
-            {id = 29549, count = 4},
-            {id = 29579, count = 3},
-            {id = 29580, count = 8},
-            {id = 29581, count = 15},
-            {id = 29555, count = 2},
-        }
-    },
-    {
-        id = 29568,
-        name = "Haloed Tabard",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 80},
-            {id = 29549, count = 4},
-            {id = 29579, count = 3},
-            {id = 29580, count = 8},
-            {id = 29581, count = 15},
-            {id = 29555, count = 2},
-        }
-    },
-    {
-        id = 29574,
-        name = "Soulbinder Mantle",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 80},
-            {id = 29549, count = 4},
-            {id = 29579, count = 3},
-            {id = 29580, count = 8},
-            {id = 29581, count = 15},
-            {id = 29555, count = 2},
-        }
-    },
-    {
-        id = 29562,
-        name = "Deathlord Greaves",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 70},
-            {id = 29549, count = 3},
-            {id = 29579, count = 2},
-            {id = 29580, count = 6},
-            {id = 29581, count = 15},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29569,
-        name = "Haloed Legs",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 70},
-            {id = 29549, count = 3},
-            {id = 29579, count = 2},
-            {id = 29580, count = 6},
-            {id = 29581, count = 15},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29575,
-        name = "Soulbinder Kilt",
-        level = 10,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 70},
-            {id = 29549, count = 3},
-            {id = 29579, count = 2},
-            {id = 29580, count = 6},
-            {id = 29581, count = 15},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29563,
-        name = "Deathlord Walkers",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 50},
-            {id = 29549, count = 2},
-            {id = 29579, count = 2},
-            {id = 29580, count = 5},
-            {id = 29581, count = 10},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29570,
-        name = "Haloed Shoes",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 50},
-            {id = 29549, count = 2},
-            {id = 29579, count = 2},
-            {id = 29580, count = 5},
-            {id = 29581, count = 10},
-            {id = 29555, count = 1},
-        }
-    },
-    {
-        id = 29576,
-        name = "Soulbinder Sandals",
-        level = 30,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29541, count = 50},
-            {id = 29549, count = 2},
-            {id = 29579, count = 2},
-            {id = 29580, count = 5},
-            {id = 29581, count = 10},
-            {id = 29555, count = 1},
-        }
-    },
-    {
         id = 29577,
         name = "Shadowwoven Gloves",
         level = 30,
@@ -765,12 +8,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29580, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -782,12 +20,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29599, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -799,12 +32,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29600, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -816,12 +44,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29601, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -833,12 +56,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29602, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -850,12 +68,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29603, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -867,12 +80,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29604, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -884,12 +92,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29605, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -901,12 +104,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29606, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -918,12 +116,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29580, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -935,12 +128,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29599, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -952,12 +140,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29600, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+{id = 26434, count = 1},   
         }
     },
     {
@@ -969,12 +152,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29601, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -986,12 +164,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29602, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1003,12 +176,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29603, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1020,12 +188,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29604, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1037,12 +200,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29605, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -1054,12 +212,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29541, count = 125},
-            {id = 29549, count = 3},
-            {id = 29579, count = 6},
-            {id = 29606, count = 15},
-            {id = 29581, count = 30},
-            {id = 29555, count = 1},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -1071,8 +224,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29899, count = 20},
-            {id = 29892, count = 20},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1084,9 +236,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29899, count = 10},
-            {id = 29898, count = 10},
-            {id = 29892, count = 10},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -1098,8 +248,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29894, count = 20},
-            {id = 29892, count = 20},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1111,8 +260,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29895, count = 10},
-            {id = 29892, count = 20},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -1124,8 +272,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29896, count = 20},
-            {id = 29892, count = 20},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -1137,8 +284,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29897, count = 20},
-            {id = 29892, count = 20},
+            {id = 26434, count = 1},   
         }
     },
     {
@@ -1150,76 +296,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29898, count = 20},
-            {id = 29892, count = 20},
-        }
-    },
-    {
-        id = 29861,
-        name = "Myst Regalia Helmet",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 15},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29862,
-        name = "Myst Regalia Mantle",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 30},
-            {id = 29901, count = 5},
-            {id = 29920, count = 1},
-            {id = 29921, count = 25},
-            {id = 29924, count = 3},
-            {id = 29895, count = 3},
-        }
-    },
-    {
-        id = 29863,
-        name = "Myst Regalia Legs",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 15},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29864,
-        name = "Myst Regalia Galoshes",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 15},
-            {id = 29901, count = 2},
-            {id = 29920, count = 1},
-            {id = 29921, count = 10},
-            {id = 29924, count = 1},
-            {id = 29895, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1231,12 +308,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 20},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1248,80 +320,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 20},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29869,
-        name = "Seraphic Helmet",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 15},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29870,
-        name = "Seraphic Tabard",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 30},
-            {id = 29901, count = 5},
-            {id = 29920, count = 1},
-            {id = 29921, count = 25},
-            {id = 29924, count = 3},
-            {id = 29895, count = 3},
-        }
-    },
-    {
-        id = 29871,
-        name = "Seraphic Greaves",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 15},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29872,
-        name = "Seraphic Boots",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 15},
-            {id = 29901, count = 2},
-            {id = 29920, count = 1},
-            {id = 29921, count = 10},
-            {id = 29924, count = 1},
-            {id = 29895, count = 1},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1333,12 +332,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 20},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1350,82 +344,10 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 20},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
+           {id = 26434, count = 1},   
         }
     },
-    {
-        id = 29878,
-        name = "Dawnforged Helmet",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 15},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29879,
-        name = "Dawnforged Plate",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 30},
-            {id = 29901, count = 5},
-            {id = 29920, count = 1},
-            {id = 29921, count = 25},
-            {id = 29924, count = 3},
-            {id = 29895, count = 3},
-        }
-    },
-    {
-        id = 29880,
-        name = "Dawnforged Legs",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 15},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
-        }
-    },
-    {
-        id = 29881,
-        name = "Dawnforged Boots",
-        level = 35,
-        cost = 60000,
-        count = 1,
-        storage = 0,
-        storageText = "",
-        materials = {
-            {id = 29902, count = 15},
-            {id = 29901, count = 2},
-            {id = 29920, count = 1},
-            {id = 29921, count = 10},
-            {id = 29924, count = 1},
-            {id = 29895, count = 1},
-        }
-    },
+
     {
         id = 29916,
         name = "Dawnforged Belt",
@@ -1435,12 +357,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 20},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
+           {id = 26434, count = 1},   
         }
     },
     {
@@ -1452,12 +369,7 @@ Crafting.armorsmith = {
         storage = 0,
         storageText = "",
         materials = {
-            {id = 29902, count = 20},
-            {id = 29901, count = 3},
-            {id = 29920, count = 1},
-            {id = 29921, count = 20},
-            {id = 29924, count = 2},
-            {id = 29895, count = 2},
+            {id = 26434, count = 1},   
         }
     },
 }

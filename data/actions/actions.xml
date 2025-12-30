@@ -23,6 +23,8 @@
 	<action itemid="15358" script="ancora.lua"/>
 	<action itemid="25524" script="rookslayer.lua"/>
 	<action itemid="11101" script="other/donate.lua"/>
+
+
 	
 	<!-- Reward Chest System 
 	<action itemid="21584"  script="rewardchest.lua"/>-->

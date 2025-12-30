@@ -1,0 +1,1 @@
+ALTER TABLE `players` ADD `autoloot` BLOB NULL DEFAULT NULL AFTER `conditions`

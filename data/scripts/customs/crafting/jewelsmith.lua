@@ -111,7 +111,7 @@ Crafting.jewelsmith = {
         }
     },
     {
-        id = 29865,
+        id = 29867,
         name = "Myst Regalia Amulet",
         level = 35,
         cost = 60000,
@@ -128,7 +128,7 @@ Crafting.jewelsmith = {
         }
     },
     {
-        id = 29866,
+        id = 29868,
         name = "Myst Regalia Ring",
         level = 35,
         cost = 60000,
