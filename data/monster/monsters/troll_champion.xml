@@ -41,11 +41,13 @@
 	<loot>
 		<item name="gold coin" countmax="12" chance="64000" />
 		<item name="silver amulet" chance="230" />
-		<item name="spear" chance="25000" />
-		<item name="studded club" chance="5450" />
 		<item id="2512" chance="6000" /><!-- wooden shield -->
 		<item id="2544" countmax="5" chance="5450" />
+		<item name="scarf" chance="5000" />
 		<item name="leather boots" chance="9000" />
+		<item name="leather helmet" chance="9000" />		
+		<item name="leather armor" chance="9000" />
+		<item name="leather legs" chance="9000" />
 		<item name="meat" chance="9650" />
 		<item name="bunch of troll hair" chance="3000" />
 		<item name="trollroot" chance="750" />

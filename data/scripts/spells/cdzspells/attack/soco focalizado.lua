@@ -6,8 +6,8 @@ combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 function onGetFormulaValues(player, skill, attack, factor)
     local level = player:getLevel()
     local magiclevel = player:getMagicLevel()
-    local min = (level / 5) + (magiclevel * 0.1) * (skill * attack * 0.01) + 1
-    local max = (level / 5) + (magiclevel * 0.1) * (skill * attack * 0.02) + 2
+    local min = (level / 5) + (skill + attack) * (magiclevel / 3)
+    local max = (level / 5) + (skill + attack) * (magiclevel / 3)
     return -min, -max
 end
 
@@ -22,10 +22,10 @@ end
 spell:name("Soco Focalizado")
 spell:words("soco focalizado")
 spell:group("attack")
-spell:id(1)
-spell:cooldown(1 * 1000)
+spell:range(3)
+spell:cooldown(3000)
 spell:level(1)
-spell:mana(20)
+spell:mana(30)
 spell:isSelfTarget(false)  -- Evita que a magia ataque o próprio jogador
 spell:needTarget(true) 
 spell:isPremium(false)

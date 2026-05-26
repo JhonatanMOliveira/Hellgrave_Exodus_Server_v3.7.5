@@ -14,29 +14,33 @@ local RewardType = {
     StorageSlot = 187614, -- 87615 - 87625 reserved (10)
     StorageKillsSelected = 187626, -- 87627 - 87637 reserved (10)
     StorageKillsCurrent = 187638, -- 87639 - 87649 reserved (10)
+    StorageLastKillX = 187650,
+    StorageLastKillY = 187651,
+    StorageLastKillZ = 187652,
+    StorageBossPending = 187653,
     ActiveTasksLimit = 3, -- max 10 or you will have to adjust storage keys
     RecommendedLevelRange = 10, -- when player is within this range (at level 20, 10-20 and 20-30 levels), "Recommended" text will be displayed in tasks list
     RequiredKills = {Min = 300, Max = 1000}, -- Minimum and Maximum amount of kills that player can select
     KillsForBonus = 100, -- every how many kills should bonus be applied (not counting minimum amount of kills)
-    --[[
-      % increased rank points gained per KillsForBonus kills
-      If player selects to kill 100 Trolls, only base value is granted
-      Selecting 200 kills grants base value + PointsIncrease%
-      Default: 100
-      Type: Percent
-    ]]
+    
+      -- increased rank points gained per KillsForBonus kills
+      -- If player selects to kill 100 Trolls, only base value is granted
+      -- Selecting 200 kills grants base value + PointsIncrease%
+      -- Default: 100
+      -- Type: Percent
+    
     PointsIncrease = 10,
-    --[[
-      % increased experience points gained per KillsForBonus kills
-      Default: 10
-      Type: Percent
-    ]]
+    
+      -- increased experience points gained per KillsForBonus kills
+      -- Default: 10
+      -- Type: Percent
+    
     ExperienceIncrease = 20,
-    --[[
-      % increased gold coins gained per KillsForBonus kills
-      Default: 10
-      Type: Percent
-    ]]
+    
+      -- increased gold coins gained per KillsForBonus kills
+      -- Default: 10
+      -- Type: Percent
+    
     GoldIncrease = 15,
     Party = {
       Enabled = true, -- should party members share kills
@@ -59,21 +63,21 @@ local RewardType = {
   
     },
     Tasks = {
-      --[[
+      
         {
           RaceName = "Trolls", -- Name of the task
           Level = 8, -- Recommended level for this task (see RecommendedLevelRange)
           Monsters = {"Troll", "Troll Champion"}, -- List of monsters that count for the task, case-sensitive
+          BossName = "Big Boss Trolliver",
           Rewards = {
             {Type = RewardType.Points, BaseValue = 1}, -- Adds rank points
             {Type = RewardType.Experience, BaseValue = 1000}, -- Gives experience
-            {Type = RewardType.Gold, BaseValue = 500} -- Gives gold coins to bank
+            {Type = RewardType.Gold, BaseValue = 500}, -- Gives gold coins to bank
             {Type = RewardType.Item, Id = 2353, Amount = 1}, -- Rewards with 1 Burning Heart item
             {Type = RewardType.Storage, Key = 1234, Value = 1, Description = "Access to new hunting area"}, -- Sets storage 1234 with value 1
-            {Type = RewardType.Teleport, Position = Position(1000, 1000, 7), Description = "Troll Boss fight"} -- Teleports to Position when task is completed
           }
         },
-      ]]
+      
       {
         RaceName = "Crocodiles",
         Level = 6,
@@ -746,6 +750,8 @@ local RewardType = {
       },
     }
   }
+
+  Config.Tasks = Config.Tasks or {}
   
   local Cache = {}
   
@@ -753,6 +759,7 @@ local RewardType = {
   
   function StartupEvent.onStartup()
     Cache.Ranks = {}
+    Cache.BossTasks = {}
     local ordered = {}
     for key, _ in pairs(Config.Ranks) do
       table.insert(ordered, key)
@@ -774,13 +781,16 @@ local RewardType = {
     end
   
     Cache.Tasks = {}
-    for id, task in ipairs(Config.Tasks) do
+    for id, task in ipairs(Config.Tasks or {}) do
       for _, name in ipairs(task.Monsters) do
         Cache.Tasks[name] = id
       end
+      if task.BossName then
+        Cache.BossTasks[task.BossName] = id
+      end
     end
     
-    for _, task in ipairs(Config.Tasks) do
+    for _, task in ipairs(Config.Tasks or {}) do
       if not task.Outfits then
         task.Outfits = {}
         for _, monster in ipairs(task.Monsters) do
@@ -853,7 +863,7 @@ local RewardType = {
   
     -- #region Send tasks list
     local tasks = {}
-    for _, task in ipairs(Config.Tasks) do
+    for _, task in ipairs(Config.Tasks or {}) do
       local taskData = {
         name = task.RaceName,
         lvl = task.Level,
@@ -862,7 +872,7 @@ local RewardType = {
         rewards = {}
       }
   
-      for _, reward in ipairs(task.Rewards) do
+      for _, reward in ipairs(task.Rewards or {}) do
         if reward.Type == RewardType.Points or reward.Type == RewardType.Experience or reward.Type == RewardType.Gold or reward.Type == RewardType.Ranking  then
           table.insert(taskData.rewards, {type = reward.Type, value = reward.BaseValue})
         elseif reward.Type == RewardType.Item then
@@ -951,10 +961,39 @@ local RewardType = {
     self:sendExtendedOpcode(Config.TasksOpCode, json.encode({ action = "ranking", data = data }))
 end
 
+  local function setTaskLastKillPosition(player, taskId, position)
+    local slot = player:getSlotByTaskId(taskId)
+    if not slot then
+      return
+    end
+
+    player:setStorageValue(Config.StorageLastKillX + slot, position.x)
+    player:setStorageValue(Config.StorageLastKillY + slot, position.y)
+    player:setStorageValue(Config.StorageLastKillZ + slot, position.z)
+  end
+
+  local function setTaskBossPending(player, taskId, pending)
+    local slot = player:getSlotByTaskId(taskId)
+    if not slot then
+      return
+    end
+
+    player:setStorageValue(Config.StorageBossPending + slot, pending and 1 or -1)
+  end
+
+  local function isTaskBossPending(player, taskId)
+    local slot = player:getSlotByTaskId(taskId)
+    if not slot then
+      return false
+    end
+
+    return player:getStorageValue(Config.StorageBossPending + slot) == 1
+  end
+
   
   
   function Player:startNewTask(taskId, kills)
-    local task = Config.Tasks[taskId]
+    local task = (Config.Tasks or {})[taskId]
     if task then
       local slot = self:getFreeTaskSlot()
       if not slot then
@@ -969,23 +1008,31 @@ end
   
       kills = math.max(kills, Config.RequiredKills.Min)
       kills = math.min(kills, Config.RequiredKills.Max)
-  
+
       self:setStorageValue(Config.StorageSlot + slot, taskId)
       self:setStorageValue(Config.StorageKillsCurrent + slot, 0)
       self:setStorageValue(Config.StorageKillsSelected + slot, kills)
-  
+      self:setStorageValue(Config.StorageBossPending + slot, -1)
+      self:setStorageValue(Config.StorageLastKillX + slot, -1)
+      self:setStorageValue(Config.StorageLastKillY + slot, -1)
+      self:setStorageValue(Config.StorageLastKillZ + slot, -1)
+
       self:sendTaskUpdate(taskId)
     end
   end
   
   function Player:cancelTask(taskId)
-    local task = Config.Tasks[taskId]
+    local task = (Config.Tasks or {})[taskId]
     if task then
       local slot = self:getSlotByTaskId(taskId)
       if slot then
         self:setStorageValue(Config.StorageSlot + slot, -1)
         self:setStorageValue(Config.StorageKillsCurrent + slot, -1)
         self:setStorageValue(Config.StorageKillsSelected + slot, -1)
+        self:setStorageValue(Config.StorageBossPending + slot, -1)
+        self:setStorageValue(Config.StorageLastKillX + slot, -1)
+        self:setStorageValue(Config.StorageLastKillY + slot, -1)
+        self:setStorageValue(Config.StorageLastKillZ + slot, -1)
         self:sendTaskUpdate(taskId)
       end
     end
@@ -997,55 +1044,131 @@ end
     if not target or target:isPlayer() or target:getMaster() then
       return true
     end
-  
-    local taskId = Cache.Tasks[target:getName()]
-    if taskId then
-      local task = Config.Tasks[taskId]
+
+    local bossTaskId = Cache.BossTasks[target:getName()]
+    if bossTaskId then
+      local task = (Config.Tasks or {})[bossTaskId]
       if task then
         local party = player:getParty()
         if party and Config.Party.Enabled then
           local members = party:getMembers()
           table.insert(members, party:getLeader())
-  
+
           local killerPos = player:getPosition()
           for _, member in ipairs(members) do
             if Config.Party.Range > 0 then
               if member:getPosition():getDistance(killerPos) <= Config.Party.Range then
-                member:taskProcessKill(taskId)
+                member:claimTaskBossReward(bossTaskId)
               end
             else
-              member:taskProcessKill(taskId)
+              member:claimTaskBossReward(bossTaskId)
             end
           end
         else
-          player:taskProcessKill(taskId)
+          player:claimTaskBossReward(bossTaskId)
+        end
+      end
+      return true
+    end
+
+    local taskId = Cache.Tasks[target:getName()]
+    if taskId then
+      local killPos = target:getPosition()
+
+      local task = (Config.Tasks or {})[taskId]
+      if task then
+        local party = player:getParty()
+        if party and Config.Party.Enabled then
+          local members = party:getMembers()
+          table.insert(members, party:getLeader())
+
+          local killerPos = player:getPosition()
+          for _, member in ipairs(members) do
+            local shouldSpawnBoss = member == player
+            if Config.Party.Range > 0 then
+              if member:getPosition():getDistance(killerPos) <= Config.Party.Range then
+                setTaskLastKillPosition(member, taskId, killPos)
+                member:taskProcessKill(taskId, shouldSpawnBoss)
+              end
+            else
+              setTaskLastKillPosition(member, taskId, killPos)
+              member:taskProcessKill(taskId, shouldSpawnBoss)
+            end
+          end
+        else
+          setTaskLastKillPosition(player, taskId, killPos)
+          player:taskProcessKill(taskId, true)
         end
       end
     end
-  
+
     return true
   end
   
-  function Player:taskProcessKill(taskId)
+  function Player:taskProcessKill(taskId, shouldSpawnBoss)
     local slot = self:getSlotByTaskId(taskId)
     if slot then
+      if isTaskBossPending(self, taskId) then
+        self:sendTaskUpdate(taskId)
+        return
+      end
+
       self:addTaskKill(slot)
   
       local requiredKills = self:getTaskRequiredKills(slot)
       local kills = self:getTaskKills(slot)
       if kills >= requiredKills then
-        self:setStorageValue(Config.StorageSlot + slot, -1)
-        self:setStorageValue(Config.StorageKillsCurrent + slot, -1)
-        self:setStorageValue(Config.StorageKillsSelected + slot, -1)
-  
-        local task = Config.Tasks[taskId]
-        for _, reward in ipairs(task.Rewards) do
-          self:addTaskReward(reward, requiredKills)
+        local lastKillPos = Position(
+          self:getStorageValue(Config.StorageLastKillX + slot),
+          self:getStorageValue(Config.StorageLastKillY + slot),
+          self:getStorageValue(Config.StorageLastKillZ + slot)
+        )
+
+        local task = (Config.Tasks or {})[taskId]
+        setTaskBossPending(self, taskId, true)
+        self:setStorageValue(Config.StorageKillsCurrent + slot, requiredKills)
+
+        if shouldSpawnBoss and task and task.BossName and lastKillPos.x > 0 and lastKillPos.y > 0 and lastKillPos.z >= 0 then
+          Game.createMonster(task.BossName, lastKillPos, false, true)
         end
-        self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "[Task Status] You have finished " .. task.RaceName .. " task!")
+
+        self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "[Task Status] You have finished " .. task.RaceName .. " task! Defeat the boss to claim your reward.")
       end
       self:sendTaskUpdate(taskId)
     end
+  end
+
+  function Player:claimTaskBossReward(taskId)
+    local slot = self:getSlotByTaskId(taskId)
+    if not slot then
+      return false
+    end
+
+    if not isTaskBossPending(self, taskId) then
+      return false
+    end
+
+    local task = (Config.Tasks or {})[taskId]
+    if not task then
+      return false
+    end
+
+    local requiredKills = self:getTaskRequiredKills(slot)
+    for _, reward in ipairs(task.Rewards or {}) do
+      self:addTaskReward(reward, requiredKills)
+    end
+
+    self:setStorageValue(Config.StorageSlot + slot, -1)
+    self:setStorageValue(Config.StorageKillsCurrent + slot, -1)
+    self:setStorageValue(Config.StorageKillsSelected + slot, -1)
+    self:setStorageValue(Config.StorageBossPending + slot, -1)
+    self:setStorageValue(Config.StorageLastKillX + slot, -1)
+    self:setStorageValue(Config.StorageLastKillY + slot, -1)
+    self:setStorageValue(Config.StorageLastKillZ + slot, -1)
+
+    self:sendTaskUpdate(taskId)
+    self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "[Task Status] You have claimed the reward for " .. task.RaceName .. ".")
+    return true
   end
   
   function Player:addTaskReward(reward, requiredKills)
@@ -1204,10 +1327,64 @@ end
         return i
       end
     end
-  
+
     return nil
   end
-  
+
+  function Player:startTrackerTask(taskId, requiredKills, currentKills)
+    local task = (Config.Tasks or {})[taskId]
+    if not task then
+      return nil
+    end
+
+    local slot = self:getFreeTaskSlot()
+    if not slot then
+      return nil
+    end
+
+    requiredKills = math.max(1, tonumber(requiredKills) or 1)
+    currentKills = math.max(0, math.min(requiredKills, tonumber(currentKills) or 0))
+
+    self:setStorageValue(Config.StorageSlot + slot, taskId)
+    self:setStorageValue(Config.StorageKillsCurrent + slot, currentKills)
+    self:setStorageValue(Config.StorageKillsSelected + slot, requiredKills)
+    self:setStorageValue(Config.StorageBossPending + slot, -1)
+    self:setStorageValue(Config.StorageLastKillX + slot, -1)
+    self:setStorageValue(Config.StorageLastKillY + slot, -1)
+    self:setStorageValue(Config.StorageLastKillZ + slot, -1)
+    self:sendTaskUpdate(taskId)
+
+    return slot
+  end
+
+  function Player:updateTrackerTask(taskId, currentKills, requiredKills)
+    local slot = self:getSlotByTaskId(taskId)
+    if not slot then
+      return false
+    end
+
+    if requiredKills ~= nil then
+      self:setStorageValue(Config.StorageKillsSelected + slot, math.max(1, tonumber(requiredKills) or 1))
+    end
+
+    if currentKills ~= nil then
+      self:setStorageValue(Config.StorageKillsCurrent + slot, math.max(0, tonumber(currentKills) or 0))
+    end
+
+    self:sendTaskUpdate(taskId)
+    return true
+  end
+
+  Config.Tasks[#Config.Tasks + 1] = {
+    RaceName = "Troll Wolf Dungeon - Kills",
+    Level = 1,
+    Monsters = {"Troll", "Wolf"},
+    Rewards = {},
+  }
+
+  TasksCustomIds = TasksCustomIds or {}
+  TasksCustomIds.TrollWolfDungeonKills = #Config.Tasks
+
   function MonsterType:getOutfitOTC()
     local outfit = self:getOutfit()
     return {

@@ -1,8 +1,11 @@
+local familiar_choice_storage = 633454
+
 function onModalWindow(player, modalWindowId, buttonId, choiceId)
     player:unregisterEvent("choiceFamiliar")
       if modalWindowId == 1000 then
           if buttonId == 100 then
               if choiceId == 1 then
+                  player:setStorageValue(familiar_choice_storage, 1)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 1)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -22,6 +25,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
                   player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Normal Familiar as your Familiar.")
               elseif choiceId == 2 then
               if player:getStorageValue(Expeditions.BlackDracadetPet) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 2)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 1)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -44,6 +48,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 3 then
                   if player:getStorageValue(Expeditions.BlackDracadetPet2) == 1 then
+                      player:setStorageValue(familiar_choice_storage, 3)
                       player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                       player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                       player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 1)
@@ -66,6 +71,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
                   end
               elseif choiceId == 4 then
               if player:getStorageValue(Expeditions.BlackDracadetPet3) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 4)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -88,8 +94,9 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 5 then
               if player:getStorageValue(Expeditions.FrostDracadetPet) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 5)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
-                  player:setStorageValue(Expeditions.BlackDracadetPetChoice, 1)
+                  player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice3, 0)
                   player:setStorageValue(Expeditions.FrostDracadetPetChoice, 1)
@@ -109,29 +116,31 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
                   player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
               end
               elseif choiceId == 6 then
-                  if player:getStorageValue(Expeditions.FrostDracadetPet2) == 1 then
-                      player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
-                      player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
-                      player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
-                      player:setStorageValue(Expeditions.BlackDracadetPetChoice3, 0)
-                      player:setStorageValue(Expeditions.FrostDracadetPetChoice, 0)
-                      player:setStorageValue(Expeditions.FrostDracadetPetChoice2, 1)
-                      player:setStorageValue(Expeditions.FrostDracadetPetChoice3, 0)
-                      player:setStorageValue(Expeditions.SwampDracadetPetChoice, 0)
-                      player:setStorageValue(Expeditions.SwampDracadetPetChoice2, 0)
-                      player:setStorageValue(Expeditions.SwampDracadetPetChoice3, 0)
-                      player:setStorageValue(Expeditions.StoneDracadetPetChoice, 0)
-                      player:setStorageValue(Expeditions.StoneDracadetPetChoice2, 0)
-                      player:setStorageValue(Expeditions.StoneDracadetPetChoice3, 0)
-                      player:setStorageValue(Expeditions.FireDracadetPetChoice, 0)
-                      player:setStorageValue(Expeditions.FireDracadetPetChoice2, 0)
-                      player:setStorageValue(Expeditions.FireDracadetPetChoice3, 0)
-                      player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Frost Dracadet [2] as your Familiar.")
-                  else
-                      player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
-                  end
+              if player:getStorageValue(Expeditions.FrostDracadetPet2) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 6)
+                  player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
+                  player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
+                  player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
+                  player:setStorageValue(Expeditions.BlackDracadetPetChoice3, 0)
+                  player:setStorageValue(Expeditions.FrostDracadetPetChoice, 0)
+                  player:setStorageValue(Expeditions.FrostDracadetPetChoice2, 1)
+                  player:setStorageValue(Expeditions.FrostDracadetPetChoice3, 0)
+                  player:setStorageValue(Expeditions.SwampDracadetPetChoice, 0)
+                  player:setStorageValue(Expeditions.SwampDracadetPetChoice2, 0)
+                  player:setStorageValue(Expeditions.SwampDracadetPetChoice3, 0)
+                  player:setStorageValue(Expeditions.StoneDracadetPetChoice, 0)
+                  player:setStorageValue(Expeditions.StoneDracadetPetChoice2, 0)
+                  player:setStorageValue(Expeditions.StoneDracadetPetChoice3, 0)
+                  player:setStorageValue(Expeditions.FireDracadetPetChoice, 0)
+                  player:setStorageValue(Expeditions.FireDracadetPetChoice2, 0)
+                  player:setStorageValue(Expeditions.FireDracadetPetChoice3, 0)
+                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Frost Dracadet [2] as your Familiar.")
+              else
+                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
+              end
               elseif choiceId == 7 then
               if player:getStorageValue(Expeditions.FrostDracadetPet3) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 7)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -154,6 +163,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 8 then
               if player:getStorageValue(Expeditions.SwampDracadetPet3) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 8)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -176,6 +186,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 9 then
               if player:getStorageValue(Expeditions.SwampDracadetPet2) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 9)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -192,12 +203,13 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice2, 0)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice3, 0)
-                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Swamp Dracadet [3] as your Familiar.")
+                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Swamp Dracadet [2] as your Familiar.")
               else
                   player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
               end
               elseif choiceId == 10 then
               if player:getStorageValue(Expeditions.SwampDracadetPet) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 10)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -220,6 +232,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 11 then
               if player:getStorageValue(Expeditions.StoneDracadetPet3) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 11)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -242,6 +255,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 12 then
               if player:getStorageValue(Expeditions.StoneDracadetPet2) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 12)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -258,12 +272,13 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice2, 0)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice3, 0)
-                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Stone Dracadet [3] as your Familiar.")
+                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Stone Dracadet [2] as your Familiar.")
               else
                   player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
               end
               elseif choiceId == 13 then
               if player:getStorageValue(Expeditions.StoneDracadetPet) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 13)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -286,6 +301,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 14 then
               if player:getStorageValue(Expeditions.FireDracadetPet3) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 14)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -308,6 +324,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               end
               elseif choiceId == 15 then
               if player:getStorageValue(Expeditions.FireDracadetPet2) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 15)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -324,12 +341,13 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice2, 1)
                   player:setStorageValue(Expeditions.FireDracadetPetChoice3, 0)
-                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Fire Dracadet [3] as your Familiar.")
+                  player:sendTextMessage(MESSAGE_INFO_DESCR, "You have chosen Fire Dracadet [2] as your Familiar.")
               else
                   player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
               end
               elseif choiceId == 16 then
               if player:getStorageValue(Expeditions.FireDracadetPet) == 1 then
+                  player:setStorageValue(familiar_choice_storage, 16)
                   player:setStorageValue(Expeditions.NormalFamiliarChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice, 0)
                   player:setStorageValue(Expeditions.BlackDracadetPetChoice2, 0)
@@ -350,7 +368,7 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
               else
                   player:sendTextMessage(MESSAGE_INFO_DESCR, "You need unlock this familiar first.")
               end
-          else
+              else
               player:sendTextMessage(MESSAGE_INFO_DESCR, "You cancelled the selection.")
           end
       end

@@ -937,6 +937,7 @@ class LuaScriptInterface
 
 		static int luaPlayerGetVocation(lua_State* L);
 		static int luaPlayerSetVocation(lua_State* L);
+		static int luaPlayerGetAttackSpeed(lua_State* L);
 
 		static int luaPlayerGetSex(lua_State* L);
 		static int luaPlayerSetSex(lua_State* L);
@@ -1008,6 +1009,9 @@ class LuaScriptInterface
 
 		static int luaPlayerGetPremiumEndsAt(lua_State* L);
 		static int luaPlayerSetPremiumEndsAt(lua_State* L);
+		static int luaPlayerGetPremiumPoints(lua_State* L);
+		static int luaPlayerAddPremiumPoints(lua_State* L);
+		static int luaPlayerRemovePremiumPoints(lua_State* L);
 
 		static int luaPlayerHasBlessing(lua_State* L);
 		static int luaPlayerAddBlessing(lua_State* L);

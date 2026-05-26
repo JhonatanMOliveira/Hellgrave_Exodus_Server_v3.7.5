@@ -8,7 +8,7 @@
 
 
 	<!-- Wrath Of The Emperor Quest -->
-	<globalevent name="WotESpyHoles" interval="5000" script="wrath of the emperor quest/spyHoles.lua" />
+<!-- <globalevent name="WotESpyHoles" interval="5000" script="wrath of the emperor quest/spyHoles.lua" /> -->	
 
 	<!-- Demon Oak Quest -->
 	<globalevent name="DemonOakVoices" interval="15000" script="demon oak quest/voices.lua" />
@@ -21,7 +21,7 @@
 
 	<!-- World Changes -->
 	<globalevent name="FuryGates" type="startup" script="worldchanges/furygates.lua" />
-	<globalevent name="Yasir" type="startup" script="worldchanges/yasir.lua" />
+
 
 	<!-- Spawn -->
 	<globalevent name="RaidSystem" interval="10000" script="spawn/raids.lua" />
@@ -29,6 +29,20 @@
 	<globalevent type="startup" name="RashidSpawn" script="spawn/RashidSpawn.lua" />
 	<globalevent type="startup" name="CilliaSpawn" script="spawn/CilliaSpawn.lua" />
 	
+	<!-- Spawn Minerio (a cada 30 minutos + startup) 
+	<globalevent name="SpawnMinerio" interval="1800000" script="spawn/SpawnMinerio.lua" />
+	<globalevent type="startup" name="SpawnMinerioStartup" script="spawn/SpawnMinerio.lua" />
+-->
+	<!-- Spawn Flores (a cada 30 minutos + startup) 
+	<globalevent name="SpawnFlores" interval="1800000" script="spawn/SpawnFlores.lua" />
+	<globalevent type="startup" name="SpawnFloresStartup" script="spawn/SpawnFlores.lua" />
+-->
+	<!-- Spawn Arvores 
+	<globalevent name="Spawnarvores" interval="1800000" script="spawn/Spawnarvores.lua" />
+	<globalevent type="startup" name="SpawnarvoresStartup" script="spawn/Spawnarvores.lua" />
+-->
+
+
 	<!-- Boosted Creatures -->
 	<globalevent name="BoostedCreature" type="startup" script="boosted/daily-monster.lua" />
 	<globalevent name="BoostedBoss" type="startup" script="boosted/daily-boss.lua" />

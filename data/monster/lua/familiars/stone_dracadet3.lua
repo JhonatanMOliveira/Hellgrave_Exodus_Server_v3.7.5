@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -70,16 +70,9 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", type= COMBAT_HOLYDAMAGE, interval = 2000, chance = 100, minDamage = -250, maxDamage = -380},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_HOLYDAMAGE, minDamage = -280, maxDamage = -450, range = 7, radius = 4, shootEffect = 71, effect = 271, target = true},
-	{name ="combat", interval = 2000, chance = 22, type = COMBAT_HOLYDAMAGE, minDamage = -250, maxDamage = -500, length = 8, spread = 3, effect = 299, target = false}
+	{name ="ice strike", interval = 2000, chance = 17, minDamage = -300, maxDamage = -450, range = 5, target = true}
 }
 
-monster.defenses = {
-	defense = 55,
-	armor = 55,
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 650, maxDamage = 850, effect = 185, target = false}
-}
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},

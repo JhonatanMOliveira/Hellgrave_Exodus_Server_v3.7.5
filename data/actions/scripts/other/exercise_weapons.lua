@@ -33,14 +33,14 @@ local skills = {
     [27745] = {id=SKILL_AXE, voc={4,8}}, -- Lasting Exercise Axe
     [27746] = {id=SKILL_CLUB, voc={4,8}}, -- Lasting Exercise Club
     [27735] = {id=SKILL_DISTANCE, voc={3,7}, range=CONST_ANI_SIMPLEARROW}, -- Exercise Bow
-    [27736] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10}, range=CONST_ANI_SMALLICE}, -- Exercise Rod
-    [27737] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10}, range=CONST_ANI_FIRE}, -- Exercise Wand
+    [27736] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10,11}, range=CONST_ANI_SMALLICE}, -- Exercise Rod
+    [27737] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10,11}, range=CONST_ANI_FIRE}, -- Exercise Wand
     [27741] = {id=SKILL_DISTANCE, voc={3,7}, range=CONST_ANI_SIMPLEARROW}, -- Durable Exercise Bow
-    [27742] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10}, range=CONST_ANI_SMALLICE}, -- Durable Exercise Rod
-    [27743] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10}, range=CONST_ANI_FIRE}, -- Durable Exercise Wand
+    [27742] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10,11}, range=CONST_ANI_SMALLICE}, -- Durable Exercise Rod
+    [27743] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10,11}, range=CONST_ANI_FIRE}, -- Durable Exercise Wand
     [27747] = {id=SKILL_DISTANCE, voc={3,7}, range=CONST_ANI_SIMPLEARROW}, -- Lasting Exercise Bow
-    [27748] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10}, range=CONST_ANI_SMALLICE}, -- Lasting Exercise Rod
-    [27749] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10}, range=CONST_ANI_FIRE}, -- Lasting Exercise Wand
+    [27748] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10,11}, range=CONST_ANI_SMALLICE}, -- Lasting Exercise Rod
+    [27749] = {id=SKILL_MAGLEVEL, voc={1,2,5,6,9,10,11}, range=CONST_ANI_FIRE}, -- Lasting Exercise Wand
 }
 
 

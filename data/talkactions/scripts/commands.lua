@@ -10,6 +10,7 @@ function onSay(cid, words, param)
                         "!summonfamiliar - Summons your familiar.\n" ..
                         "!familiarlevel - Shows your familiar's level.\n" ..
                         "!choosefamiliar - Select a familiar.\n" ..
+                        "!attackspeed - Shows your current attack speed.\n" ..
                         "!resis - Shows your resistances.\n" ..
                         "!buyhouse - Allows you to buy a house.\n" ..
                         "!sellhouse - Allows you to sell a house.\n" ..
@@ -18,6 +19,7 @@ function onSay(cid, words, param)
                         "!deathlist - Shows a list of recent deaths.\n" ..
                         "!kills - Shows your total kills.\n" ..
                         "!online;/online - Shows the current online players.\n" ..
+                        "!bank - Shows your bank balance.\n" ..
                         "!serverinfo - Displays the server information.\n" ..
                         "!ancestral - Displays information about the ancestral system.")
         return true

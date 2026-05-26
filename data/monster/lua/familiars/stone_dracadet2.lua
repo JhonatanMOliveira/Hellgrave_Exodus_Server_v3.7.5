@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -70,6 +70,7 @@ monster.loot = {
 }
 
 monster.attacks = {
+	{name ="stone dracadet stun", interval = 8000, chance = 100, target = true},
 	{name ="melee", type= COMBAT_HOLYDAMAGE, interval = 2000, chance = 100, minDamage = -150, maxDamage = -280},
 	{name ="combat", interval = 2000, chance = 30, type = COMBAT_HOLYDAMAGE, minDamage = -180, maxDamage = -350, range = 7, radius = 4, shootEffect = 71, effect = 271, target = true},
 	{name ="combat", interval = 2000, chance = 22, type = COMBAT_HOLYDAMAGE, minDamage = -200, maxDamage = -400, length = 8, spread = 3, effect = 299, target = false}

@@ -1,14 +1,14 @@
 local combat = Combat()
-combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_FIREATTACK)
+combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+combat:setParameter(COMBAT_PARAM_EFFECT, 427)
 combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 combat:setParameter(COMBAT_PARAM_BLOCKSHIELD, true)
 
 function onGetFormulaValues(player, skill, attack, factor)
     local level = player:getLevel()
     local magiclevel = player:getMagicLevel()
-    local min = (level / 5) + (skill + attack) * (magiclevel / 3)
-    local max = (level / 5) + (skill + attack) * (magiclevel / 3)
+    local min = (level / 5) + (skill + attack) * (magiclevel /2)
+    local max = (level / 5) + (skill + attack) * (magiclevel /2)
     return -min, -max
 end
 
@@ -23,11 +23,11 @@ end
 spell:name("Golpe Furacao")
 spell:words("golpe furacao")
 spell:group("attack")
-spell:id(4)
+spell:id(21)
 spell:vocation("Aco Ceu")
-spell:cooldown(1000)
+spell:cooldown(3000)
 spell:level(10)
-spell:mana(35)
+spell:mana(30)
 spell:isSelfTarget(false)  -- Evita que a magia ataque o próprio jogador
 spell:needTarget(true) 
 spell:isPremium(false)

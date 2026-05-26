@@ -7,7 +7,21 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 	local modal = DUNGEON_SYSTEM.Modal
 	local sto = DUNGEON_SYSTEM.Storages	
 
-    if (modalWindowId == DUNGEON_SYSTEM.Modal.ID) then
+	if (modalWindowId == DUNGEON_SYSTEM.Modal.ID) then
+		if not dg[choiceId] then
+			return false
+		end
+
+		if buttonId == 200 and dg[choiceId].CustomStart then
+			local customStart = _G[dg[choiceId].CustomStart]
+			if type(customStart) ~= "function" then
+				player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This dungeon is not available right now.")
+				return false
+			end
+
+			player:unregisterEvent("DungeonSystem_Modal")
+			return customStart(player)
+		end
 		
 		if buttonId == 200 then
 			
@@ -16,9 +30,11 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 				for y = dg[choiceId].FromPos.y, dg[choiceId].ToPos.y do
 					for z = dg[choiceId].FromPos.z, dg[choiceId].ToPos.z do
 						local tile = Tile(x, y, z)
-						local creature = tile:getTopCreature()
-						if creature and creature:isPlayer() then
-							players[#players+1] = creature
+						if tile then
+							local creature = tile:getTopCreature()
+							if creature and creature:isPlayer() and creature:getId() ~= player:getId() then
+								players[#players+1] = creature
+							end
 						end
 					end
 				end
@@ -113,11 +129,13 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 							for y = positionPlayer.y - distance, positionPlayer.y + distance do
 								for z = positionPlayer.z, positionPlayer.z do
 									local tileP = Tile(x, y, z)
-									local creatureP = tileP:getTopCreature()
-									if creatureP and creatureP:isPlayer() then
-										for xx = 1, #names do
-											if creatureP:getName() == names[xx] then
-												posOfPlayer[#posOfPlayer+1] = creatureP
+									if tileP then
+										local creatureP = tileP:getTopCreature()
+										if creatureP and creatureP:isPlayer() then
+											for xx = 1, #names do
+												if creatureP:getName() == names[xx] then
+													posOfPlayer[#posOfPlayer+1] = creatureP
+												end
 											end
 										end
 									end
@@ -151,9 +169,11 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 								for y = dg[choiceId].FromPos.y, dg[choiceId].ToPos.y do
 									for z = dg[choiceId].FromPos.z, dg[choiceId].ToPos.z do
 										local tile = Tile(x, y, z)
-										local monster = tile:getTopCreature()
-										if monster and monster:isMonster() then
-											monster:remove()
+										if tile then
+											local monster = tile:getTopCreature()
+											if monster and monster:isMonster() then
+												monster:remove()
+											end
 										end
 									end
 								end
@@ -222,9 +242,11 @@ function onModalWindow(player, modalWindowId, buttonId, choiceId)
 						for y = dg[choiceId].FromPos.y, dg[choiceId].ToPos.y do
 							for z = dg[choiceId].FromPos.z, dg[choiceId].ToPos.z do
 								local tile = Tile(x, y, z)
-								local monster = tile:getTopCreature()
-								if monster and monster:isMonster() then
-									monster:remove()
+								if tile then
+									local monster = tile:getTopCreature()
+									if monster and monster:isMonster() then
+										monster:remove()
+									end
 								end
 							end
 						end

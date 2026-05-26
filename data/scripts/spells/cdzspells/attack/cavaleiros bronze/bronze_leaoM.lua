@@ -1,6 +1,6 @@
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, 352)
+combat:setParameter(COMBAT_PARAM_EFFECT, 409)
 combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 combat:setParameter(COMBAT_PARAM_BLOCKSHIELD, true)
 
@@ -29,10 +29,10 @@ spell:name("Bomba de Leao")
 spell:words("bomba de leao")
 spell:group("attack")
 spell:vocation("Bronze Leao Menor")
-spell:id(11)  -- ID válido
+spell:id(42)  -- ID válido
 spell:cooldown(1000)
-spell:level(120)
-spell:mana(400)
+spell:level(1)
+spell:mana(360)
 spell:isSelfTarget(false)  -- Evita que a magia ataque o próprio jogador
 spell:needTarget(true)  -- Garante que a magia precisa de um alvo
 spell:isPremium(true)

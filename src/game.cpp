@@ -2078,6 +2078,11 @@ void Game::playerAutoWalk(uint32_t playerId, const std::vector<Direction>& listD
 		return;
 	}
 
+	if (player->isMovementBlocked()) {
+		player->sendCancelWalk();
+		return;
+	}
+
 	player->resetIdleTime();
 	player->setNextWalkTask(nullptr);
 	player->startAutoWalk(listDir);
@@ -3234,6 +3239,13 @@ void Game::playerSetAttackedCreature(uint32_t playerId, uint32_t creatureId)
 		return;
 	}
 
+	if (player->hasCondition(CONDITION_STUN)) {
+		player->sendCancelMessage(RETURNVALUE_NOTPOSSIBLE);
+		player->sendCancelTarget();
+		player->setAttackedCreature(nullptr);
+		return;
+	}
+
 	Creature* attackCreature = getCreatureByID(creatureId);
 	if (!attackCreature) {
 		player->setAttackedCreature(nullptr);
@@ -3755,6 +3767,12 @@ void Game::checkCreatureWalk(uint32_t creatureId)
 {
 	Creature* creature = getCreatureByID(creatureId);
 	if (creature && creature->getHealth() > 0) {
+		if (Player* player = creature->getPlayer()) {
+			if (player->isMovementBlocked()) {
+				player->sendCancelWalk();
+				return;
+			}
+		}
 		creature->onWalk();
 		cleanup();
 	}

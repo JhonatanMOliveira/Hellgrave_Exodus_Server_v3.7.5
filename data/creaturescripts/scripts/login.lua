@@ -266,5 +266,6 @@ end
 	---- Resistances from Rarity ----
 	player:registerEvent("rarity_onHealthChangeAbsorb")
 	player:registerEvent("rarity_onHealthChangeDamage")
+
 	return true
 end

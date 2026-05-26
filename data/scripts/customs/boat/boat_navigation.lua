@@ -154,7 +154,7 @@ function boatStepOut.onStepOut(cid, item, fromPosition, itemEx, toPosition)
     return true
 end
 
-boatSystem:type("stepout")
+boatStepOut:type("stepout")
 boatStepOut:id(27725, 27728, 27729, 27730, 27731)
 boatStepOut:register()
 

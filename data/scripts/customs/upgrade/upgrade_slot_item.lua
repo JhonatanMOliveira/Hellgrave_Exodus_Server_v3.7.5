@@ -1,22 +1,22 @@
 print(">> Upgrade System Loaded")
 local conf = {
     ["level"] = {
-        [0] = {successPercent = 1, downgradeLevel = 0, levelItem = 10},
+        [0] = {successPercent = 100, downgradeLevel = 0, levelItem = 10},
         [1] = {successPercent = 100, downgradeLevel = 0, levelItem = 10},
-        [2] = {successPercent = 100, downgradeLevel = 1, levelItem = 20},
-        [3] = {successPercent = 100, downgradeLevel = 2, levelItem = 30},
-        [4] = {successPercent = 100, downgradeLevel = 3, levelItem = 40},
-        [5] = {successPercent = 100, downgradeLevel = 4, levelItem = 50},
-        [6] = {successPercent = 100, downgradeLevel = 5, levelItem = 60},
-        [7] = {successPercent = 100, downgradeLevel = 6, levelItem = 70},
-        [8] = {successPercent = 100, downgradeLevel = 7, levelItem = 80},
-        [9] = {successPercent = 100, downgradeLevel = 8, levelItem = 90},
-        [10] = {successPercent = 100, downgradeLevel = 9, levelItem = 100},
-        [11] = {successPercent = 100, downgradeLevel = 10, levelItem = 110},
-        [12] = {successPercent = 100, downgradeLevel = 11, levelItem = 120},
-        [13] = {successPercent = 100, downgradeLevel = 12, levelItem = 130},
-        [14] = {successPercent = 100, downgradeLevel = 13, levelItem = 140},
-        [15] = {successPercent = 100, downgradeLevel = 14, levelItem = 150},
+        [2] = {successPercent = 90, downgradeLevel = 1, levelItem = 20},
+        [3] = {successPercent = 80, downgradeLevel = 2, levelItem = 30},
+        [4] = {successPercent = 70, downgradeLevel = 4, levelItem = 40},
+        [5] = {successPercent = 60, downgradeLevel = 4, levelItem = 50},
+        [6] = {successPercent = 60, downgradeLevel = 5, levelItem = 60},
+        [7] = {successPercent = 45, downgradeLevel = 6, levelItem = 70},
+        [8] = {successPercent = 40, downgradeLevel = 8, levelItem = 80},
+        [9] = {successPercent = 35, downgradeLevel = 8, levelItem = 90},
+        [10] = {successPercent = 30, downgradeLevel = 9, levelItem = 100},
+        [11] = {successPercent = 25, downgradeLevel = 10, levelItem = 110},
+        [12] = {successPercent = 20, downgradeLevel = 12, levelItem = 120},
+        [13] = {successPercent = 15, downgradeLevel = 12, levelItem = 130},
+        [14] = {successPercent = 12, downgradeLevel = 13, levelItem = 140},
+        [15] = {successPercent = 10, downgradeLevel = 14, levelItem = 150},
     },
     
     ["upgrade"] = {
@@ -84,6 +84,16 @@ local upgradeCooldown = {}
 slotAttribute.maxSlots = 3
 slotAttribute.baseSubids = 90
 slotAttribute.cache = {}
+slotAttribute.allowedSlots = {
+    [CONST_SLOT_HEAD] = true,
+    [CONST_SLOT_ARMOR] = true,
+    [CONST_SLOT_LEGS] = true,
+    [CONST_SLOT_FEET] = true,
+}
+
+function slotAttribute.isAllowedSlot(slot)
+    return slotAttribute.allowedSlots[slot] == true
+end
 
 slotAttribute.attributes = {
     { name = "Club", values = { 1, 2, 3 }, percent = false },
@@ -373,6 +383,19 @@ function itemUpgrader.onUse(player, item, fromPosition, itemEx, toPosition)
         return false
     end
 
+    local allowedItemSlot = false
+    for slot = CONST_SLOT_HEAD, CONST_SLOT_GLOVES do
+        if slotAttribute.isAllowedSlot(slot) and it:usesSlot(slot) then
+            allowedItemSlot = true
+            break
+        end
+    end
+
+    if not allowedItemSlot then
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "You can only use this upgrade on head, body, legs and feet items.")
+        return false
+    end
+
     local level = upgrading.getLevel(itemEx.uid)
     local successModifier, itemToRemove = getSuccessModifier(player)
     local nLevel = nil
@@ -381,16 +404,16 @@ function itemUpgrader.onUse(player, item, fromPosition, itemEx, toPosition)
         upgradeWithStats(itemEx, it)
     end
 
-    if item.itemid == 29619 and level < 5 then
+    if item.itemid == 29619 and level < 4 then
         local successPercent = conf["level"][level + 1].successPercent + successModifier
         nLevel = (successPercent >= math.random(1, 100)) and (level + 1) or conf["level"][level].downgradeLevel
-    elseif item.itemid == 29620 and level >= 5 and level < 10 then
+    elseif item.itemid == 29620 and level >= 4 and level < 8 then
         local successPercent = conf["level"][level + 1].successPercent + successModifier
         nLevel = (successPercent >= math.random(1, 100)) and (level + 1) or conf["level"][level].downgradeLevel
-    elseif item.itemid == 29621 and level >= 10 and level < 13 then
+    elseif item.itemid == 29621 and level >= 8 and level < 12 then
         local successPercent = conf["level"][level + 1].successPercent + successModifier
         nLevel = (successPercent >= math.random(1, 100)) and (level + 1) or conf["level"][level].downgradeLevel
-    elseif item.itemid == 29622 and level >= 13 and level < 15 then
+    elseif item.itemid == 29622 and level >= 12 and level < 15 then
         local successPercent = conf["level"][level + 1].successPercent + successModifier
         nLevel = (successPercent >= math.random(1, 100)) and (level + 1) or conf["level"][level].downgradeLevel
     elseif item.itemid == 29622 and level == 15 then
@@ -471,35 +494,47 @@ end
 
 slotAttribute.autoDetection = function(playerId)
     local player = Player(playerId)
-        if player then
-            if not slotAttribute.cache[playerId] then
-                slotAttribute.cache[playerId] = {}
-            end
-            for slot = CONST_SLOT_HEAD, CONST_SLOT_GLOVES do
+    if player then
+        if not slotAttribute.cache[playerId] then
+            slotAttribute.cache[playerId] = {}
+        end
+
+        for slot = CONST_SLOT_HEAD, CONST_SLOT_GLOVES do
+            if slotAttribute.isAllowedSlot(slot) then
                 local item = player:getSlotItem(slot)
-                    if item then
-                        local slots = slotAttribute.getItemSlots(item)
-                        slotAttribute.onSlotEquip(player, slots, slot)
-                            if #slots < slotAttribute.maxSlots then
-                                for index = #slots+1, slotAttribute.maxSlots do
-                                    local subid = slotAttribute.baseSubids + slot + (CONST_SLOT_GLOVES * index)
-                                        player:removeCondition(CONDITION_ATTRIBUTES, CONDITIONID_DEFAULT, subid, true)
-                                        player:removeCondition(CONDITION_HASTE, CONDITIONID_DEFAULT, subid, true)
-                                        player:removeCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT, subid, true)
-                                end
-                            end
-                    else
-                        for index = 1, slotAttribute.maxSlots do
+                if item then
+                    local slots = slotAttribute.getItemSlots(item)
+                    slotAttribute.onSlotEquip(player, slots, slot)
+
+                    if #slots < slotAttribute.maxSlots then
+                        for index = #slots + 1, slotAttribute.maxSlots do
                             local subid = slotAttribute.baseSubids + slot + (CONST_SLOT_GLOVES * index)
                             player:removeCondition(CONDITION_ATTRIBUTES, CONDITIONID_DEFAULT, subid, true)
                             player:removeCondition(CONDITION_HASTE, CONDITIONID_DEFAULT, subid, true)
                             player:removeCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT, subid, true)
                         end
                     end
+                else
+                    for index = 1, slotAttribute.maxSlots do
+                        local subid = slotAttribute.baseSubids + slot + (CONST_SLOT_GLOVES * index)
+                        player:removeCondition(CONDITION_ATTRIBUTES, CONDITIONID_DEFAULT, subid, true)
+                        player:removeCondition(CONDITION_HASTE, CONDITIONID_DEFAULT, subid, true)
+                        player:removeCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT, subid, true)
+                    end
+                end
+            else
+                for index = 1, slotAttribute.maxSlots do
+                    local subid = slotAttribute.baseSubids + slot + (CONST_SLOT_GLOVES * index)
+                    player:removeCondition(CONDITION_ATTRIBUTES, CONDITIONID_DEFAULT, subid, true)
+                    player:removeCondition(CONDITION_HASTE, CONDITIONID_DEFAULT, subid, true)
+                    player:removeCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT, subid, true)
+                end
             end
-            addEvent(slotAttribute.autoDetection, 100, playerId)
-        else
-            slotAttribute.cache[playerId] = nil
+        end
+
+        addEvent(slotAttribute.autoDetection, 100, playerId)
+    else
+        slotAttribute.cache[playerId] = nil
     end
 end
 

@@ -2,7 +2,13 @@
 ---- EDIT BELOW: local cooldown = 10, 10 = Seconds, change it to the number you want
 ---- Replace file on data/actions/scripts/other/potions.lua
 
+local cooldownHealth = 3 -- segundos de cooldown para health/life/spirit potions
+local cooldownMana   = 3 -- segundos de cooldown para mana potions
+
 local ALL_VOCATIONS = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27}
+
+local STORAGE_CD_HEALTH = 50000 -- storage key cooldown de health/life/spirit
+local STORAGE_CD_MANA   = 50001 -- storage key cooldown de mana
 
 local berserk = Condition(CONDITION_ATTRIBUTES)
 berserk:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
@@ -22,11 +28,185 @@ bullseye:setParameter(CONDITION_PARAM_SKILL_SHIELD, -10)
 bullseye:setParameter(CONDITION_PARAM_BUFF_SPELL, true)
 
 local potions = {
+	[7618] = { -- health potion
+		cdType = "health",
+		health = {125, 175},
+		flask = 7636
+	},
+	[26733] = { -- nimble life potion
+		cdType = "health",
+		health = {135, 185},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[7588] = { -- strong health potion
+		cdType = "health",
+		health = {250, 350},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		flask = 7634,
+		description = "You do not have the required level."
+	},
+	[26734] = { -- hazel life potion
+		cdType = "health",
+		health = {260, 360},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[7591] = { -- great health potion
+		cdType = "health",
+		health = {425, 575},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		flask = 7635,
+		description = "You do not have the required level."
+	},
+	[26735] = { -- tumble life potion
+		cdType = "health",
+		health = {435, 585},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[8473] = { -- ultimate health potion
+		cdType = "health",
+		health = {650, 850},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		flask = 7635,
+		description = "You do not have the required level."
+	},
+	[28076] = { -- Exalted Health potion
+		cdType = "health",
+		health = {660, 860},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[26031] = { -- supreme health potion
+		cdType = "health",
+		health = {875, 1125},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		flask = 7635,
+		description = "You do not have the required level."
+	},
+	[28077] = { -- Advanced Health potion
+		cdType = "health",
+		health = {885, 1135},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[28078] = { -- Divine health potion
+		cdType = "health",
+		health = {1100, 1400},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[28079] = { -- Mythic Health potion
+		cdType = "health",
+		health = {1500, 1650},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+
+-- MANA POTIONS
+
+	[7620] = { -- mana potion
+		cdType = "mana",
+		mana = {75, 125},
+		flask = 7636
+	},
+	[26736] = { -- nimble mana potion
+		cdType = "mana",
+		mana = {85, 135},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[7589] = { -- strong mana potion
+		cdType = "mana",
+		mana = {115, 185},
+		vocations = ALL_VOCATIONS,
+		level = 50,
+		flask = 7634,
+		description = "You do not have the required level."
+	},
+	[26737] = { -- hazel mana potion
+		cdType = "mana",
+		mana = {125, 195},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[7590] = { -- great mana potion
+		cdType = "mana",
+		mana = {150, 250},
+		vocations = ALL_VOCATIONS,
+		level = 80,
+		flask = 7635,
+		description = "You do not have the required level."
+	},
+	[26738] = { -- tumble mana potion
+		cdType = "mana",
+		mana = {160, 260},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[26029] = { -- ultimate mana potion
+		cdType = "mana",
+		mana = {425, 575},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		flask = 7635,
+		description = "You do not have the required level."
+	},
+	[28080] = { -- Exalted Mana potion
+		cdType = "mana",
+		mana = {435, 585},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[28081] = { -- Advanced Mana potion
+		cdType = "mana",
+		mana = {550, 700},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[28082] = { -- Divine Mana potion
+		cdType = "mana",
+		mana = {700, 900},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+	[28083] = { -- Mythic Mana potion
+		cdType = "mana",
+		mana = {900, 1200},
+		vocations = ALL_VOCATIONS,
+		level = 1,
+		description = "You do not have the required level."
+	},
+
+
+--OUTROS
+
+
 	[6558] = { -- concentrated demonic blood
+		cdType = "health",
 		transform = {7588, 7589},
 		effect = CONST_ME_DRAWBLOOD
 	},
 	[7439] = { -- berserk potion
+		cdType = "health",
 		condition = berserk,
 		vocations = ALL_VOCATIONS,
 		effect = CONST_ME_MAGIC_RED,
@@ -34,56 +214,25 @@ local potions = {
 		text = "You feel stronger."
 	},
 	[7440] = { -- mastermind potion
-		condition = mastermind, 
+		cdType = "mana",
+		condition = mastermind,
 		vocations = ALL_VOCATIONS,
 		effect = CONST_ME_MAGIC_BLUE,
 		description = "You do not have the required level.",
 		text = "You feel smarter."
-		},
+	},
 	[7443] = { -- bullseye potion
+		cdType = "health",
 		condition = bullseye,
 		vocations = ALL_VOCATIONS,
 		effect = CONST_ME_MAGIC_GREEN,
 		description = "You do not have the required level.",
 		text = "You feel more accurate."
 	},
-	[7588] = { -- strong health potion
-		health = {250, 350},
-		vocations = ALL_VOCATIONS,
-		level = 50,
-		flask = 7634,
-		description = "You do not have the required level."
-	},
-	[7589] = { -- strong mana potion
-		mana = {115, 185},
-		vocations = ALL_VOCATIONS,
-		level = 50,
-		flask = 7634,
-		description = "You do not have the required level."
-	},
-	[7590] = { -- great mana potion
-		mana = {150, 250},
-		vocations = ALL_VOCATIONS,
-		level = 80,
-		flask = 7635,
-		description = "You do not have the required level."
-	},
-	[7591] = { -- great health potion
-		health = {425, 575},
-		vocations = ALL_VOCATIONS,
-		level = 80,
-		flask = 7635,
-		description = "You do not have the required level."
-	},
-	[7618] = { -- health potion
-		health = {125, 175},
-		flask = 7636
-	},
-	[7620] = { -- mana potion
-		mana = {75, 125},
-		flask = 7636
-	},
+
+
 	[8472] = { -- great spirit potion
+		cdType = "health",
 		health = {250, 350},
 		mana = {100, 200},
 		vocations = ALL_VOCATIONS,
@@ -91,29 +240,20 @@ local potions = {
 		flask = 7635,
 		description = "You do not have the required level."
 	},
-	[8473] = { -- ultimate health potion
-		health = {650, 850},
-		vocations = ALL_VOCATIONS,
-		level = 130,
-		flask = 7635,
-		description = "You do not have the required level."
-	},
+
 	[8474] = { -- antidote potion
+		cdType = "health",
 		antidote = true,
 		flask = 7636,
 	},
 	[8704] = { -- small health potion
+		cdType = "health",
 		health = {60, 90},
 		flask = 7636,
 	},
-	[26029] = { -- ultimate mana potion
-		mana = {425, 575},
-		vocations = ALL_VOCATIONS,
-		level = 130,
-		flask = 7635,
-		description = "You do not have the required level."
-	},
+
 	[26030] = { -- supreme spirit potion
+		cdType = "health",
 		health = {420, 580},
 		mana = {200, 350},
 		vocations = ALL_VOCATIONS,
@@ -121,98 +261,9 @@ local potions = {
 		flask = 7635,
 		description = "You do not have the required level."
 	},
-	[26031] = { -- ultimate health potion
-		health = {875, 1125},
-		vocations = ALL_VOCATIONS,
-		level = 200,
-		flask = 7635,
-		description = "You do not have the required level."
-	},
-	[26733] = { -- nimble life potion
-		health = {515, 685},
-		vocations = ALL_VOCATIONS,
-		level = 100,
-		description = "You do not have the required level."
-	},
-	[26734] = { -- hazel life potion
-		health = {750, 920},
-		vocations = ALL_VOCATIONS,
-		level = 150,
-		description = "You do not have the required level."
-	},
-	[26735] = { -- tumble life potion
-		health = {890, 1050},
-		vocations = ALL_VOCATIONS,
-		level = 200,
-		description = "You do not have the required level."
-	},
-	[26736] = { -- nimble mana potion
-		mana = {570, 775},
-		vocations = ALL_VOCATIONS,
-		level = 100,
-		description = "You do not have the required level."
-	},
-	[26737] = { -- hazel mana potion
-		mana = {750, 885},
-		vocations = ALL_VOCATIONS,
-		level = 150,
-		description = "You do not have the required level."
-	},
-	[26738] = { -- tumble mana potion
-		mana = {890, 1050},
-		vocations = ALL_VOCATIONS,
-		level = 200,
-		description = "You do not have the required level."
-	},
-	[28076] = { -- Exalted Health potion
-		health = {1000, 1180},
-		vocations = ALL_VOCATIONS,
-		level = 1,
-		description = "You do not have the required level."
-	},
-	[28077] = { -- Advanced Health potion
-		health = {1150, 1300},
-		vocations = ALL_VOCATIONS,
-		level = 350,
-		description = "You do not have the required level."
-	},
-	[28078] = { -- Divine health potion
-		health = {1300, 1450},
-		vocations = ALL_VOCATIONS,
-		level = 500,
-		description = "You do not have the required level."
-	},
-	[28079] = { -- Mythic Health potion
-		health = {1500, 1650},
-		vocations = ALL_VOCATIONS,
-		level = 700,
-		description = "You do not have the required level."
-	},
-	[28080] = { -- Exalted Mana potion
-		mana = {1050, 1150},
-		vocations = ALL_VOCATIONS,
-		level = 250,
-		description = "You do not have the required level."
-	},
-	[28081] = { -- Advanced Mana potion
-		mana = {1150, 1280},
-		vocations = ALL_VOCATIONS,
-		level = 350,
-		description = "You do not have the required level."
-	},
-	[28082] = { -- Divine Mana potion
-		mana = {1280, 1390},
-		vocations = ALL_VOCATIONS,
-		level = 500,
-		description = "You do not have the required level."
-	},
-	[28083] = { -- Mythic Mana potion
-		mana = {1400, 1600},
-		vocations = ALL_VOCATIONS,
-		level = 700,
-		description = "You do not have the required level."
-	},
+
 	[28085] = { -- Nimble Spirit Potion
+		cdType = "health",
 		health = {500, 680},
 		mana = {240, 380},
 		vocations = ALL_VOCATIONS,
@@ -220,6 +271,7 @@ local potions = {
 		description = "You do not have the required level."
 	},
 	[28086] = { -- hazel spirit potion
+		cdType = "health",
 		health = {550, 720},
 		mana = {270, 430},
 		vocations = ALL_VOCATIONS,
@@ -227,6 +279,7 @@ local potions = {
 		description = "You do not have the required level."
 	},
 	[28087] = { -- tumble spirit potion
+		cdType = "health",
 		health = {600, 760},
 		mana = {300, 480},
 		vocations = ALL_VOCATIONS,
@@ -234,6 +287,7 @@ local potions = {
 		description = "You do not have the required level."
 	},
 	[28088] = { -- exalted spirit potion
+		cdType = "health",
 		health = {650, 800},
 		mana = {330, 530},
 		vocations = ALL_VOCATIONS,
@@ -241,6 +295,7 @@ local potions = {
 		description = "You do not have the required level."
 	},
 	[28089] = { -- advanced spirit potion
+		cdType = "health",
 		health = {750, 890},
 		mana = {400, 600},
 		vocations = ALL_VOCATIONS,
@@ -248,6 +303,7 @@ local potions = {
 		description = "You do not have the required level."
 	},
 	[28090] = { -- divine spirit potion
+		cdType = "health",
 		health = {830, 970},
 		mana = {480, 680},
 		vocations = ALL_VOCATIONS,
@@ -255,12 +311,13 @@ local potions = {
 		description = "You do not have the required level."
 	},
 	[28091] = { -- mythic spirit potion
+		cdType = "health",
 		health = {920, 1150},
 		mana = {570, 850},
 		vocations = ALL_VOCATIONS,
 		level = 700,
 		description = "You do not have the required level."
-	},
+	}
 }
 
 
@@ -270,7 +327,22 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 	local potion = potions[item:getId()]
-	if potion.level and player:getLevel() < potion.level or potion.vocations and not table.contains(potion.vocations, player:getVocation():getId()) then
+	if not potion then
+		return false
+	end
+
+	-- COOLDOWN CHECK
+	local now = os.time()
+	local cdStorage = potion.cdType == "mana" and STORAGE_CD_MANA or STORAGE_CD_HEALTH
+	local cdTime    = potion.cdType == "mana" and cooldownMana or cooldownHealth
+	local lastUse   = player:getStorageValue(cdStorage)
+	if lastUse > 0 and (now - lastUse) < cdTime then
+		local remaining = cdTime - (now - lastUse)
+		player:say("Aguarde " .. remaining .. " segundo(s) para usar outra potion.", TALKTYPE_MONSTER_SAY)
+		return true
+	end
+
+	if (potion.level and player:getLevel() < potion.level) or (potion.vocations and not table.contains(potion.vocations, player:getVocation():getId())) then
 		player:say(potion.description, TALKTYPE_MONSTER_SAY)
 		return true
 	end
@@ -291,6 +363,8 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		item:getPosition():sendMagicEffect(potion.effect)
 		playSoundPlayer(player, "other_potion.ogg")
 		item:remove(1)
+		-- Registra cooldown para transform também
+		player:setStorageValue(cdStorage, now)
 		return true
 	else
 		if potion.health then
@@ -309,10 +383,15 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 
 		player:addAchievementProgress("Potion Addict", 100000)
-		player:addItem(potion.flask)
+		if potion.flask then
+			player:addItem(potion.flask)
+		end
 		target:say("Aaaah...", TALKTYPE_MONSTER_SAY)
 		target:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 	end
+
+	-- Registra o tempo do último uso
+	player:setStorageValue(cdStorage, now)
 
 	if not configManager.getBoolean(configKeys.REMOVE_POTION_CHARGES) then
 		return true

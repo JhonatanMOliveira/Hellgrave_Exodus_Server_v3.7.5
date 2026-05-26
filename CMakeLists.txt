@@ -17,6 +17,10 @@ if (NOT WIN32)
     add_compile_options(-Wall -Wextra -Wnon-virtual-dtor -pedantic -Werror -pipe -fvisibility=hidden)
 endif ()
 
+if (MSVC)
+    add_compile_options(/utf-8)
+endif ()
+
 set(CMAKE_CXX_FLAGS_PERFORMANCE "${CMAKE_CXX_FLAGS_RELEASE} -march=native")
 
 if (CMAKE_COMPILER_IS_GNUCXX)

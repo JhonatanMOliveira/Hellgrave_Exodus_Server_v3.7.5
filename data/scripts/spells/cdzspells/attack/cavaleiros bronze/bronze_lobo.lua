@@ -1,6 +1,6 @@
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, 353)
+combat:setParameter(COMBAT_PARAM_EFFECT, 412)
 combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 combat:setParameter(COMBAT_PARAM_BLOCKSHIELD, true)
 
@@ -29,10 +29,10 @@ spell:name("Uivo Mortal")
 spell:words("uivo mortal")
 spell:group("attack")
 spell:vocation("Bronze Lobo")
-spell:id(12)  -- ID válido
+spell:id(43)  -- ID válido
 spell:cooldown(1000)
-spell:level(120)
-spell:mana(400)
+spell:level(1)
+spell:mana(360)
 spell:isSelfTarget(false)  -- Evita que a magia ataque o próprio jogador
 spell:needTarget(true)  -- Garante que a magia precisa de um alvo
 spell:isPremium(true)

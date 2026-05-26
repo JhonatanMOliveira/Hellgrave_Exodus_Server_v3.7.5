@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -70,6 +70,7 @@ monster.loot = {
 }
 
 monster.attacks = {
+	{name ="condition", type = CONDITION_BLEEDING, interval = 8000, chance = 100, minDamage = -50, maxDamage = -100, range = 7, effect = CONST_ME_DRAWBLOOD, target = true},
 	{name ="melee", type= COMBAT_PHYSICALDAMAGE, interval = 2000, chance = 100, minDamage = -150, maxDamage = -280},
 	{name ="combat", interval = 2000, chance = 30, type = COMBAT_DEATHDAMAGE, minDamage = -180, maxDamage = -350, range = 7, radius = 4, shootEffect = 11, effect = 39, target = true},
 	{name ="combat", interval = 2000, chance = 22, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -400, length = 8, spread = 3, effect = 339, target = false}

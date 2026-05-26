@@ -51,6 +51,11 @@ function herbalistSystem.onUse(cid, item, fromPosition, itemEx, toPosition)
     if not player then
         return true
     end
+
+    if not ProfessionSystem:canUseTool(player, 1) then
+        player:popupFYI(ProfessionSystem:getToolRestrictedMessage(player))
+        return true
+    end
     
     local lastUsageTime = player:getStorageValue(215551) 
 

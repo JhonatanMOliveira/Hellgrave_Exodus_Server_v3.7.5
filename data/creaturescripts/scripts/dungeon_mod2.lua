@@ -21,7 +21,7 @@ end
 
 function onModalWindow(player, modalWindowId, buttonId, choiceId)  
     
-	player:unregisterEvent("DungeonSystemType_Modal")
+	player:unregisterEvent("DungeonSystemDetails_Modal")
 
 	local dg = DUNGEON_SYSTEM.Dungeons
 	local msg = DUNGEON_SYSTEM.Messages

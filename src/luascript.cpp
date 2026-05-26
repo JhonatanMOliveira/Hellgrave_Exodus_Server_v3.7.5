@@ -1113,7 +1113,6 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(AMMO_THROWINGKNIFE)
 	registerEnum(AMMO_STONE)
 	registerEnum(AMMO_SNOWBALL)
-	registerEnum(AMMO_ROSA)
 
 	registerEnum(BUG_CATEGORY_MAP)
 	registerEnum(BUG_CATEGORY_TYPO)
@@ -1192,6 +1191,8 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(CONDITION_CURSED)
 	registerEnum(CONDITION_SPLASHED)
 	registerEnum(CONDITION_BEWITCHED)
+	registerEnum(CONDITION_STUN)
+	registerEnum(CONDITION_ROOT)
 	registerEnum(CONDITION_EXHAUST_COMBAT)
 	registerEnum(CONDITION_EXHAUST_HEAL)
 	registerEnum(CONDITION_PACIFIED)
@@ -1383,7 +1384,6 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(CONST_ANI_DEATH)
 	registerEnum(CONST_ANI_LARGEROCK)
 	registerEnum(CONST_ANI_SNOWBALL)
-	registerEnum(CONST_ANI_ROSA)
 	registerEnum(CONST_ANI_POWERBOLT)
 	registerEnum(CONST_ANI_POISON)
 	registerEnum(CONST_ANI_INFERNALBOLT)
@@ -1424,6 +1424,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(CONST_ANI_WEAPONTYPE)
 	registerEnum(CONST_ANI_ARCANE)
 	registerEnum(CONST_ANI_WATER)
+	registerEnum(CONST_ANI_ROSA)
 
 	registerEnum(CONST_PROP_BLOCKSOLID)
 	registerEnum(CONST_PROP_HASHEIGHT)
@@ -2506,6 +2507,7 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Player", "getVocation", LuaScriptInterface::luaPlayerGetVocation);
 	registerMethod("Player", "setVocation", LuaScriptInterface::luaPlayerSetVocation);
+	registerMethod("Player", "getAttackSpeed", LuaScriptInterface::luaPlayerGetAttackSpeed);
 
 	registerMethod("Player", "getSex", LuaScriptInterface::luaPlayerGetSex);
 	registerMethod("Player", "setSex", LuaScriptInterface::luaPlayerSetSex);
@@ -2575,6 +2577,10 @@ void LuaScriptInterface::registerFunctions()
 
 	registerMethod("Player", "getPremiumEndsAt", LuaScriptInterface::luaPlayerGetPremiumEndsAt);
 	registerMethod("Player", "setPremiumEndsAt", LuaScriptInterface::luaPlayerSetPremiumEndsAt);
+
+	registerMethod("Player", "getPremiumPoints", LuaScriptInterface::luaPlayerGetPremiumPoints);
+	registerMethod("Player", "addPremiumPoints", LuaScriptInterface::luaPlayerAddPremiumPoints);
+	registerMethod("Player", "removePremiumPoints", LuaScriptInterface::luaPlayerRemovePremiumPoints);
 
 	registerMethod("Player", "hasBlessing", LuaScriptInterface::luaPlayerHasBlessing);
 	registerMethod("Player", "addBlessing", LuaScriptInterface::luaPlayerAddBlessing);
@@ -9135,6 +9141,18 @@ int LuaScriptInterface::luaPlayerGetVocation(lua_State* L)
 	return 1;
 }
 
+int LuaScriptInterface::luaPlayerGetAttackSpeed(lua_State* L)
+{
+	// player:getAttackSpeed()
+	Player* player = getUserdata<Player>(L, 1);
+	if (player) {
+		lua_pushnumber(L, player->getAttackSpeed());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
 int LuaScriptInterface::luaPlayerSetVocation(lua_State* L)
 {
 	// player:setVocation(id or name or userdata)
@@ -10136,6 +10154,50 @@ int LuaScriptInterface::luaPlayerSetPremiumEndsAt(lua_State* L)
 	player->setPremiumTime(timestamp);
 	IOLoginData::updatePremiumTime(player->getAccount(), timestamp);
 	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerGetPremiumPoints(lua_State* L)
+{
+	// player:getPremiumPoints()
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	uint64_t points = IOLoginData::getPremiumPoints(player->getAccount());
+	lua_pushnumber(L, static_cast<lua_Number>(points));
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerAddPremiumPoints(lua_State* L)
+{
+	// player:addPremiumPoints(amount)
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	uint32_t amount = getNumber<uint32_t>(L, 2);
+	IOLoginData::addPremiumPoints(player->getAccount(), amount);
+	pushBoolean(L, true);
+	return 1;
+}
+
+int LuaScriptInterface::luaPlayerRemovePremiumPoints(lua_State* L)
+{
+	// player:removePremiumPoints(amount) -> returns boolean
+	Player* player = getUserdata<Player>(L, 1);
+	if (!player) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	uint32_t amount = getNumber<uint32_t>(L, 2);
+	bool ok = IOLoginData::removePremiumPoints(player->getAccount(), amount);
+	pushBoolean(L, ok);
 	return 1;
 }
 

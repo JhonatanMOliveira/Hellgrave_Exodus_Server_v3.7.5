@@ -217,6 +217,8 @@ Condition* Condition::createCondition(ConditionId_t id, ConditionType_t type, in
 		case CONDITION_YELLTICKS:
 		case CONDITION_PACIFIED:
 		case CONDITION_MANASHIELD:
+		case CONDITION_STUN:
+		case CONDITION_ROOT:
 			return new ConditionGeneric(id, type, ticks, buff, subId, aggressive);
 
 		default:
@@ -329,7 +331,29 @@ bool Condition::updateCondition(const Condition* addCondition)
 
 bool ConditionGeneric::startCondition(Creature* creature)
 {
-	return Condition::startCondition(creature);
+	if (!Condition::startCondition(creature)) {
+		return false;
+	}
+
+	if (conditionType == CONDITION_STUN || conditionType == CONDITION_ROOT) {
+		if (creature) {
+			creature->stopEventWalk();
+			creature->setMovementBlocked(true);
+			creature->setNoMove(true);
+
+			if (Player* player = creature->getPlayer()) {
+				player->sendCancelWalk();
+			}
+
+			if (conditionType == CONDITION_STUN) {
+				if (Player* player = creature->getPlayer()) {
+					g_game.playerCancelAttackAndFollow(player->getID());
+				}
+			}
+		}
+	}
+
+	return true;
 }
 
 bool ConditionGeneric::executeCondition(Creature* creature, int32_t interval)
@@ -337,9 +361,18 @@ bool ConditionGeneric::executeCondition(Creature* creature, int32_t interval)
 	return Condition::executeCondition(creature, interval);
 }
 
-void ConditionGeneric::endCondition(Creature*)
+void ConditionGeneric::endCondition(Creature* creature)
 {
-	//
+	if (conditionType == CONDITION_STUN || conditionType == CONDITION_ROOT) {
+		if (!creature) {
+			return;
+		}
+
+		if (!creature->hasCondition(CONDITION_STUN) && !creature->hasCondition(CONDITION_ROOT)) {
+			creature->setMovementBlocked(false);
+			creature->setNoMove(false);
+		}
+	}
 }
 
 void ConditionGeneric::addCondition(Creature*, const Condition* condition)

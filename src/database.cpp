@@ -19,6 +19,14 @@ Database::~Database()
 
 bool Database::connect()
 {
+	// Some MariaDB Connector/C builds default to stricter TLS behavior.
+	// Disable peer verification for this process before opening the connection.
+#ifdef _WIN32
+	_putenv_s("MARIADB_TLS_DISABLE_PEER_VERIFICATION", "1");
+#else
+	setenv("MARIADB_TLS_DISABLE_PEER_VERIFICATION", "1", 1);
+#endif
+
 	// connection handle initialization
 	handle = mysql_init(nullptr);
 	if (!handle) {
@@ -26,9 +34,19 @@ bool Database::connect()
 		return false;
 	}
 
+	// Avoid inheriting SSL settings from client option files (my.ini/my.cnf).
+	mysql_optionsv(handle, MYSQL_READ_DEFAULT_FILE, nullptr);
+	mysql_optionsv(handle, MYSQL_READ_DEFAULT_GROUP, nullptr);
+
 	// automatic reconnect
 	bool reconnect = true;
-	mysql_options(handle, MYSQL_OPT_RECONNECT, &reconnect);
+	mysql_optionsv(handle, MYSQL_OPT_RECONNECT, &reconnect);
+
+	// Disable SSL for local XAMPP/MySQL setups that do not provide TLS.
+	uint8_t sslVerify = 0;
+	mysql_optionsv(handle, MYSQL_OPT_SSL_VERIFY_SERVER_CERT, &sslVerify);
+	uint8_t sslEnforce = 0;
+	mysql_optionsv(handle, MYSQL_OPT_SSL_ENFORCE, &sslEnforce);
 
 	// connects to database
 	if (!mysql_real_connect(handle, g_config.getString(ConfigManager::MYSQL_HOST).c_str(), g_config.getString(ConfigManager::MYSQL_USER).c_str(), g_config.getString(ConfigManager::MYSQL_PASS).c_str(), g_config.getString(ConfigManager::MYSQL_DB).c_str(), g_config.getNumber(ConfigManager::SQL_PORT), g_config.getString(ConfigManager::MYSQL_SOCK).c_str(), 0)) {

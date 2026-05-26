@@ -38,10 +38,10 @@ spell:name("Meteoro de Pegasus")
 spell:words("meteoro de pegasus")
 spell:group("attack")
 spell:vocation("Bronze Leao Menor")
-spell:id(50)  -- ID válido
+spell:id(44)  -- ID válido
 spell:cooldown(2 * 1000)
 spell:level(120)
-spell:mana(120)
+spell:mana(360)
 spell:isSelfTarget(false)  -- Evita que a magia ataque o próprio jogador
 spell:needTarget(true)  -- Garante que a magia precisa de um alvo
 spell:isPremium(true)

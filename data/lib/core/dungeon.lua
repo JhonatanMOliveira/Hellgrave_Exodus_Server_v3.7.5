@@ -2,8 +2,8 @@ DUNGEON_SYSTEM = {
 
 	Storages = {
 		timerDungeon = 49356,
-		timerCooldown = 50203,
-		storageReward = 50205,
+		timerCooldown = 59003,
+		storageReward = 59005,
 	},
 	
 	Modal = {
@@ -46,9 +46,9 @@ DUNGEON_SYSTEM = {
 
 	Dungeons = {
 		[1] = {
-			Name = "Bones Dungeon",
+			Name = "Bones ",
 			NeedParty = true,
-			AmountParty = 2,
+			AmountParty = 1,
 			NeedLevel = true,
 			Level = 150,
 			DungeonTime = 3600,
@@ -62,7 +62,7 @@ DUNGEON_SYSTEM = {
 		[2] = {
 			Name = "Master of the Elements",
 			NeedParty = true,
-			AmountParty = 2,
+			AmountParty = 1,
 			NeedLevel = true,
 			Level = 200,
 			DungeonTime = 3600,
@@ -76,7 +76,7 @@ DUNGEON_SYSTEM = {
 		[3] = {
 			Name = "Forbidden Chevalier",
 			NeedParty = true,
-			AmountParty = 2,
+			AmountParty = 1,
 			NeedLevel = true,
 			Level = 500,
 			DungeonTime = 3600,
@@ -90,16 +90,31 @@ DUNGEON_SYSTEM = {
 		[4] = {
 			Name = "Rootkraken",
 			NeedParty = false,
-			AmountParty = 2,
+			AmountParty = 1,
 			NeedLevel = true,
 			Level = 600,
 			DungeonTime = 1800,
-			DungeonPos = Position(31574, 31623, 8),
-			FromPos = {x = 31564, y = 31614, z = 8},
-			ToPos = {x = 31586, y = 31620, z = 8},
+			DungeonPos = Position(1182, 609, 8),
+			FromPos = {x = 1091, y = 414, z = 7},
+			ToPos = {x = 1184, y = 609, z = 8},
 			SpawnMonsters = false,
 			Monsters = {
 			},			
+		},
+		[5] = {
+			Name = "Troll Wolf Dungeon",
+			NeedParty = false,
+			AmountParty = 1,
+			NeedLevel = false,
+			Level = 1,
+			DungeonTime = 1800,
+			DungeonPos = Position(1182, 609, 8),
+			FromPos = {x = 1182, y = 612, z = 9},
+			ToPos = {x = 1205, y = 753, z = 9},
+			SpawnMonsters = false,
+			Monsters = {
+			},
+			CustomStart = "TrollWolfDungeonStart",
 		},
 	},
 }

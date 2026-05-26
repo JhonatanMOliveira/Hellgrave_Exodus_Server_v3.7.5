@@ -18,19 +18,38 @@ end
 
 local function rollRarityForReroll(player)
   local rarities = {
-    { id = 1, chance = 25.0 }, { id = 2, chance = 18.0 }, { id = 3, chance = 15.0 },
-    { id = 4, chance = 12.0 },  { id = 5, chance = 10.0 }, { id = 6, chance = 8.0 },
-    { id = 7, chance = 7.0 },  { id = 8, chance = 6.0 }, { id = 9, chance = 5.0 },
-    { id = 10, chance = 4.0 }, { id = 11, chance = 3.5 },{ id = 12, chance = 3.0 },
-    { id = 13, chance = 2.5 }, { id = 14, chance = 2.0 },{ id = 15, chance = 1.0 },
+    { id = 1, chance = 20 },
+    { id = 2, chance = 18 },
+    { id = 3, chance = 16 },
+    { id = 4, chance = 10 },
+    { id = 5, chance = 6 },
+    { id = 6, chance = 5 },
+    { id = 7, chance = 4 },
+    { id = 8, chance = 3 },
+    { id = 9, chance = 2 },
+    { id = 10, chance = 1 },
+    { id = 11, chance = 0.50 },
+    { id = 12, chance = 0.40 },
+    { id = 13, chance = 0.30 },
+    { id = 14, chance = 0.20 },
+    { id = 15, chance = 0.10 },
   }
-  --- Chance is 15 base ---
-  if math.random(100) > 15 then return 0 end
+
+  local totalChance = 0
   for _, r in ipairs(rarities) do
-    if math.random(100) <= r.chance then
+    totalChance = totalChance + r.chance
+  end
+
+  -- Single weighted roll across exact percentage chances.
+  local rarityRoll = math.random() * totalChance
+  local cumulative = 0
+  for _, r in ipairs(rarities) do
+    cumulative = cumulative + r.chance
+    if rarityRoll <= cumulative then
       return r.id
     end
   end
+
   return 0
 end
 

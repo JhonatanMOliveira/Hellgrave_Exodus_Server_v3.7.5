@@ -35,7 +35,7 @@ StatsMaxValues = {
   [CHARSTAT_DEXTERITY] = 20,
   [CHARSTAT_VITALITY] = 20,
   [CHARSTAT_SPIRIT] = 20,
-  [CHARSTAT_WISDOM] = 0,
+  [CHARSTAT_WISDOM] = 20,
 }
 
 -- +1 point at X level
@@ -61,6 +61,26 @@ local StatsConfig = {
 	  180,
 	  190,
 	  200,
+    210,
+    220,    
+    230,
+    240,    
+    250,
+    260,    
+    270,
+    280,    
+    290,    
+    300,
+    310,    
+    320,    
+    330,   
+    340,    
+    350,
+    360,    
+    370,    
+    380,    
+    390,    
+    400,
   }
 }
 

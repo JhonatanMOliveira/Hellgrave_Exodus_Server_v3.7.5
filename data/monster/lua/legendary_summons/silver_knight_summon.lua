@@ -74,7 +74,6 @@ monster.attacks = {
 	{name ="combat", interval = 3000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -180, maxDamage = -350, range = 5, radius = 3, effect = CONST_ME_MORTAREA, target = true},
 	{name ="combat", interval = 3000, chance = 25, type = COMBAT_ICEDAMAGE, minDamage = -180, maxDamage = -350, range = 5, radius = 3, effect = CONST_ME_ICEAREA, target = true},
 	{name ="combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -350, range = 6, radius = 2, effect = CONST_ME_ICETORNADO, target = true},
-	{name ="ice strike", interval = 2000, chance = 17, minDamage = -300, maxDamage = -450, range = 5, target = true}
 }
 
 monster.defenses = {

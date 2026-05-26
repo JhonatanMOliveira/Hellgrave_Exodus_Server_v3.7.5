@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monsters>
+  <monster name="Aberration of the Depths" file="monster/lua/azure_portals/aberration_of_the_depths.lua" looktype="961" />
+  <monster name="Alpha Demon" file="monster/lua/azure_portals/alpha_demon.lua" looktype="962" />
+  <monster name="Azure Guard" file="monster/lua/azure_portals/azure_guard.lua" looktype="958" />
+  <monster name="Black Dragon" file="monster/lua/azure_portals/black_dragon.lua" looktype="963" />
+  <monster name="Azure" file="monster/lua/azure_portals/boss/azure.lua" looktype="964" />
+  <monster name="Deep Necromancer" file="monster/lua/azure_portals/boss/deep_necromancer.lua" looktype="965" />
+  <monster name="Terror Spider" file="monster/lua/azure_portals/boss/terror_spider.lua" looktype="966" />
+  <monster name="Brontosaurus" file="monster/lua/azure_portals/brontosaurus.lua" looktype="954" />
+  <monster name="Butcher Ogre" file="monster/lua/azure_portals/butcher_ogre.lua" looktype="956" />
+  <monster name="Colossal Ice Monkey" file="monster/lua/azure_portals/colossal_ice_monkey.lua" looktype="955" />
+  <monster name="Demon of the Depths" file="monster/lua/azure_portals/demon_of_the_depths.lua" looktype="957" />
+  <monster name="Giant Hornet" file="monster/lua/azure_portals/giant_hornet.lua" looktype="953" />
+  <monster name="Netheria Dragon" file="monster/lua/azure_portals/netheria_dragon.lua" looktype="969" />
+  <monster name="Reflect Spider" file="monster/lua/azure_portals/reflect_spider.lua" looktype="960" />
+  <monster name="Rhino of the Depths" file="monster/lua/azure_portals/rhino_of_the_depths.lua" looktype="970" />
+  <monster name="Ruthless Spider" file="monster/lua/azure_portals/ruthless_spider.lua" looktype="968" />
+  <monster name="Skullcrusher Demon" file="monster/lua/azure_portals/skullcrusher_demon.lua" looktype="959" />
+  <monster name="Venom Spider" file="monster/lua/azure_portals/venom_spider.lua" looktype="967" />
+  <monster name="Bloated Man-Maggot" file="monster/lua/bakragore/Bloated_Man-Maggot.lua" looktype="1080" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ayana the crimson curse" file="monster/lua/bakragore/boss/Ayana_the_crimson_curse.lua" looktype="1078" lookhead="132" lookbody="132" looklegs="57" lookfeet="76" />
+  <monster name="Bakragore" file="monster/lua/bakragore/boss/Bakragore.lua" looktype="1092" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Chagorz" file="monster/lua/bakragore/boss/Chagorz.lua" looktype="1090" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ichgahal" file="monster/lua/bakragore/boss/Ichgahal.lua" looktype="1089" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Murcion" file="monster/lua/bakragore/boss/Murcion.lua" looktype="1088" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tamru the Black" file="monster/lua/bakragore/boss/tamru_the_black.lua" looktype="1095" lookhead="95" lookbody="132" looklegs="76" lookfeet="76" />
+  <monster name="Vemiath" file="monster/lua/bakragore/boss/Vemiath.lua" looktype="1091" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Converter" file="monster/lua/bakragore/Converter.lua" looktype="1070" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Darklight Construct" file="monster/lua/bakragore/Darklight_Construct.lua" looktype="1069" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Darklight Emitter" file="monster/lua/bakragore/Darklight_Emitter.lua" looktype="1074" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Darklight Matter" file="monster/lua/bakragore/Darklight_Matter.lua" looktype="1071" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Darklight Source" file="monster/lua/bakragore/Darklight_Source.lua" looktype="1086" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Darklight Striker" file="monster/lua/bakragore/Darklight_Striker.lua" looktype="1087" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Elder Bloodjaw" file="monster/lua/bakragore/Elder_Bloodjaw.lua" looktype="1075" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Feral Werecrocodile" file="monster/lua/bakragore/Feral_Werecrocodile.lua" looktype="1078" lookhead="1" lookbody="1" looklegs="78" lookfeet="0" />
+  <monster name="Foxmouse" file="monster/lua/bakragore/foxmouse.lua" looktype="1076" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Meandering Mushroom" file="monster/lua/bakragore/Meandering_Mushroom.lua" looktype="1094" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mycobiontic Beetle" file="monster/lua/bakragore/Mycobiontic_Beetle.lua" looktype="1093" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Oozing Carcass" file="monster/lua/bakragore/Oozing_Carcass.lua" looktype="1073" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Oozing Corpus" file="monster/lua/bakragore/Oozing_Corpus.lua" looktype="1072" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Rotten Man-Maggot" file="monster/lua/bakragore/Rotten_Man-Maggot.lua" looktype="1081" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sopping Carcass" file="monster/lua/bakragore/Sopping_Carcass.lua" looktype="1084" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sopping Corpus" file="monster/lua/bakragore/Sopping_Corpus.lua" looktype="1085" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Walking Pillar" file="monster/lua/bakragore/Walking_Pillar.lua" looktype="1082" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wandering Pillar" file="monster/lua/bakragore/Wandering_Pillar.lua" looktype="1083" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Werecrocodile" file="monster/lua/bakragore/Werecrocodile.lua" looktype="1078" lookhead="84" lookbody="84" looklegs="84" lookfeet="78" />
+  <monster name="Werepanther" file="monster/lua/bakragore/Werepanther.lua" looktype="1079" lookhead="1" lookbody="1" looklegs="1" lookfeet="45" />
+  <monster name="Weretiger" file="monster/lua/bakragore/Weretiger.lua" looktype="1077" lookhead="120" lookbody="108" looklegs="121" lookfeet="120" />
+  <monster name="White Weretiger" file="monster/lua/bakragore/white_weretiger.lua" looktype="1095" lookhead="0" lookbody="121" looklegs="0" lookfeet="0" />
+  <monster name="Drume" file="monster/lua/bounac/drume.lua" looktype="1061" lookhead="38" lookbody="76" looklegs="57" lookfeet="114" />
+  <monster name="Usurper Archer" file="monster/lua/bounac/usurper_archer.lua" looktype="1060" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Usurper Knight" file="monster/lua/bounac/usurper_knight.lua" looktype="1060" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Usurper Warlock" file="monster/lua/bounac/usurper_warlock.lua" looktype="1060" lookhead="57" lookbody="2" looklegs="21" lookfeet="95" />
+  <monster name="Angry Sugar Fairy" file="monster/lua/candy_isle/angry_sugar_fairy.lua" looktype="1288" lookhead="34" lookbody="25" looklegs="34" lookfeet="94" />
+  <monster name="Candy Fairy" file="monster/lua/candy_isle/bosses/candy_fairy.lua" looktype="1288" lookhead="81" lookbody="96" looklegs="104" lookfeet="18" />
+  <monster name="Sugar Daddy" file="monster/lua/candy_isle/bosses/sugar_daddy.lua" looktype="1298" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sugar Mommy" file="monster/lua/candy_isle/bosses/sugar_mommy.lua" looktype="1298" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Candy Floss Elemental" file="monster/lua/candy_isle/candy_floss_elemental.lua" looktype="1289" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Candy Horror" file="monster/lua/candy_isle/candy_horror.lua" looktype="1286" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goggle Cake" file="monster/lua/candy_isle/goggle_cake.lua" looktype="1287" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Nible Maw" file="monster/lua/candy_isle/nible_maw.lua" looktype="1284" lookhead="0" lookbody="0" looklegs="94" lookfeet="0" />
+  <monster name="Clone" file="monster/lua/clones/clone.lua" looktype="128" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Cobra Assassin" file="monster/lua/cobra/cobra_assassin.lua" looktype="1007" lookhead="2" lookbody="2" looklegs="77" lookfeet="19" />
+  <monster name="Cobra Scout" file="monster/lua/cobra/cobra_scout.lua" looktype="1007" lookhead="1" lookbody="1" looklegs="102" lookfeet="78" />
+  <monster name="Cobra Vizier" file="monster/lua/cobra/cobra_vizier.lua" looktype="1007" lookhead="19" lookbody="19" looklegs="67" lookfeet="78" />
+  <monster name="Custodian" file="monster/lua/cobra/custodian.lua" looktype="1007" lookhead="1" lookbody="1" looklegs="0" lookfeet="0" />
+  <monster name="Gaffir" file="monster/lua/cobra/gaffir.lua" looktype="1007" lookhead="16" lookbody="74" looklegs="94" lookfeet="50" />
+  <monster name="Guard Captain Quaid" file="monster/lua/cobra/guard_captain_quaid.lua" looktype="1007" lookhead="38" lookbody="20" looklegs="21" lookfeet="2" />
+  <monster name="Scarlett Etzel" file="monster/lua/cobra/scarlett_etzel.lua" looktype="1006" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ugly Monster" file="monster/lua/cobra/ugly_monster.lua" looktype="1008" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bone Archer" file="monster/lua/dungeons/dungeon_bones/bone_archer.lua" looktype="947" />
+  <monster name="Bone Berserker" file="monster/lua/dungeons/dungeon_bones/bone_berserker.lua" looktype="944" />
+  <monster name="Bone Knight" file="monster/lua/dungeons/dungeon_bones/bone_knight.lua" looktype="951" />
+  <monster name="Bone Mage" file="monster/lua/dungeons/dungeon_bones/bone_mage.lua" looktype="950" />
+  <monster name="Bone Master" file="monster/lua/dungeons/dungeon_bones/bone_master.lua" looktype="945" />
+  <monster name="Bone Ruthless" file="monster/lua/dungeons/dungeon_bones/bone_ruthless.lua" looktype="948" />
+  <monster name="Bone Scarvenger" file="monster/lua/dungeons/dungeon_bones/bone_scarvenger.lua" looktype="946" />
+  <monster name="Bone Slicer" file="monster/lua/dungeons/dungeon_bones/bone_slicer.lua" looktype="949" />
+  <monster name="Bone Warrior" file="monster/lua/dungeons/dungeon_bones/bone_warrior.lua" looktype="943" />
+  <monster name="Prince Skeletal" file="monster/lua/dungeons/dungeon_bones/prince_skeletal.lua" looktype="952" />
+  <monster name="Babayaga" file="monster/lua/dungeons/forbidden/babayaga.lua" looktype="1261" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Dybuk" file="monster/lua/dungeons/forbidden/dybuk.lua" looktype="1256" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Forbidden Chevalier" file="monster/lua/dungeons/forbidden/Forbidden_chevalier.lua" looktype="1255" />
+  <monster name="Hodag" file="monster/lua/dungeons/forbidden/hodag.lua" looktype="1259" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Lochtag" file="monster/lua/dungeons/forbidden/lochtag.lua" looktype="1257" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Oznik" file="monster/lua/dungeons/forbidden/oznik.lua" looktype="1260" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Snallygaster" file="monster/lua/dungeons/forbidden/snallygaster.lua" looktype="1258" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bulltauren Alchemist" file="monster/lua/dungeons/master_of_elements_cave/bulltauren_alchemist.lua" looktype="981" />
+  <monster name="Bulltauren Brute" file="monster/lua/dungeons/master_of_elements_cave/bulltauren_brute.lua" looktype="980" />
+  <monster name="Bulltauren Forgepriest" file="monster/lua/dungeons/master_of_elements_cave/bulltauren_forgepriest.lua" looktype="982" />
+  <monster name="Master of the Elements" file="monster/lua/dungeons/master_of_elements_cave/master_of_the_elements.lua" looktype="975" />
+  <monster name="Mega Dragon" file="monster/lua/dungeons/master_of_elements_cave/mega_dragon.lua" looktype="978" />
+  <monster name="Mitmah Vanguard" file="monster/lua/dungeons/master_of_elements_cave/mitmah_vanguard.lua" looktype="979" />
+  <monster name="Tauren Herk" file="monster/lua/dungeons/master_of_elements_cave/tauren_herk.lua" looktype="976" />
+  <monster name="Tornado" file="monster/lua/dungeons/master_of_elements_cave/tornado.lua" looktype="983" />
+  <monster name="Wardragon" file="monster/lua/dungeons/master_of_elements_cave/wardragon.lua" looktype="977" />
+  <monster name="Quara Looter" file="monster/lua/dungeons/roothing/quara_looter.lua" looktype="1264" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Quara Plunderer" file="monster/lua/dungeons/roothing/quara_plunderer.lua" looktype="1265" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Quara Raider" file="monster/lua/dungeons/roothing/quara_raider.lua" looktype="1266" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Rootthing Amber Shaper" file="monster/lua/dungeons/roothing/rootthing_amber_shaper.lua" looktype="1268" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Rootthing Bug Tracker" file="monster/lua/dungeons/roothing/rootthing_bug_tracker.lua" looktype="1269" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Rootthing Nutshell" file="monster/lua/dungeons/roothing/rootthing_nutshell.lua" looktype="1267" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="The Rootkraken" file="monster/lua/dungeons/roothing/the_rootkraken.lua" looktype="1270" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ashseer Dravok" file="monster/lua/expeditions/bosses/ashseer_dravok.lua" looktype="1388" />
+  <monster name="Emberlord Zanarth" file="monster/lua/expeditions/bosses/emberlord_zanarth.lua" looktype="1393" />
+  <monster name="Hollowborn Zepharix" file="monster/lua/expeditions/bosses/hollowborn_zepharix.lua" looktype="1392" />
+  <monster name="Icebound Thryssan" file="monster/lua/expeditions/bosses/icebound_thryssan.lua" looktype="1389" />
+  <monster name="Tidebreaker Voryn" file="monster/lua/expeditions/bosses/tidebreaker_voryn.lua" looktype="1391" />
+  <monster name="Voidweaver Krythax" file="monster/lua/expeditions/bosses/voidweaver_krythax.lua" looktype="1390" />
+  <monster name="Armored Giant" file="monster/lua/expeditions/dorn/armored_giant.lua" looktype="1329" />
+  <monster name="Axebringer Fiend" file="monster/lua/expeditions/dorn/axebringer_fiend.lua" looktype="1330" />
+  <monster name="Enforced Mountain Goblin" file="monster/lua/expeditions/dorn/enforced_mountain_goblin.lua" looktype="1348" />
+  <monster name="Hooded Colossus" file="monster/lua/expeditions/dorn/hooded_colossus.lua" looktype="1328" />
+  <monster name="Mountain Goblin" file="monster/lua/expeditions/dorn/mountain_goblin.lua" looktype="1347" />
+  <monster name="Spiked Enforcer" file="monster/lua/expeditions/dorn/spiked_enforcer.lua" looktype="1331" />
+  <monster name="Swamp Monster" file="monster/lua/expeditions/dorn/swamp_monster.lua" looktype="1349" />
+  <monster name="Tomb Zombie" file="monster/lua/expeditions/dorn/tomb_zombie.lua" looktype="1155" />
+  <monster name="Wild Boar" file="monster/lua/expeditions/dorn/wild_boar.lua" looktype="1324" />
+  <monster name="Frost Hydra" file="monster/lua/expeditions/frosthold/frost_hydra.lua" looktype="1315" />
+  <monster name="Frost Larva" file="monster/lua/expeditions/frosthold/frost_larva.lua" looktype="1317" />
+  <monster name="Frost Spider" file="monster/lua/expeditions/frosthold/frost_spider.lua" looktype="1318" />
+  <monster name="Frosted Dragon" file="monster/lua/expeditions/frosthold/frosted_dragon.lua" looktype="1316" />
+  <monster name="Giant Lursk Spider" file="monster/lua/expeditions/frosthold/giant_lursk_spider.lua" looktype="1322" />
+  <monster name="Small Lursk Spider" file="monster/lua/expeditions/frosthold/small_lursk_spider.lua" looktype="1321" />
+  <monster name="Bloodthirst Bulgeye" file="monster/lua/expeditions/hallowfall/bloodthirst_bulgeye.lua" looktype="1352" />
+  <monster name="Bogspike Lancer" file="monster/lua/expeditions/hallowfall/bogspike_lancer.lua" looktype="1351" />
+  <monster name="Mossblade Hopper" file="monster/lua/expeditions/hallowfall/mossblade_hopper.lua" looktype="1353" />
+  <monster name="Mystic Baguemage" file="monster/lua/expeditions/hallowfall/mystic_baguemage.lua" looktype="1354" />
+  <monster name="Sunfang Croaker" file="monster/lua/expeditions/hallowfall/sunfang_croaker.lua" looktype="1350" />
+  <monster name="Arbaziloth" file="monster/lua/expeditions/vardenfell/arbaziloth.lua" looktype="1370" />
+  <monster name="Arbaziloth Master" file="monster/lua/expeditions/vardenfell/arbaziloth_master.lua" looktype="1371" />
+  <monster name="Belomimus" file="monster/lua/expeditions/vardenfell/belomimus.lua" looktype="1377" />
+  <monster name="Bloodfang Reaver" file="monster/lua/expeditions/vardenfell/bloodfang_reaver.lua" looktype="1385" />
+  <monster name="Bonecrusher" file="monster/lua/expeditions/vardenfell/bonecrusher.lua" looktype="1383" />
+  <monster name="Brinebrute Inferniarch" file="monster/lua/expeditions/vardenfell/brinebrute_inferniarch.lua" looktype="1366" />
+  <monster name="Broodrider Inferniarch" file="monster/lua/expeditions/vardenfell/broodrider_inferniarch.lua" looktype="1368" />
+  <monster name="Demibeast" file="monster/lua/expeditions/vardenfell/demibeast.lua" looktype="1378" />
+  <monster name="Gralvalon" file="monster/lua/expeditions/vardenfell/gralvalon.lua" looktype="1365" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Grave Sentinel" file="monster/lua/expeditions/vardenfell/grave_sentinel.lua" looktype="1381" />
+  <monster name="Hedgehog" file="monster/lua/expeditions/vardenfell/hedgehog.lua" looktype="1379" />
+  <monster name="Hellhunter Inferniarch" file="monster/lua/expeditions/vardenfell/hellhunter_inferniarch.lua" looktype="1365" />
+  <monster name="Helm Hunter" file="monster/lua/expeditions/vardenfell/helm_hunter.lua" looktype="1380" />
+  <monster name="Malvaroth" file="monster/lua/expeditions/vardenfell/malvaroth.lua" looktype="1366" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pale Lancer" file="monster/lua/expeditions/vardenfell/pale_lancer.lua" looktype="1382" />
+  <monster name="Sineater Inferniarch" file="monster/lua/expeditions/vardenfell/sineater_inferniarch.lua" looktype="1367" />
+  <monster name="Spellreaper Inferniarch" file="monster/lua/expeditions/vardenfell/spellreaper_inferniarch.lua" looktype="1364" />
+  <monster name="Stonebark Titan" file="monster/lua/expeditions/vardenfell/stonebark_titan.lua" looktype="1387" />
+  <monster name="Tomb Guardian" file="monster/lua/expeditions/vardenfell/tomb_guardian.lua" looktype="1386" />
+  <monster name="Twisterror" file="monster/lua/expeditions/vardenfell/twisterror.lua" looktype="1364" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wraith Archer" file="monster/lua/expeditions/vardenfell/wraith_archer.lua" looktype="1384" />
+  <monster name="Angry Parrot" file="monster/lua/expeditions/vyrsk_island/angry_parrot.lua" looktype="1304" />
+  <monster name="Bat Goblin" file="monster/lua/expeditions/vyrsk_island/bat_goblin.lua" looktype="1310" />
+  <monster name="Charged Mechanic Goblin" file="monster/lua/expeditions/vyrsk_island/charged_mechanic_goblin.lua" looktype="1314" />
+  <monster name="Hermit Crab" file="monster/lua/expeditions/vyrsk_island/hermit_crab.lua" looktype="1302" />
+  <monster name="Mechanic Goblin" file="monster/lua/expeditions/vyrsk_island/mechanic_goblin.lua" looktype="1309" />
+  <monster name="Mounted Archer Goblin" file="monster/lua/expeditions/vyrsk_island/mounted_archer_goblin.lua" looktype="1311" />
+  <monster name="Mounted Mage Goblin" file="monster/lua/expeditions/vyrsk_island/mounted_mage_goblin.lua" looktype="1312" />
+  <monster name="Mounted Warrior Goblin" file="monster/lua/expeditions/vyrsk_island/mounted_warrior_goblin.lua" looktype="1313" />
+  <monster name="One-Eye Ollie" file="monster/lua/expeditions/vyrsk_island/one_eyed_ollie.lua" looktype="1320" />
+  <monster name="Thief Goblin" file="monster/lua/expeditions/vyrsk_island/thief_goblin.lua" looktype="1308" />
+  <monster name="Brokul" file="monster/lua/falcon/brokul.lua" looktype="1003" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Falcon Knight" file="monster/lua/falcon/falcon_knight.lua" looktype="1001" lookhead="57" lookbody="96" looklegs="38" lookfeet="105" />
+  <monster name="Falcon Paladin" file="monster/lua/falcon/falcon_paladin.lua" looktype="1001" lookhead="57" lookbody="96" looklegs="38" lookfeet="105" />
+  <monster name="Grand Canon Dominus" file="monster/lua/falcon/grand_canon_dominus.lua" looktype="1001" lookhead="57" lookbody="96" looklegs="96" lookfeet="105" />
+  <monster name="Grand Chaplain Gaunder" file="monster/lua/falcon/grand_chaplain_gaunder.lua" looktype="1001" lookhead="57" lookbody="96" looklegs="23" lookfeet="105" />
+  <monster name="Grand Commander Soeren" file="monster/lua/falcon/grand_commander_soeren.lua" looktype="1001" lookhead="57" lookbody="96" looklegs="76" lookfeet="105" />
+  <monster name="Grand Master Oberon" file="monster/lua/falcon/grand_master_oberon.lua" looktype="1002" lookhead="21" lookbody="96" looklegs="21" lookfeet="105" />
+  <monster name="Preceptor Lazare" file="monster/lua/falcon/preceptor_lazare.lua" looktype="1005" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Thawing Dragon Lord" file="monster/lua/falcon/thawing_dragon_lord.lua" looktype="1004" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Black Dracadet" file="monster/lua/familiars/black_dracadet.lua" looktype="1305" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Black Dracadet [2]" file="monster/lua/familiars/black_dracadet2.lua" looktype="1306" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Black Dracadet [3]" file="monster/lua/familiars/black_dracadet3.lua" looktype="1307" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Druid familiar" file="monster/lua/familiars/druid_familiar.lua" looktype="1232" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fire Dracadet" file="monster/lua/familiars/fire_dracadet.lua" looktype="1361" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fire Dracadet [2]" file="monster/lua/familiars/fire_dracadet2.lua" looktype="1362" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fire Dracadet [3]" file="monster/lua/familiars/fire_dracadet3.lua" looktype="1363" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Frost Dracadet" file="monster/lua/familiars/frost_dracadet.lua" looktype="1325" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Frost Dracadet [2]" file="monster/lua/familiars/frost_dracadet2.lua" looktype="1326" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Frost Dracadet [3]" file="monster/lua/familiars/frost_dracadet3.lua" looktype="1327" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Illusionist familiar" file="monster/lua/familiars/illusionist_familiar.lua" looktype="1227" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Knight familiar" file="monster/lua/familiars/knight_familiar.lua" looktype="1230" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Paladin familiar" file="monster/lua/familiars/paladin_familiar.lua" looktype="1231" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sorcerer familiar" file="monster/lua/familiars/sorcerer_familiar.lua" looktype="1233" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Stone Dracadet" file="monster/lua/familiars/stone_dracadet.lua" looktype="1358" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Stone Dracadet [2]" file="monster/lua/familiars/stone_dracadet2.lua" looktype="1359" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Stone Dracadet [3]" file="monster/lua/familiars/stone_dracadet3.lua" looktype="1360" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Swamp Dracadet" file="monster/lua/familiars/swamp_dracadet.lua" looktype="1355" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Swamp Dracadet [2]" file="monster/lua/familiars/swamp_dracadet2.lua" looktype="1356" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Swamp Dracadet [3]" file="monster/lua/familiars/swamp_dracadet3.lua" looktype="1357" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Cursed Prospector" file="monster/lua/feaster_of_souls/cursed_prospector.lua" looktype="1031" lookhead="0" lookbody="19" looklegs="0" lookfeet="38" />
+  <monster name="Evil Prospector" file="monster/lua/feaster_of_souls/evil_prospector.lua" looktype="1031" lookhead="0" lookbody="14" looklegs="0" lookfeet="34" />
+  <monster name="Flimsy Lost Soul" file="monster/lua/feaster_of_souls/flimsy_lost_soul.lua" looktype="1031" lookhead="0" lookbody="6" looklegs="0" lookfeet="116" />
+  <monster name="Freakish Lost Soul" file="monster/lua/feaster_of_souls/freakish_lost_soul.lua" looktype="1031" lookhead="0" lookbody="74" looklegs="0" lookfeet="83" />
+  <monster name="Irgix The Flimsy" file="monster/lua/feaster_of_souls/irgix_the_flimsy.lua" looktype="1031" lookhead="0" lookbody="0" looklegs="0" lookfeet="94" />
+  <monster name="Mean Lost Soul" file="monster/lua/feaster_of_souls/mean_lost_soul.lua" looktype="1031" lookhead="0" lookbody="14" looklegs="0" lookfeet="83" />
+  <monster name="The Dread Maiden" file="monster/lua/feaster_of_souls/the_dread_maiden.lua" looktype="1032" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="The Fear Feaster" file="monster/lua/feaster_of_souls/the_fear_feaster.lua" looktype="1033" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="The Pale Worm" file="monster/lua/feaster_of_souls/the_paleworm.lua" looktype="1034" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="The Unwelcome" file="monster/lua/feaster_of_souls/the_unwelcome.lua" looktype="1035" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Unaz the Mean" file="monster/lua/feaster_of_souls/unaz_the_mean.lua" looktype="1031" lookhead="0" lookbody="95" looklegs="0" lookfeet="0" />
+  <monster name="Vok The Freakish" file="monster/lua/feaster_of_souls/vok_the_freakish.lua" looktype="1031" lookhead="0" lookbody="98" looklegs="0" lookfeet="94" />
+  <monster name="Feroxa" file="monster/lua/feroxa/feroxa.lua" looktype="731" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bragrumol" file="monster/lua/grave_danger/bragrumol.lua" looktype="856" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Count Vlarkorth" file="monster/lua/grave_danger/count_vlarkorth.lua" looktype="1009" lookhead="10" lookbody="19" looklegs="19" lookfeet="19" />
+  <monster name="Duke Krule" file="monster/lua/grave_danger/duke_krule.lua" looktype="1009" lookhead="19" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Earl Osam" file="monster/lua/grave_danger/earl_osam.lua" looktype="1011" lookhead="95" lookbody="38" looklegs="60" lookfeet="76" />
+  <monster name="King Zelos" file="monster/lua/grave_danger/king_zelos.lua" looktype="1012" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Lord Azaram" file="monster/lua/grave_danger/lord_azaram.lua" looktype="1011" lookhead="0" lookbody="38" looklegs="94" lookfeet="82" />
+  <monster name="Fetter" file="monster/lua/grave_danger/others/fetter.lua" looktype="235" lookhead="20" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Magnor Mournbringer" file="monster/lua/grave_danger/others/magnor_mournbringer.lua" looktype="1009" lookhead="19" lookbody="76" looklegs="114" lookfeet="76" />
+  <monster name="Nargol the Impaler" file="monster/lua/grave_danger/others/nargol_the_impaler.lua" looktype="1010" lookhead="19" lookbody="78" looklegs="78" lookfeet="0" />
+  <monster name="Regenerating Mass" file="monster/lua/grave_danger/others/regenerating_mass.lua" looktype="238" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Rewar the bloody" file="monster/lua/grave_danger/others/rewar_the_bloody.lua" looktype="1009" lookhead="10" lookbody="19" looklegs="19" lookfeet="19" />
+  <monster name="Risen Soldier" file="monster/lua/grave_danger/others/risen_soldier.lua" looktype="306" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Shard Of Magnor" file="monster/lua/grave_danger/others/shard_of_magnor.lua" looktype="1009" lookhead="19" lookbody="76" looklegs="114" lookfeet="76" />
+  <monster name="Soulless Minion" file="monster/lua/grave_danger/others/soulless_minion.lua" looktype="68" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="The Red Knight" file="monster/lua/grave_danger/others/the_red_knight.lua" looktype="1011" lookhead="95" lookbody="78" looklegs="78" lookfeet="78" />
+  <monster name="Vampiric Blood" file="monster/lua/grave_danger/others/vampiric_blood.lua" looktype="1013" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sir Baeloc" file="monster/lua/grave_danger/sir_baeloc.lua" looktype="1010" lookhead="19" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sir Nictros" file="monster/lua/grave_danger/sir_nictros.lua" looktype="1010" lookhead="19" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Adult Goanna" file="monster/lua/kilmaresh/adult_goanna.lua" looktype="1020" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Black Sphinx Acolyte" file="monster/lua/kilmaresh/black_sphinx_acolyte.lua" looktype="1019" lookhead="95" lookbody="95" looklegs="94" lookfeet="95" />
+  <monster name="Burning Gladiator" file="monster/lua/kilmaresh/burning_gladiator.lua" looktype="541" lookhead="95" lookbody="113" looklegs="3" lookfeet="3" />
+  <monster name="Crypt Warden" file="monster/lua/kilmaresh/crypt_warden.lua" looktype="1021" lookhead="41" lookbody="38" looklegs="0" lookfeet="0" />
+  <monster name="Earworm" file="monster/lua/kilmaresh/earworm.lua" looktype="26" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Feral Sphinx" file="monster/lua/kilmaresh/feral_sphinx.lua" looktype="1022" lookhead="76" lookbody="75" looklegs="57" lookfeet="0" />
+  <monster name="Gryphon" file="monster/lua/kilmaresh/gryphon.lua" looktype="1023" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Lamassu" file="monster/lua/kilmaresh/lamassu.lua" looktype="1021" lookhead="50" lookbody="2" looklegs="0" lookfeet="76" />
+  <monster name="Manticore" file="monster/lua/kilmaresh/manticore.lua" looktype="1024" lookhead="116" lookbody="97" looklegs="113" lookfeet="20" />
+  <monster name="Ogre Rowdy" file="monster/lua/kilmaresh/ogre_rowdy.lua" looktype="1025" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ogre Ruffian" file="monster/lua/kilmaresh/ogre_ruffian.lua" looktype="1026" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ogre Sage" file="monster/lua/kilmaresh/ogre_sage.lua" looktype="1027" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Katex Blood Tongue" file="monster/lua/kilmaresh/others/katex_blood_tongue.lua" looktype="1047" lookhead="76" lookbody="57" looklegs="113" lookfeet="113" />
+  <monster name="Srezz Yellow Eyes" file="monster/lua/kilmaresh/others/srezz_yellow_eyes.lua" looktype="220" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Utua Stone Sting" file="monster/lua/kilmaresh/others/utua_stone_sting.lua" looktype="398" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Yirkas Blue Scales" file="monster/lua/kilmaresh/others/yirkas_blue_scales.lua" looktype="1029" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Priestess of the Wild Sun" file="monster/lua/kilmaresh/priestess_of_the_wild_sun.lua" looktype="1028" lookhead="95" lookbody="78" looklegs="94" lookfeet="3" />
+  <monster name="Sphinx" file="monster/lua/kilmaresh/sphinx.lua" looktype="1022" lookhead="0" lookbody="39" looklegs="0" lookfeet="3" />
+  <monster name="Urmahlullu the Immaculate" file="monster/lua/kilmaresh/urmahlullu_the_immaculate.lua" looktype="1018" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Urmahlullu the Tamed" file="monster/lua/kilmaresh/urmahlullu_the_tamed.lua" looktype="1018" lookhead="57" lookbody="75" looklegs="38" lookfeet="86" />
+  <monster name="Urmahlullu the Weakened" file="monster/lua/kilmaresh/urmahlullu_the_weakened.lua" looktype="1018" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wildness of Urmahlullu" file="monster/lua/kilmaresh/wildness_of_urmahlullu.lua" looktype="570" lookhead="57" lookbody="75" looklegs="38" lookfeet="86" />
+  <monster name="Wisdom of Urmahlullu" file="monster/lua/kilmaresh/wisdom_of_urmahlullu.lua" looktype="1019" lookhead="57" lookbody="75" looklegs="38" lookfeet="86" />
+  <monster name="Young Goanna" file="monster/lua/kilmaresh/young_goanna.lua" looktype="1029" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Signatus" file="monster/lua/legendary_summons/bronze_druid_summon.lua" looktype="1098" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Nineveth" file="monster/lua/legendary_summons/bronze_knight_summon.lua" looktype="1096" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Vykas" file="monster/lua/legendary_summons/bronze_paladin_summon.lua" looktype="1097" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Kagros" file="monster/lua/legendary_summons/bronze_sorcerer_summon.lua" looktype="1099" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Navinos" file="monster/lua/legendary_summons/golden_druid_summon last.lua" looktype="1107" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Azena" file="monster/lua/legendary_summons/golden_druid_summon.lua" looktype="1107" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Thirain" file="monster/lua/legendary_summons/golden_knight_summon last.lua" looktype="1104" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Blackfang" file="monster/lua/legendary_summons/golden_knight_summon.lua" looktype="1104" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Shandi" file="monster/lua/legendary_summons/golden_paladin_summon last.lua" looktype="1105" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Kyzra" file="monster/lua/legendary_summons/golden_paladin_summon.lua" looktype="1105" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Halrock" file="monster/lua/legendary_summons/golden_sorcerer_summon last.lua" looktype="1106" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Thaemine" file="monster/lua/legendary_summons/golden_sorcerer_summon.lua" looktype="1106" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Erasmo" file="monster/lua/legendary_summons/silver_druid_summon.lua" looktype="1100" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Kaldor" file="monster/lua/legendary_summons/silver_knight_summon.lua" looktype="1101" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wonpho" file="monster/lua/legendary_summons/silver_paladin_summon.lua" looktype="1102" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Lutia" file="monster/lua/legendary_summons/silver_sorcerer_summon.lua" looktype="1103" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Burster Spectre" file="monster/lua/lions/burster_spectre.lua" looktype="1068" lookhead="9" lookbody="10" looklegs="86" lookfeet="79" />
+  <monster name="Furious Scorpion" file="monster/lua/lions/furious_scorpion.lua" looktype="398" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Gazer Spectre" file="monster/lua/lions/gazer_spectre.lua" looktype="1068" lookhead="94" lookbody="21" looklegs="77" lookfeet="78" />
+  <monster name="Ripper Spectre" file="monster/lua/lions/ripper_spectre.lua" looktype="1068" lookhead="81" lookbody="78" looklegs="61" lookfeet="94" />
+  <monster name="Werehyaena" file="monster/lua/lions/werehyaena.lua" looktype="1047" lookhead="57" lookbody="77" looklegs="1" lookfeet="1" />
+  <monster name="Werelion" file="monster/lua/lions/werelion.lua" looktype="1049" lookhead="58" lookbody="2" looklegs="94" lookfeet="10" />
+  <monster name="Werelioness" file="monster/lua/lions/werelioness.lua" looktype="1049" lookhead="0" lookbody="2" looklegs="0" lookfeet="94" />
+  <monster name="White Lion" file="monster/lua/lions/white_lion.lua" looktype="1041" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Training Warrior" file="monster/lua/monster_training.lua" looktype="1209" lookhead="68" lookbody="102" looklegs="61" lookfeet="35" />
+  <monster name="Bretzecutioner" file="monster/lua/others/bretzecutioner.lua" looktype="236" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bruise Payne" file="monster/lua/others/bruise_payne.lua" looktype="307" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Death Dragon" file="monster/lua/others/death_dragon.lua" looktype="231" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ethershreck" file="monster/lua/others/ethershreck.lua" looktype="351" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fazzrah" file="monster/lua/others/fazzrah.lua" looktype="343" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Flameborn" file="monster/lua/others/flameborn.lua" looktype="322" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fleshcrawler" file="monster/lua/others/fleshcrawler.lua" looktype="79" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Gorgo" file="monster/lua/others/gorgo.lua" looktype="330" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Hemming" file="monster/lua/others/hemming.lua" looktype="308" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Kerberos" file="monster/lua/others/kerberos.lua" looktype="240" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Paiz The Pauperizer" file="monster/lua/others/paiz_the_pauperizer.lua" looktype="362" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ribstride" file="monster/lua/others/ribstride.lua" looktype="101" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sulphur Scuttler" file="monster/lua/others/sulphur_scuttler.lua" looktype="352" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="The Welter" file="monster/lua/others/the_welter.lua" looktype="563" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tormentor" file="monster/lua/others/tormentor.lua" looktype="245" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tromphonyte" file="monster/lua/others/tromphonyte.lua" looktype="381" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tyrn" file="monster/lua/others/tyrn.lua" looktype="562" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Weakened Shlorg" file="monster/lua/others/weakened_shlorg.lua" looktype="565" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Zanakeph" file="monster/lua/others/zanakeph.lua" looktype="231" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Arodis Saron" file="monster/lua/quests/arodis/arodis_saron.lua" looktype="1226" />
+  <monster name="Astro King" file="monster/lua/quests/astro/Astro_king.lua" looktype="1209" />
+  <monster name="Astro Mage" file="monster/lua/quests/astro/astro_mage.lua" looktype="1207" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Astro Warrior" file="monster/lua/quests/astro/astro_warrior.lua" looktype="1208" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Blessed Archangel" file="monster/lua/quests/blessed/blessed_archangel.lua" looktype="1223" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mercurial Mage" file="monster/lua/quests/mercurial/mercurial_mage.lua" looktype="1227" />
+  <monster name="Animated Feather" file="monster/lua/secret_library/animated_feather.lua" looktype="986" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Biting Book" file="monster/lua/secret_library/biting_book.lua" looktype="994" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enhanced Death Book" file="monster/lua/secret_library/bosses/boss_acess/enhanced_death_book.lua" looktype="989" lookhead="79" lookbody="83" looklegs="113" lookfeet="0" />
+  <monster name="Enhanced Electric Book" file="monster/lua/secret_library/bosses/boss_acess/enhanced_electric_book.lua" looktype="989" lookhead="15" lookbody="91" looklegs="85" lookfeet="0" />
+  <monster name="Enhanced Fire Book" file="monster/lua/secret_library/bosses/boss_acess/enhanced_fire_book.lua" looktype="989" lookhead="79" lookbody="113" looklegs="78" lookfeet="0" />
+  <monster name="Enhanced Frosty Book" file="monster/lua/secret_library/bosses/boss_acess/enhanced_frosty_book.lua" looktype="989" lookhead="87" lookbody="85" looklegs="79" lookfeet="0" />
+  <monster name="Ghulosh" file="monster/lua/secret_library/bosses/ghulosh.lua" looktype="990" lookhead="79" lookbody="94" looklegs="94" lookfeet="94" />
+  <monster name="Gorzindel" file="monster/lua/secret_library/bosses/gorzindel.lua" looktype="990" lookhead="94" lookbody="100" looklegs="0" lookfeet="0" />
+  <monster name="Lokathmor" file="monster/lua/secret_library/bosses/lokathmor.lua" looktype="990" lookhead="85" lookbody="27" looklegs="0" lookfeet="0" />
+  <monster name="Mazzinor" file="monster/lua/secret_library/bosses/mazzinor.lua" looktype="990" lookhead="85" lookbody="27" looklegs="0" lookfeet="0" />
+  <monster name="The Scourge Of Oblivion" file="monster/lua/secret_library/bosses/the_scourge_of_oblivion.lua" looktype="875" lookhead="79" lookbody="79" looklegs="60" lookfeet="79" />
+  <monster name="Brain Squid" file="monster/lua/secret_library/brain_squid.lua" looktype="987" lookhead="97" lookbody="18" looklegs="61" lookfeet="85" />
+  <monster name="Burning Book" file="monster/lua/secret_library/burning_book.lua" looktype="989" lookhead="79" lookbody="113" looklegs="78" lookfeet="0" />
+  <monster name="Cursed Book" file="monster/lua/secret_library/cursed_book.lua" looktype="989" lookhead="79" lookbody="83" looklegs="113" lookfeet="0" />
+  <monster name="Energetic Book" file="monster/lua/secret_library/energetic_book.lua" looktype="989" lookhead="15" lookbody="91" looklegs="85" lookfeet="0" />
+  <monster name="Energuardian of Tales" file="monster/lua/secret_library/energuardian_of_tales.lua" looktype="991" lookhead="66" lookbody="85" looklegs="82" lookfeet="93" />
+  <monster name="Floating Savant" file="monster/lua/secret_library/floating_savant.lua" looktype="991" lookhead="113" lookbody="94" looklegs="78" lookfeet="78" />
+  <monster name="Flying Book" file="monster/lua/secret_library/flying_book.lua" looktype="988" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Guardian of Tales" file="monster/lua/secret_library/guardian_of_tales.lua" looktype="989" lookhead="92" lookbody="54" looklegs="0" lookfeet="79" />
+  <monster name="Icecold Book" file="monster/lua/secret_library/icecold_book.lua" looktype="989" lookhead="87" lookbody="85" looklegs="79" lookfeet="0" />
+  <monster name="Ink Blob" file="monster/lua/secret_library/ink_blob.lua" looktype="992" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Knowledge Elemental" file="monster/lua/secret_library/knowledge_elemental.lua" looktype="993" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Rage Squid" file="monster/lua/secret_library/rage_squid.lua" looktype="987" lookhead="94" lookbody="78" looklegs="78" lookfeet="0" />
+  <monster name="Squid Warden" file="monster/lua/secret_library/squid_warden.lua" looktype="987" lookhead="9" lookbody="21" looklegs="41" lookfeet="85" />
+  <monster name="Bony Sea Devil" file="monster/lua/soul_war/bony_sea_devil.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goshnar's Cruelty" file="monster/lua/soul_war/bosses/goshnars_cruelty.lua" looktype="1050" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goshnar's Greed" file="monster/lua/soul_war/bosses/goshnars_greed.lua" looktype="1051" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goshnar's Hatred" file="monster/lua/soul_war/bosses/goshnars_hatred.lua" looktype="1054" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goshnar's Malice" file="monster/lua/soul_war/bosses/goshnars_malice.lua" looktype="1053" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goshnar's Megalomania" file="monster/lua/soul_war/bosses/goshnars_megalomania.lua" looktype="1055" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Goshnar's Spite" file="monster/lua/soul_war/bosses/goshnars_spite.lua" looktype="1052" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Aspect of Power" file="monster/lua/soul_war/bosses/summons/aspect_of_power.lua" looktype="1050" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Dreadful Harvester" file="monster/lua/soul_war/bosses/summons/dreadful_harvester.lua" looktype="300" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Hateful Soul" file="monster/lua/soul_war/bosses/summons/hateful_soul.lua" looktype="1031" lookhead="0" lookbody="91" looklegs="0" lookfeet="0" />
+  <monster name="Malicious Soul" file="monster/lua/soul_war/bosses/summons/malicious_soul.lua" looktype="1031" lookhead="0" lookbody="81" looklegs="0" lookfeet="0" />
+  <monster name="Mean Maw" file="monster/lua/soul_war/bosses/summons/mean_maw.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mirror Image" file="monster/lua/soul_war/bosses/summons/mirror_image.lua" looktype="136" lookhead="76" lookbody="114" looklegs="76" lookfeet="76" />
+  <monster name="Spiteful Spitter" file="monster/lua/soul_war/bosses/summons/spiteful_spitter.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Brachiodemon" file="monster/lua/soul_war/brachiodemon.lua" looktype="1048" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Branchy Crawler" file="monster/lua/soul_war/branchy_crawler.lua" looktype="1045" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Capricious Phantom" file="monster/lua/soul_war/capricious_phantom.lua" looktype="1046" lookhead="81" lookbody="114" looklegs="85" lookfeet="83" />
+  <monster name="Cloak Of Terror" file="monster/lua/soul_war/cloak_of_terror.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Courage Leech" file="monster/lua/soul_war/courage_leech.lua" looktype="1059" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Distorted Phantom" file="monster/lua/soul_war/distorted_phantom.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Druid's Apparition" file="monster/lua/soul_war/druid's_apparition.lua" looktype="148" lookhead="114" lookbody="48" looklegs="114" lookfeet="95" />
+  <monster name="Hazardous Phantom" file="monster/lua/soul_war/hazardous_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Illusionist's Apparition" file="monster/lua/soul_war/illusionist's_apparition.lua" looktype="148" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Infernal Demon" file="monster/lua/soul_war/infernal_demon.lua" looktype="1057" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Infernal Phantom" file="monster/lua/soul_war/infernal_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Knight's Apparition" file="monster/lua/soul_war/knight's_apparition.lua" looktype="131" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Many Faces" file="monster/lua/soul_war/many_faces.lua" looktype="1044" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mould Phantom" file="monster/lua/soul_war/mould_phantom.lua" looktype="1046" lookhead="106" lookbody="60" looklegs="131" lookfeet="116" />
+  <monster name="Paladin's Apparition" file="monster/lua/soul_war/paladin's_apparition.lua" looktype="129" lookhead="57" lookbody="42" looklegs="114" lookfeet="114" />
+  <monster name="Rotten Golem" file="monster/lua/soul_war/rotten_golem.lua" looktype="1056" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sorcerer's Apparition" file="monster/lua/soul_war/sorcerer's_apparition.lua" looktype="138" lookhead="95" lookbody="114" looklegs="52" lookfeet="76" />
+  <monster name="Turbulent Elemental" file="monster/lua/soul_war/turbulent_elemental.lua" looktype="1058" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Vibrant Phantom" file="monster/lua/soul_war/vibrant_phantom.lua" looktype="1046" lookhead="85" lookbody="85" looklegs="88" lookfeet="91" />
+  <monster name="Angry Bloated Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Bloated_Man_Maggot/Angry_Bloated_Man-Maggot.lua" looktype="1080" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Bloated Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Bloated_Man_Maggot/Enraged_Bloated_Man-Maggot.lua" looktype="1080" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Bloated Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Bloated_Man_Maggot/Furious_Bloated_Man-Maggot.lua" looktype="1080" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Bloated Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Bloated_Man_Maggot/Savage_Bloated_Man-Maggot.lua" looktype="1080" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Bloated Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Bloated_Man_Maggot/Wrathful_Bloated_Man-Maggot.lua" looktype="1080" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Converter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Converter/Angry_Converter.lua" looktype="1070" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Converter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Converter/Enraged_Converter.lua" looktype="1070" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Converter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Converter/Furious_Converter.lua" looktype="1070" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Converter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Converter/Savage_Converter.lua" looktype="1070" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Converter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Converter/Wrathful_Converter.lua" looktype="1070" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Darklight Construct" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Construct/Angry_Darklight_Construct.lua" looktype="1069" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Darklight Construct" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Construct/Enraged_Darklight_Construct.lua" looktype="1069" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Darklight Construct" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Construct/Furious_Darklight_Construct.lua" looktype="1069" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Darklight Construct" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Construct/Savage_Darklight_Construct.lua" looktype="1069" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Darklight Construct" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Construct/Wrathful_Darklight_Construct.lua" looktype="1069" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Darklight Emitter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Emitter/Angry_Darklight_Emitter.lua" looktype="1074" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Darklight Emitter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Emitter/Enraged_Darklight_Emitter.lua" looktype="1074" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Darklight Emitter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Emitter/Furious_Darklight_Emitter.lua" looktype="1074" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Darklight Emitter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Emitter/Savage_Darklight_Emitter.lua" looktype="1074" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Darklight Emitter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_Emitter/Wrathful_Darklight_Emitter.lua" looktype="1074" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Darklight Matter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_matter/Angry_Darklight_Matter.lua" looktype="1071" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Darklight Matter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_matter/Enraged_Darklight_Matter.lua" looktype="1071" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Darklight Matter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_matter/Furious_Darklight_Matter.lua" looktype="1071" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Darklight Matter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_matter/Savage_Darklight_Matter.lua" looktype="1071" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Darklight Matter" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_matter/Wrathful_Darklight_Matter.lua" looktype="1071" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Darklight Source" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_source/Angry_Darklight_Source.lua" looktype="1086" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Darklight Source" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_source/Enraged_Darklight_Source.lua" looktype="1086" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Darklight Source" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_source/Furious_Darklight_Source.lua" looktype="1086" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Darklight Source" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_source/Savage_Darklight_Source.lua" looktype="1086" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Darklight Source" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_source/Wrathful_Darklight_Source.lua" looktype="1086" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Darklight Striker" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_striker/Angry_Darklight_Striker.lua" looktype="1087" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Darklight Striker" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_striker/Enraged_Darklight_Striker.lua" looktype="1087" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Darklight Striker" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_striker/Furious_Darklight_Striker.lua" looktype="1087" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Darklight Striker" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_striker/Savage_Darklight_Striker.lua" looktype="1087" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Darklight Striker" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Darklight_striker/Wrathful_Darklight_Striker.lua" looktype="1087" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Elder Bloodjaw" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Elder_Bloodjaw/Angry_Elder_Bloodjaw.lua" looktype="1075" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Elder Bloodjaw" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Elder_Bloodjaw/Enraged_Elder_Bloodjaw.lua" looktype="1075" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Elder Bloodjaw" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Elder_Bloodjaw/Furious_Elder_Bloodjaw.lua" looktype="1075" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Elder Bloodjaw" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Elder_Bloodjaw/Savage_Elder_Bloodjaw.lua" looktype="1075" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Elder Bloodjaw" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Elder_Bloodjaw/Wrathful_Elder_Bloodjaw.lua" looktype="1075" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Meandering Mushroom" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Meandering_mushroom/Angry_Meandering_Mushroom.lua" looktype="1094" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Meandering Mushroom" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Meandering_mushroom/Enraged_Meandering_Mushroom.lua" looktype="1094" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Meandering Mushroom" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Meandering_mushroom/Furious_Meandering_Mushroom.lua" looktype="1094" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Meandering Mushroom" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Meandering_mushroom/Savage_Meandering_Mushroom.lua" looktype="1094" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Meandering Mushroom" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Meandering_mushroom/Wrathful_Meandering_Mushroom.lua" looktype="1094" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Mycobiontic Beetle" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Mycobiontic_Beetle/Angry_Mycobiontic_Beetle.lua" looktype="1093" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Furious Beetle" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Mycobiontic_Beetle/Enraged_Mycobiontic_Beetle.lua" looktype="1093" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Mycobiontic Beetle" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Mycobiontic_Beetle/Furious_Mycobiontic_Beetle.lua" looktype="1093" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Mycobiontic Beetle" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Mycobiontic_Beetle/Savage_Mycobiontic_Beetle.lua" looktype="1093" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Mycobiontic Beetle" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Mycobiontic_Beetle/Wrathful_Mycobiontic_Beetle.lua" looktype="1093" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Oozing Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_carcass/Angry_Oozing_Carcass.lua" looktype="1073" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Oozing Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_carcass/Enraged_Oozing_Carcass.lua" looktype="1073" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Oozing Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_carcass/Furious_Oozing_Carcass.lua" looktype="1073" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Oozing Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_carcass/Savage_Oozing_Carcass.lua" looktype="1073" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Oozing Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_carcass/Wrathful_Oozing_Carcass copy.lua" looktype="1073" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Oozing Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_Corpus/Angry_Oozing_Corpus.lua" looktype="1072" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Oozing Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_Corpus/Enraged_Oozing_Corpus.lua" looktype="1072" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Oozing Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_Corpus/Furious_Oozing_Corpus.lua" looktype="1072" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Oozing Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_Corpus/Savage_Oozing_Corpus.lua" looktype="1072" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Oozing Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Oozing_Corpus/Wrathful_Oozing_Corpus.lua" looktype="1072" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Rotten Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Rotten_Man-Maggot/Angry_Rotten_Man-Maggot.lua" looktype="1081" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Rotten Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Rotten_Man-Maggot/Enraged_Rotten_Man-Maggot.lua" looktype="1081" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Rotten Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Rotten_Man-Maggot/Furious_Rotten_Man-Maggot.lua" looktype="1081" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Rotten Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Rotten_Man-Maggot/Savage_Rotten_Man-Maggot.lua" looktype="1081" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Rotten Man-Maggot" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Rotten_Man-Maggot/Wrathful_Rotten_Man-Maggot.lua" looktype="1081" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Sopping Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_carcass/Angry_Sopping_Carcass.lua" looktype="1084" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Sopping Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_carcass/Enraged_Sopping_Carcass.lua" looktype="1084" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Sopping Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_carcass/Furious_Sopping_Carcass.lua" looktype="1084" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Sopping Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_carcass/Savage_Sopping_Carcass.lua" looktype="1084" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Sopping Carcass" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_carcass/Wrathful_Sopping_Carcass.lua" looktype="1084" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Sopping Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_corpus/Angry_Sopping_Corpus.lua" looktype="1085" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Sopping Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_corpus/Enraged_Sopping_Corpus.lua" looktype="1085" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Sopping Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_corpus/Furious_Sopping_Corpus.lua" looktype="1085" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Sopping Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_corpus/Savage_Sopping_Corpus.lua" looktype="1085" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Sopping Corpus" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Sopping_corpus/Wrathful_Sopping_Corpus.lua" looktype="1085" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Walking Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Walking_pillar/Angry_Walking_Pillar.lua" looktype="1082" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Walking Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Walking_pillar/Enraged_Walking_Pillar.lua" looktype="1082" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Walking Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Walking_pillar/Furious_Walking_Pillar.lua" looktype="1082" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Walking Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Walking_pillar/Savage_Walking_Pillar.lua" looktype="1082" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Walking Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Walking_pillar/Wrathful_Walking_Pillar.lua" looktype="1082" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Wandering Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Wandering_pillar/Angry_Wandering_Pillar.lua" looktype="1083" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Wandering Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Wandering_pillar/Enraged_Wandering_Pillar.lua" looktype="1083" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Wandering Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Wandering_pillar/Furious_Wandering_Pillar.lua" looktype="1083" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Wandering Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Wandering_pillar/Savage_Wandering_Pillar.lua" looktype="1083" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Wandering Pillar" file="monster/lua/Soulpit/Rotten_Blood_Monsters/Wandering_pillar/Wrathful_Wandering_Pillar copy.lua" looktype="1083" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Bony Sea Devil" file="monster/lua/Soulpit/Soulwar_monsters/Bony_sea/Angry_bony_sea_devil.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Bony Sea Devil" file="monster/lua/Soulpit/Soulwar_monsters/Bony_sea/Enraged_bony_sea_devil.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Bony Sea Devil" file="monster/lua/Soulpit/Soulwar_monsters/Bony_sea/Furious_bony_sea_devil.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Bony Sea Devil" file="monster/lua/Soulpit/Soulwar_monsters/Bony_sea/Savage_bony_sea_devil.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Bony Sea Devil" file="monster/lua/Soulpit/Soulwar_monsters/Bony_sea/Wrathful_bony_sea_devil.lua" looktype="1042" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Brachiodemon" file="monster/lua/Soulpit/Soulwar_monsters/brachiodemon/Angry_brachiodemon.lua" looktype="1048" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Brachiodemon" file="monster/lua/Soulpit/Soulwar_monsters/brachiodemon/Enraged_brachiodemon.lua" looktype="1048" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Brachiodemon" file="monster/lua/Soulpit/Soulwar_monsters/brachiodemon/Furious_brachiodemon.lua" looktype="1048" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Brachiodemon" file="monster/lua/Soulpit/Soulwar_monsters/brachiodemon/Savage_brachiodemon.lua" looktype="1048" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Brachiodemon" file="monster/lua/Soulpit/Soulwar_monsters/brachiodemon/Wrathful_brachiodemon.lua" looktype="1048" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Branchy Crawler" file="monster/lua/Soulpit/Soulwar_monsters/branchy_crawler/Anrgy_branchy_crawler.lua" looktype="1045" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Branchy Crawler" file="monster/lua/Soulpit/Soulwar_monsters/branchy_crawler/Enraged_branchy_crawler.lua" looktype="1045" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Branchy Crawler" file="monster/lua/Soulpit/Soulwar_monsters/branchy_crawler/Furious_branchy_crawler.lua" looktype="1045" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Branchy Crawler" file="monster/lua/Soulpit/Soulwar_monsters/branchy_crawler/Savage_branchy_crawler.lua" looktype="1045" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Branchy Crawler" file="monster/lua/Soulpit/Soulwar_monsters/branchy_crawler/Wrathful_branchy_crawler.lua" looktype="1045" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Capricious Phantom" file="monster/lua/Soulpit/Soulwar_monsters/capricious_phantom/Angry_capricious_phantom.lua" looktype="1046" lookhead="81" lookbody="114" looklegs="85" lookfeet="83" />
+  <monster name="Enraged Capricious Phantom" file="monster/lua/Soulpit/Soulwar_monsters/capricious_phantom/Enraged_capricious_phantom.lua" looktype="1046" lookhead="81" lookbody="114" looklegs="85" lookfeet="83" />
+  <monster name="Furious Capricious Phantom" file="monster/lua/Soulpit/Soulwar_monsters/capricious_phantom/Furious_capricious_phantom.lua" looktype="1046" lookhead="81" lookbody="114" looklegs="85" lookfeet="83" />
+  <monster name="Savage Capricious Phantom" file="monster/lua/Soulpit/Soulwar_monsters/capricious_phantom/Savage_capricious_phantom.lua" looktype="1046" lookhead="81" lookbody="114" looklegs="85" lookfeet="83" />
+  <monster name="Wrathful Capricious Phantom" file="monster/lua/Soulpit/Soulwar_monsters/capricious_phantom/Wrathful_capricious_phantom.lua" looktype="1046" lookhead="81" lookbody="114" looklegs="85" lookfeet="83" />
+  <monster name="Angry Cloak Of Terror" file="monster/lua/Soulpit/Soulwar_monsters/cloak_of_terror/Angry_cloak_of_terror.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Cloak Of Terror" file="monster/lua/Soulpit/Soulwar_monsters/cloak_of_terror/Enraged_cloak_of_terror.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Cloak Of Terror" file="monster/lua/Soulpit/Soulwar_monsters/cloak_of_terror/Furious_cloak_of_terror.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Cloak Of Terror" file="monster/lua/Soulpit/Soulwar_monsters/cloak_of_terror/Savage_cloak_of_terror.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Cloak Of Terror" file="monster/lua/Soulpit/Soulwar_monsters/cloak_of_terror/Wrathful_cloak_of_terror.lua" looktype="1043" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Courage Leech" file="monster/lua/Soulpit/Soulwar_monsters/courage_leech/Angry_courage_leech.lua" looktype="1059" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Courage Leech" file="monster/lua/Soulpit/Soulwar_monsters/courage_leech/Enraged_courage_leech.lua" looktype="1059" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Courage Leech" file="monster/lua/Soulpit/Soulwar_monsters/courage_leech/Furious_courage_leech.lua" looktype="1059" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Courage Leech" file="monster/lua/Soulpit/Soulwar_monsters/courage_leech/Savage_courage_leech.lua" looktype="1059" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Courage Leech" file="monster/lua/Soulpit/Soulwar_monsters/courage_leech/Wrathful_courage_leech.lua" looktype="1059" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Distorted Phantom" file="monster/lua/Soulpit/Soulwar_monsters/distorted_phantom/Angry_distorted_phantom.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Enraged Distorted Phantom" file="monster/lua/Soulpit/Soulwar_monsters/distorted_phantom/Enraged_distorted_phantom.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Furious Distorted Phantom" file="monster/lua/Soulpit/Soulwar_monsters/distorted_phantom/Furious_distorted_phantom.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Savage Distorted Phantom" file="monster/lua/Soulpit/Soulwar_monsters/distorted_phantom/Savage_distorted_phantom.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Wrathful Distorted Phantom" file="monster/lua/Soulpit/Soulwar_monsters/distorted_phantom/Wrathful_distorted_phantom copy.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Wrathful Distorted Phantom" file="monster/lua/Soulpit/Soulwar_monsters/distorted_phantom/Wrathful_distorted_phantom.lua" looktype="1046" lookhead="113" lookbody="94" looklegs="132" lookfeet="76" />
+  <monster name="Angry Druid's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/druids_apparition/Angry_druid's_apparition.lua" looktype="148" lookhead="114" lookbody="48" looklegs="114" lookfeet="95" />
+  <monster name="Enraged Druid's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/druids_apparition/Enraged_druid's_apparition.lua" looktype="148" lookhead="114" lookbody="48" looklegs="114" lookfeet="95" />
+  <monster name="Furious Druid's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/druids_apparition/Furious_druid's_apparition.lua" looktype="148" lookhead="114" lookbody="48" looklegs="114" lookfeet="95" />
+  <monster name="Savage Druid's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/druids_apparition/Savage_druid's_apparition.lua" looktype="148" lookhead="114" lookbody="48" looklegs="114" lookfeet="95" />
+  <monster name="Wrathful Druid's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/druids_apparition/Wrathful_druid's_apparition.lua" looktype="148" lookhead="114" lookbody="48" looklegs="114" lookfeet="95" />
+  <monster name="Angry Hazardous Phantom" file="monster/lua/Soulpit/Soulwar_monsters/hazardous_phantom/Angry_hazardous_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Enraged Hazardous Phantom" file="monster/lua/Soulpit/Soulwar_monsters/hazardous_phantom/Enraged_hazardous_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Furious Hazardous Phantom" file="monster/lua/Soulpit/Soulwar_monsters/hazardous_phantom/Furious_hazardous_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Savage Hazardous Phantom" file="monster/lua/Soulpit/Soulwar_monsters/hazardous_phantom/Savage_hazardous_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Wrathful Hazardous Phantom" file="monster/lua/Soulpit/Soulwar_monsters/hazardous_phantom/Wrathful_hazardous_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Angry Infernal Demon" file="monster/lua/Soulpit/Soulwar_monsters/infernal_demon/Angry_infernal_demon.lua" looktype="1057" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Infernal Demon" file="monster/lua/Soulpit/Soulwar_monsters/infernal_demon/Enraged_infernal_demon.lua" looktype="1057" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Infernal Demon" file="monster/lua/Soulpit/Soulwar_monsters/infernal_demon/Furious_infernal_demon.lua" looktype="1057" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Infernal Demon" file="monster/lua/Soulpit/Soulwar_monsters/infernal_demon/Savage_infernal_demon.lua" looktype="1057" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Infernal Demon" file="monster/lua/Soulpit/Soulwar_monsters/infernal_demon/Wrathful_infernal_demon.lua" looktype="1057" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Infernal Phantom" file="monster/lua/Soulpit/Soulwar_monsters/infernal_phantom/Angry_infernal_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Enraged Infernal Phantom" file="monster/lua/Soulpit/Soulwar_monsters/infernal_phantom/Enraged_infernal_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Furious Infernal Phantom" file="monster/lua/Soulpit/Soulwar_monsters/infernal_phantom/Furious_infernal_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Savage Infernal Phantom" file="monster/lua/Soulpit/Soulwar_monsters/infernal_phantom/Savage_infernal_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Wrathful Infernal Phantom" file="monster/lua/Soulpit/Soulwar_monsters/infernal_phantom/Wrathful_infernal_phantom.lua" looktype="1046" lookhead="114" lookbody="80" looklegs="94" lookfeet="78" />
+  <monster name="Angry Knight's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/knights_apparition/Angry_knight's_apparition.lua" looktype="131" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Enraged Knight's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/knights_apparition/Enraged_knight's_apparition.lua" looktype="131" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Furious Knight's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/knights_apparition/Furious_knight's_apparition.lua" looktype="131" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Savage Knight's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/knights_apparition/Savage_knight's_apparition.lua" looktype="131" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Wrathful Knight's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/knights_apparition/Wrathful_knight's_apparition.lua" looktype="131" lookhead="19" lookbody="76" looklegs="74" lookfeet="114" />
+  <monster name="Angry Many Faces" file="monster/lua/Soulpit/Soulwar_monsters/many_faces/Angry_many_faces.lua" looktype="1044" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Many Faces" file="monster/lua/Soulpit/Soulwar_monsters/many_faces/Enraged_many_faces.lua" looktype="1044" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Many Faces" file="monster/lua/Soulpit/Soulwar_monsters/many_faces/Furious_many_faces.lua" looktype="1044" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Many Faces" file="monster/lua/Soulpit/Soulwar_monsters/many_faces/Savage_many_faces.lua" looktype="1044" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Many Faces" file="monster/lua/Soulpit/Soulwar_monsters/many_faces/Wrathful_many_faces.lua" looktype="1044" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Mould Phantom" file="monster/lua/Soulpit/Soulwar_monsters/mould_phantom/Angry_mould_phantom.lua" looktype="1046" lookhead="106" lookbody="60" looklegs="131" lookfeet="116" />
+  <monster name="Enraged Mould Phantom" file="monster/lua/Soulpit/Soulwar_monsters/mould_phantom/Enraged_mould_phantom.lua" looktype="1046" lookhead="106" lookbody="60" looklegs="131" lookfeet="116" />
+  <monster name="Furious Mould Phantom" file="monster/lua/Soulpit/Soulwar_monsters/mould_phantom/Furious_mould_phantom.lua" looktype="1046" lookhead="106" lookbody="60" looklegs="131" lookfeet="116" />
+  <monster name="Savage Mould Phantom" file="monster/lua/Soulpit/Soulwar_monsters/mould_phantom/Savage_mould_phantom.lua" looktype="1046" lookhead="106" lookbody="60" looklegs="131" lookfeet="116" />
+  <monster name="Wrathful Mould Phantom" file="monster/lua/Soulpit/Soulwar_monsters/mould_phantom/Wrathful_mould_phantom.lua" looktype="1046" lookhead="106" lookbody="60" looklegs="131" lookfeet="116" />
+  <monster name="Angry Paladin's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/paladins_apparition/Angry_paladin's_apparition.lua" looktype="129" lookhead="57" lookbody="42" looklegs="114" lookfeet="114" />
+  <monster name="Enraged Paladin's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/paladins_apparition/Enraged_paladin's_apparition.lua" looktype="129" lookhead="57" lookbody="42" looklegs="114" lookfeet="114" />
+  <monster name="Furious Paladin's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/paladins_apparition/Furious_paladin's_apparition.lua" looktype="129" lookhead="57" lookbody="42" looklegs="114" lookfeet="114" />
+  <monster name="Savage Paladin's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/paladins_apparition/Savage_paladin's_apparition.lua" looktype="129" lookhead="57" lookbody="42" looklegs="114" lookfeet="114" />
+  <monster name="Wrathful Paladin's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/paladins_apparition/Wrathful_paladin's_apparition.lua" looktype="129" lookhead="57" lookbody="42" looklegs="114" lookfeet="114" />
+  <monster name="Angry Rotten Golem" file="monster/lua/Soulpit/Soulwar_monsters/rotten_golem/Angry_rotten_golem.lua" looktype="1056" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Rotten Golem" file="monster/lua/Soulpit/Soulwar_monsters/rotten_golem/Enraged_rotten_golem.lua" looktype="1056" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Rotten Golem" file="monster/lua/Soulpit/Soulwar_monsters/rotten_golem/Furious_rotten_golem.lua" looktype="1056" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Rotten Golem" file="monster/lua/Soulpit/Soulwar_monsters/rotten_golem/Savage_rotten_golem.lua" looktype="1056" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Rotten Golem" file="monster/lua/Soulpit/Soulwar_monsters/rotten_golem/Wrathful_rotten_golem.lua" looktype="1056" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Sorcerer's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/sorcerer_apparition/Angry_sorcerer's_apparition.lua" looktype="138" lookhead="95" lookbody="114" looklegs="52" lookfeet="76" />
+  <monster name="Enraged Sorcerer's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/sorcerer_apparition/Enraged_sorcerer's_apparition.lua" looktype="138" lookhead="95" lookbody="114" looklegs="52" lookfeet="76" />
+  <monster name="Furious Sorcerer's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/sorcerer_apparition/Furious_sorcerer's_apparition.lua" looktype="138" lookhead="95" lookbody="114" looklegs="52" lookfeet="76" />
+  <monster name="Savage Sorcerer's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/sorcerer_apparition/Savage_sorcerer's_apparition.lua" looktype="138" lookhead="95" lookbody="114" looklegs="52" lookfeet="76" />
+  <monster name="Wrathful Sorcerer's Apparition" file="monster/lua/Soulpit/Soulwar_monsters/sorcerer_apparition/Wrathful_sorcerer's_apparition.lua" looktype="138" lookhead="95" lookbody="114" looklegs="52" lookfeet="76" />
+  <monster name="Angry Turbulent Elemental" file="monster/lua/Soulpit/Soulwar_monsters/turbulent_elemental/angry_turbulent_elemental.lua" looktype="1058" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Enraged Turbulent Elemental" file="monster/lua/Soulpit/Soulwar_monsters/turbulent_elemental/enraged_turbulent_elemental.lua" looktype="1058" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Furious Turbulent Elemental" file="monster/lua/Soulpit/Soulwar_monsters/turbulent_elemental/furious_turbulent_elemental.lua" looktype="1058" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Savage Turbulent Elemental" file="monster/lua/Soulpit/Soulwar_monsters/turbulent_elemental/savage_turbulent_elemental.lua" looktype="1058" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Wrathful Turbulent Elemental" file="monster/lua/Soulpit/Soulwar_monsters/turbulent_elemental/wrathful_turbulent_elemental.lua" looktype="1058" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Angry Vibrant Phantom" file="monster/lua/Soulpit/Soulwar_monsters/vibrant_phantom/angry_vibrant_phantom.lua" looktype="1046" lookhead="85" lookbody="85" looklegs="88" lookfeet="91" />
+  <monster name="Enraged Vibrant Phantom" file="monster/lua/Soulpit/Soulwar_monsters/vibrant_phantom/enraged_vibrant_phantom.lua" looktype="1046" lookhead="85" lookbody="85" looklegs="88" lookfeet="91" />
+  <monster name="Furious Vibrant Phantom" file="monster/lua/Soulpit/Soulwar_monsters/vibrant_phantom/furious_vibrant_phantom.lua" looktype="1046" lookhead="85" lookbody="85" looklegs="88" lookfeet="91" />
+  <monster name="Savage Vibrant Phantom" file="monster/lua/Soulpit/Soulwar_monsters/vibrant_phantom/Savage_vibrant_phantom.lua" looktype="1046" lookhead="85" lookbody="85" looklegs="88" lookfeet="91" />
+  <monster name="Wrathful Vibrant Phantom" file="monster/lua/Soulpit/Soulwar_monsters/vibrant_phantom/Wrathful_vibrant_phantom.lua" looktype="1046" lookhead="85" lookbody="85" looklegs="88" lookfeet="91" />
+  <monster name="Aeliana" file="monster/lua/The_isles/angels/aeliana.lua" looktype="1142" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Archon" file="monster/lua/The_isles/angels/archon.lua" looktype="1141" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Baalzebul" file="monster/lua/The_isles/angels/baalzebul.lua" looktype="1144" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Lyrael" file="monster/lua/The_isles/angels/lyrael.lua" looktype="1140" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Nyxion" file="monster/lua/The_isles/angels/nyxion.lua" looktype="1143" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Oroniel" file="monster/lua/The_isles/angels/oroniel.lua" looktype="1139" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sagittarius" file="monster/lua/The_isles/angels/sagittarius.lua" looktype="1138" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Seraphiel" file="monster/lua/The_isles/angels/seraphiel.lua" looktype="1137" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bloodthirsty Buccaneer" file="monster/lua/The_isles/boats/bloodthirsty_buccaner.lua" looktype="1112" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Coastal Catcher" file="monster/lua/The_isles/boats/coastal_catcher.lua" looktype="1113" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Leviathan's Fury" file="monster/lua/The_isles/boats/leviathans_fury.lua" looktype="1111" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Naval Cavalry" file="monster/lua/The_isles/boats/naval_cavalry.lua" looktype="1110" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fangclaw" file="monster/lua/The_isles/crocodiles/fangclaw.lua" looktype="1170" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Lurkskin" file="monster/lua/The_isles/crocodiles/lurkskin.lua" looktype="1173" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Scalebreaker" file="monster/lua/The_isles/crocodiles/scalebreaker.lua" looktype="1171" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Slinkhide" file="monster/lua/The_isles/crocodiles/slinkhide.lua" looktype="1174" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sludgejaw" file="monster/lua/The_isles/crocodiles/sludgejaw.lua" looktype="1172" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Cinderclaw" file="monster/lua/The_isles/dragons/cinderclaw.lua" looktype="1124" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Scaledrake" file="monster/lua/The_isles/dragons/scaledrake.lua" looktype="1125" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Emerald Mage" file="monster/lua/The_isles/envicteds/emerald_mage.lua" looktype="1118" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Ruby Archer" file="monster/lua/The_isles/envicteds/ruby_archer.lua" looktype="1119" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Sapphire Warrior" file="monster/lua/The_isles/envicteds/sapphire_warrior.lua" looktype="1117" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bonecleaver" file="monster/lua/The_isles/giant_orcs/bonecleaver.lua" looktype="1120" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fleshcarver" file="monster/lua/The_isles/giant_orcs/fleshcarver.lua" looktype="1123" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Fleshrend" file="monster/lua/The_isles/giant_orcs/fleshrend.lua" looktype="1122" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Giant Tortoise" file="monster/lua/The_isles/giant_orcs/giant_tortoise.lua" looktype="1135" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mauler" file="monster/lua/The_isles/giant_orcs/mauler.lua" looktype="1121" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Grothar" file="monster/lua/The_isles/giant_trolls/grothar.lua" looktype="1157" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Grugnor" file="monster/lua/The_isles/giant_trolls/grugnor.lua" looktype="1159" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Krag'lok" file="monster/lua/The_isles/giant_trolls/krag'lok.lua" looktype="1158" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Krulmash" file="monster/lua/The_isles/giant_trolls/krulmash.lua" looktype="1160" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mok'gosh" file="monster/lua/The_isles/giant_trolls/mok'gosh.lua" looktype="1161" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Thokkar" file="monster/lua/The_isles/giant_trolls/thokkar.lua" looktype="1156" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Blackblade" file="monster/lua/The_isles/new_orcs/blackblade.lua" looktype="1127" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Blightbearer" file="monster/lua/The_isles/new_orcs/blightbearer.lua" looktype="1130" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Gorthak" file="monster/lua/The_isles/new_orcs/gorthak.lua" looktype="1131" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Malevolent" file="monster/lua/The_isles/new_orcs/malevolent.lua" looktype="1128" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Shadowreaper" file="monster/lua/The_isles/new_orcs/shadowreaper.lua" looktype="1126" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Urzog" file="monster/lua/The_isles/new_orcs/urzog.lua" looktype="1129" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Bonelich" file="monster/lua/The_isles/skeletons/bonelich.lua" looktype="1154" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Deathrattle" file="monster/lua/The_isles/skeletons/deathrattle.lua" looktype="1150" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Doombone" file="monster/lua/The_isles/skeletons/doombone.lua" looktype="1152" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Grimbone" file="monster/lua/The_isles/skeletons/grimbone.lua" looktype="1151" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Shadow Reaper" file="monster/lua/The_isles/skeletons/shadow_reaper.lua" looktype="1155" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Skullshade" file="monster/lua/The_isles/skeletons/skullshade.lua" looktype="1149" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tombwraith" file="monster/lua/The_isles/skeletons/tombwraith.lua" looktype="1153" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Aquatic Overlord Thalassa" file="monster/lua/The_isles/worldbosses/aquatic_overlord_thalassa.lua" looktype="1175" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Azazel The Infernal Seraph" file="monster/lua/The_isles/worldbosses/azazel_the_infernal_seraph.lua" looktype="1145" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Drak'thul The Void Sovereign" file="monster/lua/The_isles/worldbosses/drak'thul_the_void_sovereign.lua" looktype="1134" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Dreadbone The Eternal" file="monster/lua/The_isles/worldbosses/dreadbone_the_eternal.lua" looktype="1167" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Dreadscale The Ancient" file="monster/lua/The_isles/worldbosses/dreadscale_the_ancient.lua" looktype="1169" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Gor'gul The Frienzied" file="monster/lua/The_isles/worldbosses/gor'gul_the_frienzied.lua" looktype="1176" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Mortis The Sovereign" file="monster/lua/The_isles/worldbosses/mortis_the_sovereign.lua" looktype="1168" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Thalador The Stormbringer" file="monster/lua/The_isles/worldbosses/thalador_the_stormbringer.lua" looktype="1133" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tymagron The Earthshaker" file="monster/lua/The_isles/worldbosses/tymagron_the_earthshaker.lua" looktype="1136" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Vorondor The Eternal Flames" file="monster/lua/The_isles/worldbosses/vorondor_the_eternal_flames.lua" looktype="1132" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Frost Behemoth" file="monster/lua/The_isles/yetis/frost_behemoth.lua" looktype="1163" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Frostbite Behemoth" file="monster/lua/The_isles/yetis/frostbite_behemoth.lua" looktype="1162" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Frostfang Aberration" file="monster/lua/The_isles/yetis/frostfang_aberration.lua" looktype="1166" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Glacial Behemoth" file="monster/lua/The_isles/yetis/glacial_behemoth.lua" looktype="1165" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Icebound Abomination" file="monster/lua/The_isles/yetis/icebound_abomination.lua" looktype="1164" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Base Core" file="monster/lua/tower_defense/core/base_core.lua" looktype="1271" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Empyrion" file="monster/lua/tower_defense/monsters_waves/empyrion.lua" looktype="1276" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Infernalax" file="monster/lua/tower_defense/monsters_waves/infernalax.lua" looktype="1274" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Nycthariel" file="monster/lua/tower_defense/monsters_waves/nyckthariel.lua" looktype="1273" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Tenebrosus" file="monster/lua/tower_defense/monsters_waves/tenebrosus.lua" looktype="1275" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Zephyrius" file="monster/lua/tower_defense/monsters_waves/zephyrius.lua" looktype="1272" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Durin Rocksmash" file="monster/lua/tower_defense/units/During_Rocksmash.lua" looktype="1280" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Grimgar Boomstrike" file="monster/lua/tower_defense/units/Grimgar_boomstrike.lua" looktype="1279" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Grimnir Slashbaiter" file="monster/lua/tower_defense/units/Grimnir_Slashbaiter.lua" looktype="1283" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="King Aldor Goldcrusher" file="monster/lua/tower_defense/units/King_Aldor_Goldcrusher.lua" looktype="1282" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Stone Guard" file="monster/lua/tower_defense/units/Stone_Guard.lua" looktype="1277" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Thorin Ironspell" file="monster/lua/tower_defense/units/Thorin_ironspell.lua" looktype="1278" lookhead="76" lookbody="57" looklegs="76" lookfeet="95" />
+  <monster name="Fractalis the Shardmaw" file="monster/lua/waystone_portals/bosses/fractalis_the_shardmaw.lua" looktype="1425" />
+  <monster name="Frostreaver the Glacialblade" file="monster/lua/waystone_portals/bosses/frostreaver_the_glacialblade.lua" looktype="1427" />
+  <monster name="Morgrath the Umbral Archmage" file="monster/lua/waystone_portals/bosses/morgrath_the_umbral_archmage.lua" looktype="1424" />
+  <monster name="Nyxdrath the Midnight Terror" file="monster/lua/waystone_portals/bosses/nyxdrath_the_midnight_terror.lua" looktype="1426" />
+  <monster name="Rhazgor the Crimson Slayer" file="monster/lua/waystone_portals/bosses/rhazgor_the_crimson_slayer.lua" looktype="1428" />
+  <monster name="Vorgrun of the Jade Fangs" file="monster/lua/waystone_portals/bosses/vorgrun_of_the_jade_fangs.lua" looktype="1429" />
+  <monster name="Katoi Pillar" file="monster/lua/waystone_portals/pillars/katoi_pillar.lua" looktype="1271" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Arcana" file="monster/lua/waystone_portals/pillars/pillar_of_arcana.lua" looktype="1437" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Blades" file="monster/lua/waystone_portals/pillars/pillar_of_blades.lua" looktype="1431" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Death" file="monster/lua/waystone_portals/pillars/pillar_of_death.lua" looktype="1436" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Flames" file="monster/lua/waystone_portals/pillars/pillar_of_flames.lua" looktype="1433" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Forest" file="monster/lua/waystone_portals/pillars/pillar_of_forest.lua" looktype="1432" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Frost" file="monster/lua/waystone_portals/pillars/pillar_of_frost.lua" looktype="1434" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Jur" file="monster/lua/waystone_portals/pillars/pillar_of_jur.lua" looktype="1438" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Light" file="monster/lua/waystone_portals/pillars/pillar_of_light.lua" looktype="1430" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Pillar of Sun" file="monster/lua/waystone_portals/pillars/pillar_of_sun.lua" looktype="1435" lookhead="0" lookbody="0" looklegs="0" lookfeet="0" />
+  <monster name="Armorcoil" file="monster/lua/waystone_portals/waystone_map_1/armorcoil.lua" looktype="1396" />
+  <monster name="Blazefang" file="monster/lua/waystone_portals/waystone_map_1/blazefang.lua" looktype="1394" />
+  <monster name="Gorgulith" file="monster/lua/waystone_portals/waystone_map_1/gorgulith.lua" looktype="1395" />
+  <monster name="Nexlurith" file="monster/lua/waystone_portals/waystone_map_1/nexlurith.lua" looktype="1398" />
+  <monster name="Voidwagner" file="monster/lua/waystone_portals/waystone_map_1/voidwagner.lua" looktype="1397" />
+  <monster name="Aegis Sentinel" file="monster/lua/waystone_portals/waystone_map_2/aegis_sentinel.lua" looktype="1401" />
+  <monster name="Flarevein Wyrm" file="monster/lua/waystone_portals/waystone_map_2/flarevein_wyrm.lua" looktype="1403" />
+  <monster name="Gloomstinger" file="monster/lua/waystone_portals/waystone_map_2/gloomstinger.lua" looktype="1400" />
+  <monster name="Pyroquill" file="monster/lua/waystone_portals/waystone_map_2/pyroquill.lua" looktype="1399" />
+  <monster name="Toxic Mauler" file="monster/lua/waystone_portals/waystone_map_2/toxic_mauler.lua" looktype="1402" />
+  <monster name="Ashfang Wrym" file="monster/lua/waystone_portals/waystone_map_3/ashfang_wrym.lua" looktype="1418" />
+  <monster name="Bloodspark Adept" file="monster/lua/waystone_portals/waystone_map_3/bloodspark_adept.lua" looktype="1414" />
+  <monster name="Glacial Hellcharger" file="monster/lua/waystone_portals/waystone_map_3/glacial_hellcharger.lua" looktype="1422" />
+  <monster name="Nightfang Widow" file="monster/lua/waystone_portals/waystone_map_3/nightfang_widow.lua" looktype="1404" />
+  <monster name="Shadowcrystal Widow" file="monster/lua/waystone_portals/waystone_map_3/shadowcrystal_widow.lua" looktype="1405" />
+  <monster name="Bloodshade Reaper" file="monster/lua/waystone_portals/waystone_map_4/bloodshade_reaper.lua" looktype="1407" />
+  <monster name="Duskhorn Drake" file="monster/lua/waystone_portals/waystone_map_4/duskhorn_drake.lua" looktype="1406" />
+  <monster name="Nightflare Dreadknight" file="monster/lua/waystone_portals/waystone_map_4/nightflare_dreadknight.lua" looktype="1420" />
+  <monster name="Shadowvein Wrym" file="monster/lua/waystone_portals/waystone_map_4/shadowvein_wrym.lua" looktype="1416" />
+  <monster name="Umbral Arcanist" file="monster/lua/waystone_portals/waystone_map_4/umbral_arcanist.lua" looktype="1412" />
+  <monster name="Hellmaw Brute" file="monster/lua/waystone_portals/waystone_map_5/hellmaw_brute.lua" looktype="1409" />
+  <monster name="Mirethorn Hexer" file="monster/lua/waystone_portals/waystone_map_5/mirethorn_hexer.lua" looktype="1413" />
+  <monster name="Mossfang Drake" file="monster/lua/waystone_portals/waystone_map_5/mossfang_drake.lua" looktype="1408" />
+  <monster name="Plague Warbringer" file="monster/lua/waystone_portals/waystone_map_5/plague_warbringer.lua" looktype="1421" />
+  <monster name="Viridscale Wrym" file="monster/lua/waystone_portals/waystone_map_5/viridscale_wrym.lua" looktype="1417" />
+  <monster name="Embermaw Archon" file="monster/lua/waystone_portals/waystone_map_6/embermaw_archon.lua" looktype="1411" />
+  <monster name="Inferno Juggernaut" file="monster/lua/waystone_portals/waystone_map_6/inferno_juggernaut.lua" looktype="1423" />
+  <monster name="Pitlord Incarnate" file="monster/lua/waystone_portals/waystone_map_6/pitlord_incarnate.lua" looktype="1410" />
+  <monster name="Stormvein Wrym" file="monster/lua/waystone_portals/waystone_map_6/stormvein_wyrm.lua" looktype="1419" />
+  <monster name="Waterglow Conjurer" file="monster/lua/waystone_portals/waystone_map_6/waterglow_conjurer.lua" looktype="1415" />
+</monsters>

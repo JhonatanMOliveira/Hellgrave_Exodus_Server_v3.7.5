@@ -183,16 +183,7 @@ pip-log.txt
 #############
 ## TFS / OT
 #############
-config.lua
+
 
 # Extensions
-*.ini
-*.otb
-*.exe
-*.manifest
-*.otbm
-*.spr
-*.rar
-*-house.xml
-*-monster.xml
-*-npc.xml
+

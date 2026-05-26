@@ -62,15 +62,15 @@ local skillStages = {
         [{126, 149}]  = {multiplier = 7},
         [{150}]       = {multiplier = 4}
     },
-    [SKILL_MAGLEVEL] = {
-        [{  1,   60}] = {multiplier = 16},
-        [{  61,  80}] = {multiplier = 12},
-        [{ 81,  100}] = {multiplier = 8},
-        [{ 101, 110}] = {multiplier = 7},
-        [{111, 125}]  = {multiplier = 6},
-        [{126, 149}]  = {multiplier = 5},
-        [{150}]       = {multiplier = 3}
-    }
+    -- [SKILL_MAGLEVEL] = {
+    --     [{  1,   60}] = {multiplier = 16},
+    --     [{  61,  80}] = {multiplier = 12},
+    --     [{ 81,  100}] = {multiplier = 8},
+    --     [{ 101, 110}] = {multiplier = 7},
+    --     [{111, 125}]  = {multiplier = 6},
+    --     [{126, 149}]  = {multiplier = 5},
+    --     [{150}]       = {multiplier = 3}
+    -- }
 }
 
 

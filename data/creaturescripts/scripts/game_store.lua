@@ -15,12 +15,12 @@ function init()
 
 SHOP_CATEGORIES = {}
 
-local category1 = addCategory({
-  type="item",
-  item=ItemType(28084):getClientId(),
-  count=1,
-  name="Miscellaneous"
-})
+--- local category1 = addCategory({
+---   type="item",
+---   item=ItemType(28084):getClientId(),
+---   count=1,
+---   name="Miscellaneous"
+--- })
 local category2 = addCategory({
   type="outfit",
   name="Outfits",
@@ -57,24 +57,24 @@ local category4 = addCategory({
   count=1,
   name="Premium Time"
 })
-local category5 = addCategory({
-  type="item",
-  item=ItemType(27760):getClientId(),
-  count=100,
-  name="Exercise Weapon"
-})
-local category6 = addCategory({
-  type="item",
-  item=ItemType(29627):getClientId(),
-  count=1,
-  name="Waystone Device"
-})
-local category7 = addCategory({
-  type="item",
-  item=ItemType(27751):getClientId(),
-  count=1,
-  name="Exercise Dummies"
-})
+--- local category5 = addCategory({
+---   type="item",
+---   item=ItemType(27760):getClientId(),
+---   count=100,
+---   name="Exercise Weapon"
+--- })
+ local category6 = addCategory({
+   type="item",
+   item=ItemType(29627):getClientId(),
+   count=1,
+   name="Waystone Device"
+ })
+--- local category7 = addCategory({
+---   type="item",
+---   item=ItemType(27751):getClientId(),
+---   count=1,
+---   name="Exercise Dummies"
+--- })
 local category8 = addCategory({
   type="item",
   item=ItemType(29658):getClientId(),
@@ -95,24 +95,23 @@ local category10 = addCategory({
 })
 
 --- Category 1: Miscellaneous ---
-category1.addItem(50, 28084, 10, "10 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
-category1.addItem(220, 28084, 50, "50 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
-category1.addItem(399, 28084, 100, "100 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
-category1.addItem(1, 1988, 1, "BACKPACK ID", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
+--category1.addItem(50, 28084, 10, "10 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
+--category1.addItem(220, 28084, 50, "50 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
+--category1.addItem(399, 28084, 100, "100 Battlepass Points", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
+--category1.addItem(1, 1988, 1, "BACKPACK ID", "Purchase premium battlepass or shuffle missions, you cannot claim premium rewards if you already completed levels.")
 
 
 --- Category 2: Outfits ---
-category2.addOutfit(50, {storage = 535968, mount = 0, feet = 114, legs = 114, body = 116, type = 1457, auxType = 0, addons = 2, head = 2, rotating = true, name = "Shadowlotus Outfit",}, "Shadowlotus Outfit", "Full Shadowlotus Outfit with addons.")
-category2.addOutfit(50, {storage = 535969, mount = 0, feet = 114, legs = 114, body = 116, type = 1458, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
-category2.addOutfit(50, {storage = 535970, mount = 0, feet = 114, legs = 114, body = 116, type = 1459, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
-category2.addOutfit(50, {storage = 535971, mount = 0, feet = 114, legs = 114, body = 116, type = 1460, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
-category2.addOutfit(50, {storage = 535972, mount = 0, feet = 114, legs = 114, body = 116, type = 1461, auxType = 0, addons = 2, head = 2, rotating = true, name = "Blade Dancer Outfit",}, "Blade Dancer Outfit", "Full Blade Dancer Outfit with addons.")
+category2.addOutfit(50, {storage = 535968, mount = 0, feet = 114, legs = 114, body = 116, type = 1457, auxType = 0, addons = 2, head = 2, rotating = true, name = "Shun Outrfit",}, "Shun Outfit", "Full Shun Outfit with addons.")
+category2.addOutfit(50, {storage = 535969, mount = 0, feet = 114, legs = 114, body = 116, type = 1458, auxType = 0, addons = 2, head = 2, rotating = true, name = "Ikki Outfit",}, "Ikki Outfit", "Full Ikki Outfit with addons.")
+category2.addOutfit(50, {storage = 535970, mount = 0, feet = 114, legs = 114, body = 116, type = 1459, auxType = 0, addons = 2, head = 2, rotating = true, name = "Seiya Outfit",}, "Seiya Outfit", "Full Seiya Outfit with addons.")
+category2.addOutfit(50, {storage = 535971, mount = 0, feet = 114, legs = 114, body = 116, type = 1460, auxType = 0, addons = 2, head = 2, rotating = true, name = "Yoga Outfit",}, "Yoga Outfit", "Full Yoga Outfit with addons.")
+category2.addOutfit(50, {storage = 535972, mount = 0, feet = 114, legs = 114, body = 116, type = 1461, auxType = 0, addons = 2, head = 2, rotating = true, name = "Shiryu Outfit",}, "Shiryu Outfit", "Full Shiryu Outfit with addons.")
+
 
 --- Category 3: Mounts ---
-category3.addOutfit(50, {storage = 535983, mount = 104, feet = 0, legs = 0, body = 0, type = 928, auxType = 0, addons = 0, head = 2, rotating = true, name = "Spirit of Purity"}, "Spirit of Purity", "Spirit of Purity mount.")
-category3.addOutfit(690, {storage = 535984, mount = 119, feet = 0, legs = 0, body = 0, type = 1234, auxType = 0, addons = 0, head = 2, rotating = true, name = "Glacier Wyrm"}, "Glacier Wyrm", "Glacier Wyrm mount.")
-category3.addOutfit(690, {storage = 535985, mount = 120, feet = 0, legs = 0, body = 0, type = 1235, auxType = 0, addons = 0, head = 2, rotating = true, name = "Bog Tyrant"}, "Bog Tyrant", "Bog Tyrant mount.")
-category3.addOutfit(690, {storage = 535986, mount = 121, feet = 0, legs = 0, body = 0, type = 1236, auxType = 0, addons = 0, head = 2, rotating = true, name = "Crimson Fang"}, "Crimson Fang", "Crimson Fang mount.")
+--- category3.addOutfit(50, {storage = 535983, mount = 104, feet = 0, legs = 0, body = 0, type = 928, auxType = 0, addons = 0, head = 2, rotating = true, name = "Spirit of Purity"}, "Spirit of Purity", "Spirit of Purity mount.")
+
 
 --- Category 4: Premium Time ---
 category4.addImage(30, "/data/images/premium/premium_time_30.png", "Premium Time 30 Days", "", customImageBuyAction)
@@ -121,51 +120,32 @@ category4.addImage(90, "/data/images/premium/premium_time_90.png", "Premium Time
 category4.addImage(180, "/data/images/premium/premium_time_180.png", "Premium Time 180 Days", "", customImageBuyAction)
 
 --- Category 5: Exercise Weapons ---
-category5.addItem(5, 27761, 1, "1 Exercise Sword", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(5, 27762, 1, "1 Exercise Axe", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(5, 27763, 1, "1 Exercise Club", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(5, 27764, 1, "1 Exercise Bow", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(5, 27765, 1, "1 Exercise Rod", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(5, 27766, 1, "1 Exercise Wand", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(5, 27767, 1, "1 Exercise Shield", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27768, 1, "1 Durable Exercise Sword", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27769, 1, "1 Durable Exercise Axe", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27770, 1, "1 Durable Exercise Club", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27771, 1, "1 Durable Exercise Bow", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27772, 1, "1 Durable Exercise Rod", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27773, 1, "1 Durable Exercise Wand", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(15, 27774, 1, "1 Durable Exercise Shield", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27775, 1, "1 Lasting Exercise Sword", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27776, 1, "1 Lasting Exercise Axe", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27777, 1, "1 Lasting Exercise Club", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27778, 1, "1 Lasting Exercise Bow", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27779, 1, "1 Lasting Exercise Rod", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27780, 1, "1 Lasting Exercise Wand", "You will receive a box, use it to obtain the exercise weapon.")
-category5.addItem(140, 27781, 1, "1 Lasting Exercise Shield", "You will receive a box, use it to obtain the exercise weapon.")
+--- category5.addItem(5, 27761, 1, "1 Exercise Sword", "You will receive a box, use it to obtain the exercise weapon.")
+
 
 --- Category 6: Waystone Device Visual Portals ---
 
-category6.addItem(199, 29642, 1, "Stone Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29629)
-category6.addItem(199, 29643, 1, "Golden Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29630)
-category6.addItem(199, 29644, 1, "Blood Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29631)
-category6.addItem(199, 29645, 1, "Poisonous Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29632)
-category6.addItem(199, 29646, 1, "Maze Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29633)
-category6.addItem(199, 29647, 1, "Royal Gold Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29634)
-category6.addItem(199, 29648, 1, "Demonic Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29635)
-category6.addItem(199, 29649, 1, "Palace Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29636)
-category6.addItem(199, 29650, 1, "Lion Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29637)
-category6.addItem(199, 29651, 1, "Underwater Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29638)
-category6.addItem(199, 29652, 1, "Divine Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29639)
-category6.addItem(199, 29653, 1, "Inferno Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29640)
-category6.addItem(199, 29654, 1, "Jade Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29641)
+ category6.addItem(199, 29642, 1, "Stone Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29629)
+ category6.addItem(199, 29643, 1, "Golden Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29630)
+ category6.addItem(199, 29644, 1, "Blood Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29631)
+ category6.addItem(199, 29645, 1, "Poisonous Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29632)
+ category6.addItem(199, 29646, 1, "Maze Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29633)
+ category6.addItem(199, 29647, 1, "Royal Gold Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29634)
+ category6.addItem(199, 29648, 1, "Demonic Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29635)
+ category6.addItem(199, 29649, 1, "Palace Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29636)
+ category6.addItem(199, 29650, 1, "Lion Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29637)
+ category6.addItem(199, 29651, 1, "Underwater Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29638)
+ category6.addItem(199, 29652, 1, "Divine Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29639)
+ category6.addItem(199, 29653, 1, "Inferno Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.", nil, 29640)
+ category6.addItem(199, 29654, 1, "Jade Portal Waystone Kit", "Activate the effect of Stone portal on your Waystone Portal device.",  nil, 29641)
 
 --- Category 7: Exercise Dummies ---
-category7.addItem(150, 29655, 1, "Ferumbras Exercise Dummy Kit", "Place a Ferumbras Exercise Dummy in your house to train your skills.", nil, 27751)
-category7.addItem(150, 29656, 1, "Demon Exercise Dummy Kit", "Place a Demon Exercise Dummy in your house to train your skills.", nil, 27753)
-category7.addItem(150, 29657, 1, "Monk Exercise Dummy Kit", "Place a Monk Exercise Dummy in your house to train your skills.", nil, 27755)
-category7.addItem(199, 29787, 1, "Eldritch Exercise Dummy Kit", "Place a Eldritch Exercise Dummy in your house to train your skills.", nil, 29785)
-category7.addItem(199, 29820, 1, "Halloween Exercise Dummy Kit", "Place a Halloween Exercise Dummy in your house to train your skills.", nil, 29819)
-category7.addItem(199, 29838, 1, "Snowball Exercise Dummy Kit", "Place a Snowball Exercise Dummy in your house to train your skills.", nil, 29828)
+--- category7.addItem(150, 29655, 1, "Ferumbras Exercise Dummy Kit", "Place a Ferumbras Exercise Dummy in your house to train your skills.", nil, 27751)
+--- category7.addItem(150, 29656, 1, "Demon Exercise Dummy Kit", "Place a Demon Exercise Dummy in your house to train your skills.", nil, 27753)
+--- category7.addItem(150, 29657, 1, "Monk Exercise Dummy Kit", "Place a Monk Exercise Dummy in your house to train your skills.", nil, 27755)
+--- category7.addItem(199, 29787, 1, "Eldritch Exercise Dummy Kit", "Place a Eldritch Exercise Dummy in your house to train your skills.", nil, 29785)
+--- category7.addItem(199, 29820, 1, "Halloween Exercise Dummy Kit", "Place a Halloween Exercise Dummy in your house to train your skills.", nil, 29819)
+--- category7.addItem(199, 29838, 1, "Snowball Exercise Dummy Kit", "Place a Snowball Exercise Dummy in your house to train your skills.", nil, 29828)
 
 --- Category 8: House Beds ---
 category8.addItem(150, 29670, 1, "Knightly Bed Kit", "Replace your bed with a Knightly Bed at your house.", nil, 29658)
@@ -175,6 +155,7 @@ category8.addItem(150, 29783, 1, "Ember Bed Kit", "Replace your bed with a Ember
 category8.addItem(150, 29811, 1, "Halloween Bed Kit", "Replace your bed with a Halloween Bed at your house.", nil, 29788)
 
 --- Category 9: House Furnitures ---
+category9.addItem(1, 24774, 100, "Knightly Chair Kit", "Place a Knightly Chair to style your house.", nil, 29673)
 category9.addItem(35, 29679, 1, "Knightly Chair Kit", "Place a Knightly Chair to style your house.", nil, 29673)
 category9.addItem(50, 29680, 1, "Knightly Table Kit", "Place a Knightly Table to style your house.", nil, 29675)
 category9.addItem(50, 29681, 1, "Knightly Table Kit", "Place a Knightly Table to style your house.", nil, 29677)
@@ -283,9 +264,9 @@ end
 
 function getStorePoints(player)
   local points = 0
-  local resultId = db.storeQuery("SELECT `points` FROM `znote_accounts` WHERE `id` = " .. player:getAccountId())
+  local resultId = db.storeQuery("SELECT `premium_points` FROM `accounts` WHERE `id` = " .. player:getAccountId())
   if resultId ~= false then
-    points = result.getDataInt(resultId, "points")
+    points = result.getDataInt(resultId, "premium_points")
     result.free(resultId)
   end
   return points
@@ -404,8 +385,8 @@ function onExtendedOpcode(player, opcode, buffer)
   if recipientAccountId == senderAccountId then
     return sendMessage(player, "Error!", "You cannot send coins to yourself.")
   end
-  db.query("UPDATE `znote_accounts` SET `points` = `points` - " .. amount .. " WHERE `id` = " .. senderAccountId)
-  db.query("UPDATE `znote_accounts` SET `points` = `points` + " .. amount .. " WHERE `id` = " .. recipientAccountId)
+  db.query("UPDATE `accounts` SET `premium_points` = `premium_points` - " .. amount .. " WHERE `id` = " .. senderAccountId)
+  db.query("UPDATE `accounts` SET `premium_points` = `premium_points` + " .. amount .. " WHERE `id` = " .. recipientAccountId)
 
   local senderAccountId = player:getAccountId()
   local senderGuid = tostring(player:getGuid())
@@ -479,9 +460,9 @@ function processBuy(player, data)
 
   local status = callback(player, offer)
   if status == true then
-    db.query("UPDATE `znote_accounts` " ..
-             "SET `points` = `points` - " .. offer.cost ..
-             " WHERE `id` = " .. player:getAccountId())
+    db.query("UPDATE `accounts` " ..
+         "SET `premium_points` = `premium_points` - " .. offer.cost ..
+         " WHERE `id` = " .. player:getAccountId())
 
     local accountId = player:getAccountId()
     local rawGuid   = tostring(player:getGuid())

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Golfinho [BOSS]" nameDescription="Golfinho [BOSS]" race="blood" experience="6000" speed="1000">
+	<health now="10000" max="10000" />
+	<look type="1444" corpse="5984" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="300" />
+		<flag isboss="1" />
+	</flags>
+	<script>
+  		<event name="playerAttackSound"/>
+	</script>
+	<attacks>
+		<attack name="melee" interval="2000" min="-250" max="-350" />
+        <attack name="melee" interval="3000" range="3" min="-350" max="-400" />
+        <attack name="melee" interval="3000" chance="50" range="3" min="-350" max="-400" />
+        <attack name="melee" interval="8000" range="3" min="-600" max="-800" />
+        <attack name="melee" interval="8000" chance="50" range="3" min="-600" max="-800" />
+        
+
+	</attacks>
+	<defenses armor="45" defense="45">
+		<defense name="speed" interval="1000" chance="5" speedchange="1140" duration="7000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+
+
+	<voices interval="5000" chance="10">
+		<!-- <voice sentence="I WILL SET THE WORLD ON FIRE!" yell="1" />
+		<voice sentence="I WILL PROTECT MY BROOD!" yell="1" /> -->
+	</voices>
+	<loot>
+
+	</loot>
+</monster>

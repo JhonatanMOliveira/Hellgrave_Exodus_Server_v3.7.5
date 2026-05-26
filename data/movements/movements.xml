@@ -833,27 +833,27 @@
 	<movevent event="DeEquip" itemid="26132" slot="feet" function="onDeEquipItem" />
 
 	<!-- Amulets -->
-	<movevent event="Equip" itemid="29889" slot="necklace" level="1000" function="onEquipItem">
+	<movevent event="Equip" itemid="29889" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29889" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29876" slot="necklace" level="1000" function="onEquipItem">
+	<movevent event="Equip" itemid="29876" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29876" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29867" slot="necklace" level="1000" function="onEquipItem">
+	<movevent event="Equip" itemid="29867" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29867" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28690" slot="necklace" level="220" function="onEquipItem" />
+	<movevent event="Equip" itemid="28690" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="28690" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28126" slot="necklace" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28126" slot="necklace" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
 	<movevent event="DeEquip" itemid="28126" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28048" slot="necklace" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28048" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28048" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28040" slot="necklace" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28040" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28040" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28022" slot="necklace" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28022" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28022" slot="necklace" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26182" slot="necklace" function="onEquipItem" />
@@ -862,11 +862,11 @@
 	<movevent event="DeEquip" itemid="26183" slot="necklace" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26184" slot="necklace" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="26184" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27652" slot="necklace" level="180" function="onEquipItem" />
+	<movevent event="Equip" itemid="27652" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="27652" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27251" slot="necklace" level="220" function="onEquipItem" />
+	<movevent event="Equip" itemid="27251" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="27251" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27215" slot="necklace" level="250" function="onEquipItem" />
+	<movevent event="Equip" itemid="27215" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="27215" slot="necklace" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="26807" slot="necklace" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="26807" slot="necklace" function="onDeEquipItem" />
@@ -888,55 +888,55 @@
 	<movevent event="DeEquip" itemid="2200" slot="necklace" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="2201" slot="necklace" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="2201" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7887" slot="necklace" level="60" function="onEquipItem" />
+	<movevent event="Equip" itemid="7887" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="7887" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7888" slot="necklace" level="60" function="onEquipItem" />
+	<movevent event="Equip" itemid="7888" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="7888" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7889" slot="necklace" level="60" function="onEquipItem" />
+	<movevent event="Equip" itemid="7889" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="7889" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7890" slot="necklace" level="60" function="onEquipItem" />
+	<movevent event="Equip" itemid="7890" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="7890" slot="necklace" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="8266" slot="necklace" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="8266" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="10218" slot="necklace" level="80" function="onEquipItem" />
+	<movevent event="Equip" itemid="10218" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="10218" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="10219" slot="necklace" level="80" function="onEquipItem" />
+	<movevent event="Equip" itemid="10219" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="10219" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="10220" slot="necklace" level="80" function="onEquipItem" />
+	<movevent event="Equip" itemid="10220" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="10220" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="10221" slot="necklace" level="80" function="onEquipItem" />
+	<movevent event="Equip" itemid="10221" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="10221" slot="necklace" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="11374" slot="necklace" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="11374" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="15403" slot="necklace" level="120" function="onEquipItem" />
+	<movevent event="Equip" itemid="15403" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="15403" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="18402" slot="necklace" level="150" function="onEquipItem" />
+	<movevent event="Equip" itemid="18402" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="18402" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="18407" slot="necklace" level="150" function="onEquipItem" />
+	<movevent event="Equip" itemid="18407" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="18407" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="21691" slot="necklace" level="150" function="onEquipItem" />
+	<movevent event="Equip" itemid="21691" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="21691" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="23541" slot="necklace" level="75" function="onEquipItem" />
+	<movevent event="Equip" itemid="23541" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="23541" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="23554" slot="necklace" level="75" function="onEquipItem">
+	<movevent event="Equip" itemid="23554" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="23554" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27403" slot="necklace" level="230" function="onEquipItem">
+	<movevent event="Equip" itemid="27403" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27403" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="24851" slot="necklace" level="60" function="onEquipItem" />
+	<movevent event="Equip" itemid="24851" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="24851" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="25423" slot="necklace" level="100" function="onEquipItem" />
+	<movevent event="Equip" itemid="25423" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="25423" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="25424" slot="necklace" level="100" function="onEquipItem" />
+	<movevent event="Equip" itemid="25424" slot="necklace" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="25424" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26198" slot="necklace" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="26198" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="26198" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26199" slot="necklace" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="26199" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="26199" slot="necklace" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26200" slot="necklace" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="26200" slot="necklace" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="26200" slot="necklace" function="onDeEquipItem" />
 
@@ -1149,27 +1149,27 @@
 		script="boat/shadowmeld.lua" />
 
 	<!-- Rings -->
-	<movevent event="Equip" itemid="29890" slot="ring" level="1000" function="onEquipItem">
+	<movevent event="Equip" itemid="29890" slot="ring" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29890" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29877" slot="ring" level="1000" function="onEquipItem">
+	<movevent event="Equip" itemid="29877" slot="ring" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29877" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29868" slot="ring" level="1000" function="onEquipItem">
+	<movevent event="Equip" itemid="29868" slot="ring" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29868" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28691" slot="ring" level="100" function="onEquipItem" />
+	<movevent event="Equip" itemid="28691" slot="ring" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="28691" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28125" slot="ring" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28125" slot="ring" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
 	<movevent event="DeEquip" itemid="28125" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28049" slot="ring" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28049" slot="ring" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28049" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28041" slot="ring" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28041" slot="ring" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28041" slot="ring" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28023" slot="ring" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28023" slot="ring" level="1" function="onEquipItem">
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28023" slot="ring" function="onDeEquipItem" />
@@ -1314,168 +1314,168 @@
 
 
 	<!-- Belts & Gloves -->
-	<movevent event="Equip" itemid="29919" slot="beltgloves" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29919" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29919" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29918" slot="beltgloves" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29918" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29918" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29917" slot="beltgloves" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29917" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29917" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29916" slot="beltgloves" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29916" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29916" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29915" slot="beltgloves" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29915" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29915" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29914" slot="beltgloves" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29914" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29914" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29598" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29598" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29598" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29597" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29597" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29597" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29596" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29596" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29596" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29595" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29595" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29595" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29594" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29594" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29594" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29593" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29593" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29593" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29592" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29592" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29592" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29591" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29591" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29591" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29590" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29590" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29590" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29589" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29589" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29589" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29588" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29588" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29588" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29587" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29587" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29587" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29586" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29586" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29586" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29584" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29584" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29584" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29583" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29583" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29583" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29582" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29582" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29582" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29577" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29577" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29577" slot="beltgloves" function="onDeEquipItem"
 		script="special_skills/critical_mana_life_base.lua" />
-	<movevent event="Equip" itemid="29578" slot="beltgloves" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29578" slot="beltgloves" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
@@ -2209,7 +2209,7 @@
 	<movevent event="Equip" itemid="2470" slot="legs" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="2470" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26710" slot="legs" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="26710" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="26710" slot="legs" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="2477" slot="legs" function="onEquipItem">
@@ -2220,331 +2220,319 @@
 	<movevent event="DeEquip" itemid="2488" slot="legs" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="2504" slot="legs" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="2504" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7885" slot="legs" level="40" function="onEquipItem">
+	<movevent event="Equip" itemid="7885" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="7885" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7894" slot="legs" level="40" function="onEquipItem">
+	<movevent event="Equip" itemid="7894" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="7894" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7895" slot="legs" level="40" function="onEquipItem">
+	<movevent event="Equip" itemid="7895" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="7895" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="7896" slot="legs" level="40" function="onEquipItem">
+	<movevent event="Equip" itemid="7896" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="7896" slot="legs" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="8923" slot="legs" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8923" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="9777" slot="legs" level="80" function="onEquipItem">
+	<movevent event="Equip" itemid="9777" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="9777" slot="legs" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="11304" slot="legs" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="11304" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="15409" slot="legs" level="130" function="onEquipItem">
+	<movevent event="Equip" itemid="15409" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="15409" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="15412" slot="legs" level="185" function="onEquipItem">
+	<movevent event="Equip" itemid="15412" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="15412" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="15490" slot="legs" level="75" function="onEquipItem" />
+	<movevent event="Equip" itemid="15490" slot="legs" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="15490" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="18400" slot="legs" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="18400" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="18400" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="18405" slot="legs" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="18405" slot="legs" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="18405" slot="legs" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="21700" slot="legs" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="21700" slot="legs" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="23539" slot="legs" level="60" function="onEquipItem" />
+	<movevent event="Equip" itemid="23539" slot="legs" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="23539" slot="legs" function="onDeEquipItem" />
 
 	<!-- Weapons -->
-	<movevent event="Equip" itemid="29888" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29888" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29888" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29887" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29887" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29887" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29886" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29886" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29886" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29885" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29885" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29885" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29884" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29884" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29884" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29883" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29883" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29883" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29875" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29875" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29875" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29874" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29874" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29874" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29866" slot="hand" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29866" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29866" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29571" slot="hand" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29571" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29571" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29564" slot="hand" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29564" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29564" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29565" slot="hand" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29565" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29565" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29556" slot="hand" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29556" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29556" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29557" slot="hand" level="400" function="onEquipItem"
-		script="special_skills/critical_mana_life_base.lua">
-
-
-	</movevent>
-	<movevent event="DeEquip" itemid="29557" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29558" slot="hand" level="400" function="onEquipItem"
-		script="special_skills/critical_mana_life_base.lua">
-
-
-	</movevent>
-	<movevent event="DeEquip" itemid="29558" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29487" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29557" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29487" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29488" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29488" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29488" slot="hand" function="onDeEquipItem" />
 
-	<movevent event="Equip" itemid="29489" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29489" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29489" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29490" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29490" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29490" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29483" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29483" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29483" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29484" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29484" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29484" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29485" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29485" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29485" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29486" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29486" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29486" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28481" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28481" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28481" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28482" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28482" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28482" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29477" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29477" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29477" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29478" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29478" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29478" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29479" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29479" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29479" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29480" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="29480" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29480" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28716" slot="hand" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="28716" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28716" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28714" slot="hand" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="28714" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28714" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28712" slot="hand" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="28712" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28712" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28717" slot="hand" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="28717" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28717" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28715" slot="hand" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="28715" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28715" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28713" slot="hand" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="28713" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28713" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28378" slot="hand" level="350" function="onEquipItem"
+	<movevent event="Equip" itemid="28378" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28378" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28377" slot="hand" level="350" function="onEquipItem"
+	<movevent event="Equip" itemid="28377" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28377" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28376" slot="hand" level="350" function="onEquipItem"
+	<movevent event="Equip" itemid="28376" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28376" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28375" slot="hand" level="350" function="onEquipItem"
+	<movevent event="Equip" itemid="28375" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28375" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28374" slot="hand" level="350" function="onEquipItem"
+	<movevent event="Equip" itemid="28374" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28374" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28373" slot="hand" level="350" function="onEquipItem"
+	<movevent event="Equip" itemid="28373" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28373" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28137" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28137" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28137" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28136" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28136" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28136" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28135" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28135" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28135" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28134" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28134" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28134" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28133" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28133" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28133" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28132" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28132" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28132" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28131" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28131" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28131" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28130" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28130" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28130" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28129" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28129" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28129" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28128" slot="hand" level="330" function="onEquipItem">
+	<movevent event="Equip" itemid="28128" slot="hand" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28128" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28116" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28116" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28116" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28110" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28110" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28110" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28104" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28104" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28104" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28103" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28103" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28103" slot="hand" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28102" slot="hand" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28102" slot="hand" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
@@ -3051,169 +3039,169 @@
 	<movevent event="DeEquip" itemid="23590" slot="hand" function="onDeEquipItem" />
 
 	<!-- Shields -->
-	<movevent event="Equip" itemid="29882" slot="shield" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29882" slot="shield" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29882" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29865" slot="shield" level="1000" function="onEquipItem"
+	<movevent event="Equip" itemid="29865" slot="shield" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29865" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29559" slot="shield" level="400" function="onEquipItem"
+	<movevent event="Equip" itemid="29559" slot="shield" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="29559" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="29572" slot="shield" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="29572" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="29572" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28692" slot="shield" level="200" function="onEquipItem"
+	<movevent event="Equip" itemid="28692" slot="shield" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28692" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28689" slot="shield" level="200" function="onEquipItem">
+	<movevent event="Equip" itemid="28689" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28689" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28688" slot="shield" level="200" function="onEquipItem">
+	<movevent event="Equip" itemid="28688" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28688" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28381" slot="shield" level="350" function="onEquipItem">
+	<movevent event="Equip" itemid="28381" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28381" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28380" slot="shield" level="350" function="onEquipItem">
+	<movevent event="Equip" itemid="28380" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28380" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27678" slot="shield" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="27678" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27678" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28111" slot="shield" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28111" slot="shield" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28111" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28105" slot="shield" level="300" function="onEquipItem"
+	<movevent event="Equip" itemid="28105" slot="shield" level="1" function="onEquipItem"
 		script="special_skills/critical_mana_life_base.lua">
 
 
 	</movevent>
 	<movevent event="DeEquip" itemid="28105" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28039" slot="shield" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28039" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28039" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="28024" slot="shield" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="28024" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="28024" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27680" slot="shield" level="300" function="onEquipItem">
+	<movevent event="Equip" itemid="27680" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27680" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27670" slot="shield" level="300" function="onEquipItem">
+	<movevent event="Equip" itemid="27670" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27670" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27669" slot="shield" level="300" function="onEquipItem">
+	<movevent event="Equip" itemid="27669" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27669" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27653" slot="shield" level="250" function="onEquipItem">
+	<movevent event="Equip" itemid="27653" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27653" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27398" slot="shield" level="220" function="onEquipItem">
+	<movevent event="Equip" itemid="27398" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27398" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27399" slot="shield" level="250" function="onEquipItem">
+	<movevent event="Equip" itemid="27399" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27399" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27394" slot="shield" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="27394" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27394" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27202" slot="shield" level="300" function="onEquipItem">
+	<movevent event="Equip" itemid="27202" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27202" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="27203" slot="shield" level="300" function="onEquipItem">
+	<movevent event="Equip" itemid="27203" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="27203" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="26805" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="26805" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="26805" slot="shield" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="2175" slot="shield" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="2175" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8900" slot="shield" level="30" function="onEquipItem">
+	<movevent event="Equip" itemid="8900" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8900" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8901" slot="shield" level="40" function="onEquipItem">
+	<movevent event="Equip" itemid="8901" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8901" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8902" slot="shield" level="50" function="onEquipItem">
+	<movevent event="Equip" itemid="8902" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8902" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8903" slot="shield" level="60" function="onEquipItem">
+	<movevent event="Equip" itemid="8903" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8903" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8904" slot="shield" level="70" function="onEquipItem">
+	<movevent event="Equip" itemid="8904" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8904" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8905" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="8905" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8905" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8906" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="8906" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8906" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8907" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="8907" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8907" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8908" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="8908" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8908" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8909" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="8909" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8909" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="8918" slot="shield" level="80" function="onEquipItem">
+	<movevent event="Equip" itemid="8918" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="8918" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="12644" slot="shield" level="80" function="onEquipItem">
+	<movevent event="Equip" itemid="12644" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="12644" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="12647" slot="shield" level="100" function="onEquipItem">
+	<movevent event="Equip" itemid="12647" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="12647" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="15411" slot="shield" level="120" function="onEquipItem">
+	<movevent event="Equip" itemid="15411" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="15411" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="15413" slot="shield" level="130" function="onEquipItem">
+	<movevent event="Equip" itemid="15413" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="15413" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="16112" slot="shield" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="16112" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="16112" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="18401" slot="shield" level="130" function="onEquipItem">
+	<movevent event="Equip" itemid="18401" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="18401" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="18410" slot="shield" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="18410" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="18410" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="22422" slot="shield" level="75" function="onEquipItem">
+	<movevent event="Equip" itemid="22422" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="22422" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="22423" slot="shield" level="120" function="onEquipItem">
+	<movevent event="Equip" itemid="22423" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="22423" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="22424" slot="shield" level="250" function="onEquipItem">
+	<movevent event="Equip" itemid="22424" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="22424" slot="shield" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="23771" slot="shield" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="23771" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="25411" slot="shield" level="150" function="onEquipItem">
+	<movevent event="Equip" itemid="25411" slot="shield" level="1" function="onEquipItem">
 	</movevent>
 	<movevent event="DeEquip" itemid="25411" slot="shield" function="onDeEquipItem" />
-	<movevent event="Equip" itemid="25414" slot="shield" level="200" function="onEquipItem" />
+	<movevent event="Equip" itemid="25414" slot="shield" level="1" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="25414" slot="shield" function="onDeEquipItem" />
 
 

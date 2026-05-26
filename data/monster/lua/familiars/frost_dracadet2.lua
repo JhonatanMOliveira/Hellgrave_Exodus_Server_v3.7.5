@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -70,6 +70,7 @@ monster.loot = {
 }
 
 monster.attacks = {
+	{name ="frost dracadet paralyze", interval = 8000, chance = 100, target = true},
 	{name ="melee", type= COMBAT_PHYSICALDAMAGE, interval = 2000, chance = 100, minDamage = -150, maxDamage = -280},
 	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ICEDAMAGE, minDamage = -180, maxDamage = -350, range = 7, radius = 4, shootEffect = 29, effect = 282, target = true},
 	{name ="combat", interval = 2000, chance = 22, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -400, length = 8, spread = 3, effect = 308, target = false}

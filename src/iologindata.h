@@ -43,6 +43,10 @@ class IOLoginData
 
 		static void updatePremiumTime(uint32_t accountId, time_t endTime);
 
+		static uint64_t getPremiumPoints(uint32_t accountId);
+		static void addPremiumPoints(uint32_t accountId, uint32_t amount);
+		static bool removePremiumPoints(uint32_t accountId, uint32_t amount);
+
 	private:
 		using ItemMap = std::map<uint32_t, std::pair<Item*, uint32_t>>;
 

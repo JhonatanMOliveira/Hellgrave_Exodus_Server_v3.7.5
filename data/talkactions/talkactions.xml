@@ -37,11 +37,14 @@
 	<talkaction words="/reload" separator=" " script="reload.lua" />
 	<talkaction words="/raid" separator=" " script="force_raid.lua" />
 	<talkaction words="/save" separator=" " script="save.lua" />
+	<talkaction words="/serversave" separator=" " script="save.lua" />
 	<talkaction words="/get" separator=" " script="storage_get.lua" />
+	<talkaction words="/spawnitem" script="randomitemspawn.lua" />
 
 	<!-- player talkactions -->
 	<talkaction words="!commands" script="commands.lua" />
 	<talkaction words="!resis" script="resistances.lua" />
+	<talkaction words="!attackspeed" script="attackspeed.lua" />
 	<talkaction words="!buyhouse" script="buyhouse.lua" />
 	<talkaction words="!sellhouse" separator=" " script="sellhouse.lua" />
 	<talkaction words="!leavehouse" script="leavehouse.lua" />

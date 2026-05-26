@@ -31,7 +31,7 @@ for category, aid in pairs(categoryAIDs) do
   local actionEvent = Action()
 
   function actionEvent.onUse(player)
-    player:showCrafting(category) 
+    player:showCrafting(category)
     return true
   end
 
@@ -40,22 +40,23 @@ for category, aid in pairs(categoryAIDs) do
 end
 
 local rarities = {
-  { id = 1, chance = 10.0, minLevel = 1,   maxLevel = 10 },
-  { id = 2, chance = 8.0, minLevel = 11,  maxLevel = 20 },
-  { id = 3, chance = 7.0, minLevel = 21,  maxLevel = 30 },
-  { id = 4, chance = 6.5, minLevel = 31,  maxLevel = 40 },
-  { id = 5, chance = 6.0,  minLevel = 41,  maxLevel = 50 },
-  { id = 6, chance = 5.5,  minLevel = 51,  maxLevel = 60 },
-  { id = 7, chance = 5.0,  minLevel = 61,  maxLevel = 70 },
-  { id = 8, chance = 4.5,  minLevel = 71,  maxLevel = 80 },
-  { id = 9, chance = 4.0,  minLevel = 81,  maxLevel = 90 },
-  { id = 10, chance = 3.0, minLevel = 91,  maxLevel = 100 },
-  { id = 11, chance = 2.5, minLevel = 101, maxLevel = 110 },
-  { id = 12, chance = 2.0, minLevel = 111, maxLevel = 120 },
-  { id = 13, chance = 1.5, minLevel = 121, maxLevel = 130 },
-  { id = 14, chance = 1.0, minLevel = 131, maxLevel = 140 },
-  { id = 15, chance = 0.5, minLevel = 141, maxLevel = 150 },
+  { id = 1, chance = 32.0, minLevel = 1,   maxLevel = 10 },
+  { id = 2, chance = 25.0, minLevel = 11,  maxLevel = 20 },
+  { id = 3, chance = 15.0, minLevel = 21,  maxLevel = 30 },
+  { id = 4, chance = 10.0, minLevel = 31,  maxLevel = 40 },
+  { id = 5, chance = 7.0,  minLevel = 41,  maxLevel = 50 },
+  { id = 6, chance = 4.0,  minLevel = 51,  maxLevel = 60 },
+  { id = 7, chance = 3.0,  minLevel = 61,  maxLevel = 70 },
+  { id = 8, chance = 2.0,  minLevel = 71,  maxLevel = 80 },
+  { id = 9, chance = 1.0,  minLevel = 81,  maxLevel = 90 },
+  { id = 10, chance = 0.5, minLevel = 91,  maxLevel = 100 },
+  { id = 11, chance = 0.3, minLevel = 101, maxLevel = 110 },
+  { id = 12, chance = 0.2, minLevel = 111, maxLevel = 120 },
+  { id = 13, chance = 0.1, minLevel = 121, maxLevel = 130 },
+  { id = 14, chance = 0.05, minLevel = 131, maxLevel = 140 },
+  { id = 15, chance = 0.05, minLevel = 141, maxLevel = 150 },
 }
+
 
 local RarityNames = {
   [1] = "Common",
@@ -141,6 +142,10 @@ ExtendedEvent:register()
 local CHUNK_SIZE = 512 
 
 function Crafting:sendCrafts(player, category, page)
+  if not ProfessionSystem:canCraft(player, category) then
+    return
+  end
+
   local startIndex = (page - 1) * fetchLimit + 1
   local endIndex = math.min(startIndex + fetchLimit - 1, #Crafting[category])
   local craftsData = {}
@@ -248,6 +253,11 @@ function Crafting:craft(player, category, craftId)
   }
 
   if not Crafting[category] then
+    return
+  end
+
+  if not ProfessionSystem:canCraft(player, category) then
+    player:popupFYI(ProfessionSystem:getRestrictedMessage(player))
     return
   end
 
@@ -427,6 +437,11 @@ function Player:showCrafting(category)
 
   if not Crafting[selectedCategory] then
       return
+  end
+
+  if not ProfessionSystem:canCraft(self, selectedCategory) then
+    self:popupFYI(ProfessionSystem:getRestrictedMessage(self))
+    return false
   end
 
   Crafting:sendMoney(self)

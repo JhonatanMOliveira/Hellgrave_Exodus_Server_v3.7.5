@@ -598,7 +598,6 @@ ShootTypeNames shootTypeNames = {
 	{"death",		CONST_ANI_DEATH},
 	{"largerock",		CONST_ANI_LARGEROCK},
 	{"snowball",		CONST_ANI_SNOWBALL},
-	{"rosa",		CONST_ANI_ROSA},
 	{"powerbolt",		CONST_ANI_POWERBOLT},
 	{"poison",		CONST_ANI_POISON},
 	{"infernalbolt",	CONST_ANI_INFERNALBOLT},
@@ -638,6 +637,7 @@ ShootTypeNames shootTypeNames = {
 	{"simplearrow",		CONST_ANI_SIMPLEARROW},
 	{"arcane", 		CONST_ANI_ARCANE},
 	{"water",		CONST_ANI_WATER},
+	{"rosa",		CONST_ANI_ROSA},
 };
 
 CombatTypeNames combatTypeNames = {
@@ -669,7 +669,6 @@ AmmoTypeNames ammoTypeNames = {
 	{"smallstone",		AMMO_STONE},
 	{"largerock",		AMMO_STONE},
 	{"snowball",		AMMO_SNOWBALL},
-	{"rosa",		AMMO_ROSA},
 	{"powerbolt",		AMMO_BOLT},
 	{"infernalbolt",	AMMO_BOLT},
 	{"huntingspear",	AMMO_SPEAR},
@@ -683,6 +682,7 @@ AmmoTypeNames ammoTypeNames = {
 	{"flammingarrow",	AMMO_ARROW},
 	{"shiverarrow",		AMMO_ARROW},
 	{"eartharrow",		AMMO_ARROW},
+	{"rosa",		AMMO_THROWINGSTAR},
 };
 
 WeaponActionNames weaponActionNames = {

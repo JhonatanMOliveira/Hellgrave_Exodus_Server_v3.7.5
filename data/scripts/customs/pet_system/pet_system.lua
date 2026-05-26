@@ -14,16 +14,92 @@ local pet_id = 633453
 local pet_name = 633454
 
 local cooldown_storage = 808815
-local cooldown_duration = 1
+local familiar_duration = 30
+local familiar_cooldown = 60
+local familiar_total_wait = familiar_duration + familiar_cooldown
+
+local familiarChoiceNames = {
+  [1] = "Knight Familiar",
+  [2] = "Black Dracadet",
+  [3] = "Black Dracadet [2]",
+  [4] = "Black Dracadet [3]",
+  [5] = "Frost Dracadet",
+  [6] = "Frost Dracadet [2]",
+  [7] = "Frost Dracadet [3]",
+  [8] = "Swamp Dracadet",
+  [9] = "Swamp Dracadet [2]",
+  [10] = "Swamp Dracadet [3]",
+  [11] = "Stone Dracadet",
+  [12] = "Stone Dracadet [2]",
+  [13] = "Stone Dracadet [3]",
+  [14] = "Fire Dracadet",
+  [15] = "Fire Dracadet [2]",
+  [16] = "Fire Dracadet [3]",
+}
+
+local familiarSummons = {
+  {storage = Expeditions.FrostDracadetPetChoice3, name = "Frost Dracadet [3]"},
+  {storage = Expeditions.FrostDracadetPetChoice2, name = "Frost Dracadet [2]"},
+  {storage = Expeditions.FrostDracadetPetChoice, name = "Frost Dracadet"},
+  {storage = Expeditions.FireDracadetPetChoice3, name = "Fire Dracadet [3]"},
+  {storage = Expeditions.FireDracadetPetChoice2, name = "Fire Dracadet [2]"},
+  {storage = Expeditions.FireDracadetPetChoice, name = "Fire Dracadet"},
+  {storage = Expeditions.StoneDracadetPetChoice3, name = "Stone Dracadet [3]"},
+  {storage = Expeditions.StoneDracadetPetChoice2, name = "Stone Dracadet [2]"},
+  {storage = Expeditions.StoneDracadetPetChoice, name = "Stone Dracadet"},
+  {storage = Expeditions.SwampDracadetPetChoice3, name = "Swamp Dracadet [3]"},
+  {storage = Expeditions.SwampDracadetPetChoice2, name = "Swamp Dracadet [2]"},
+  {storage = Expeditions.SwampDracadetPetChoice0, name = "Swamp Dracadet"},
+  {storage = Expeditions.BlackDracadetPetChoice3, name = "Black Dracadet [3]"},
+  {storage = Expeditions.BlackDracadetPetChoice2, name = "Black Dracadet [2]"},
+  {storage = Expeditions.BlackDracadetPetChoice, name = "Black Dracadet"},
+  {storage = Expeditions.NormalFamiliarChoice, name = "Knight Familiar"},
+}
+
+local function getSelectedFamiliarName(player)
+  local selectedChoice = player:getStorageValue(pet_name)
+  if selectedChoice and selectedChoice > 0 then
+    local choiceName = familiarChoiceNames[selectedChoice]
+    if choiceName then
+      return choiceName
+    end
+  end
+
+  for _, entry in ipairs(familiarSummons) do
+    if player:getStorageValue(entry.storage) == 1 then
+      return entry.name
+    end
+  end
+
+  return "Knight Familiar"
+end
+
+local function expireFamiliar(petId, playerId)
+  local pet = Creature(petId)
+  if not pet then
+    return
+  end
+
+  local master = pet:getMaster()
+  if not master or master:getId() ~= playerId then
+    return
+  end
+
+  local player = Player(playerId)
+  if player and player:getStorageValue(pet_id) == petId then
+    player:setStorageValue(pet_id, 0)
+    player:setStorageValue(cooldown_storage, os.time() + familiar_cooldown)
+    player:sendTextMessage(MESSAGE_INFO_DESCR, "Your Familiar has vanished. You can summon it again in 1 minute.")
+  end
+
+  pet:remove()
+end
 
 function createPet(cid, petName)
   local player = Player(cid)
   if not player then
     return
   end
-
-  local vocationId = getPlayerVocation(player)
-  local vocationBaseId = player:getVocation():getId()
 
   local summons = player:getSummons()
   for _, summon in ipairs(summons) do
@@ -42,189 +118,14 @@ function createPet(cid, petName)
   end
 
   local pet = nil
+  local summonName = petName
+  if summonName == nil or summonName == "" then
+    summonName = getSelectedFamiliarName(player)
+  end
 
-  if vocationId == VOCATION.ID.SORCERER or vocationBaseId == VOCATION.ID.MASTER_SORCERER then
-    if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Frost Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Frost Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Frost Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Black Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Black Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Black Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice0) == 1 then
-      pet = Game.createMonster("Swamp Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Stone Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Stone Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Stone Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Fire Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Fire Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Fire Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-      pet = Game.createMonster("Sorcerer Familiar", player:getPosition())
-    else
-      pet = Game.createMonster("Sorcerer Familiar", player:getPosition())
-    end
-  elseif vocationId == VOCATION.ID.DRUID or vocationBaseId == VOCATION.ID.ELDER_DRUID then
-    if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Frost Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Frost Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Frost Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Black Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Black Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Black Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice0) == 1 then
-      pet = Game.createMonster("Swamp Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Stone Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Stone Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Stone Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Fire Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Fire Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Fire Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-      pet = Game.createMonster("Druid Familiar", player:getPosition())
-    else
-      pet = Game.createMonster("Druid Familiar", player:getPosition())
-    end
-  elseif vocationId == VOCATION.ID.KNIGHT or vocationBaseId == VOCATION.ID.ELITE_KNIGHT then
-    if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Frost Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Frost Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Frost Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Black Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Black Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Black Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice0) == 1 then
-      pet = Game.createMonster("Swamp Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Stone Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Stone Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Stone Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Fire Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Fire Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Fire Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-      pet = Game.createMonster("Knight Familiar", player:getPosition())
-    else
-      pet = Game.createMonster("Knight Familiar", player:getPosition())
-    end
-  elseif vocationId == VOCATION.ID.PALADIN or vocationBaseId == VOCATION.ID.ROYAL_PALADIN then
-    if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Frost Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Frost Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Frost Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Black Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Black Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Black Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice0) == 1 then
-      pet = Game.createMonster("Swamp Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Stone Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Stone Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Stone Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Fire Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Fire Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Fire Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-      pet = Game.createMonster("Paladin Familiar", player:getPosition())
-    else
-      pet = Game.createMonster("Paladin Familiar", player:getPosition())
-    end
-  elseif vocationId == VOCATION.ID.ILLUSIONIST or vocationBaseId == VOCATION.ID.ARCH_ILLUSIONIST then
-    if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Frost Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Frost Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Frost Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Black Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Black Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Black Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Swamp Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice0) == 1 then
-      pet = Game.createMonster("Swamp Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Stone Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Stone Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Stone Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-      pet = Game.createMonster("Fire Dracadet [3]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-      pet = Game.createMonster("Fire Dracadet [2]", player:getPosition())
-    elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-      pet = Game.createMonster("Fire Dracadet", player:getPosition())
-    elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-      pet = Game.createMonster("Illusionist Familiar", player:getPosition())
-    else
-      pet = Game.createMonster("Illusionist Familiar", player:getPosition())
-    end
-  elseif vocationId == VOCATION.ID.NONE then
-    player:sendTextMessage(MESSAGE_INFO_DESCR, "You need a vocation to summon a Familiar.")
+  pet = Game.createMonster(summonName, player:getPosition())
+  if not pet and summonName ~= "Knight Familiar" then
+    pet = Game.createMonster("Knight Familiar", player:getPosition())
   end
 
   if pet ~= nil then
@@ -236,8 +137,8 @@ function createPet(cid, petName)
     pet:setStorageValue(pet_experience, 0) 
     pet:setStorageValue(pet_level, 1)
     player:setStorageValue(pet_id, pet:getId())
-    player:setStorageValue(pet_name, petName)
-    player:setStorageValue(cooldown_storage, os.time() + cooldown_duration)
+    player:setStorageValue(cooldown_storage, os.time() + familiar_total_wait)
+    addEvent(expireFamiliar, familiar_duration * 1000, pet:getId(), player:getId())
     player:sendTextMessage(MESSAGE_INFO_DESCR, "You have summoned your Familiar.")
   else
     player:sendTextMessage(MESSAGE_INFO_DESCR, "Unable to create the Familiar.")
@@ -276,7 +177,7 @@ end
 local storageGet = TalkAction("!summonfamiliar")
 
 storageGet.onSay = function(player, words)
-  if player:getLevel() >= 200 then
+  if player:getLevel() >= 1 then
   if words == "!summonfamiliar" then
     local playerPos = player:getPosition()
     local summons = Game.getSpectators(playerPos, false, true, 1, 1, 1, 1)
@@ -287,191 +188,7 @@ storageGet.onSay = function(player, words)
       end
     end
     loadPlayerPet(player)
-    local vocation = player:getVocation()
-    local petName = ""
-    if vocation == VOCATION.ID.KNIGHT or vocation == VOCATION.ID.ELITE_KNIGHT then
-      if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-        petName = "Frost Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-        petName = "Frost Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-        petName = "Frost Dracadet"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-        petName = "Black Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-        petName = "Black Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-        petName = "Black Dracadet"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-        petName = "Swamp Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-        petName = "Swamp Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice) == 1 then
-        petName = "Swamp Dracadet"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-        petName = "Stone Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-        petName = "Stone Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-        petName = "Stone Dracadet"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-        petName = "Fire Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-        petName = "Fire Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-        petName = "Fire Dracadet"
-      elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-        petName = "Knight Familiar"
-      else
-         petName = "Knight Familiar"
-      end
-    elseif vocation == VOCATION.ID.SORCERER or vocation == VOCATION.ID.MASTER_SORCERER then
-      if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-        petName = "Frost Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-        petName = "Frost Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-        petName = "Frost Dracadet"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-        petName = "Black Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-        petName = "Black Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-        petName = "Black Dracadet"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-        petName = "Swamp Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-        petName = "Swamp Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice) == 1 then
-        petName = "Swamp Dracadet"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-        petName = "Stone Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-        petName = "Stone Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-        petName = "Stone Dracadet"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-        petName = "Fire Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-        petName = "Fire Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-        petName = "Fire Dracadet"
-      elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-        petName = "Sorcerer Familiar"
-      else
-        petName = "Sorcerer Familiar"
-      end
-    elseif vocation == VOCATION.ID.DRUID or vocation == VOCATION.ID.ELDER_DRUID then
-      if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-        petName = "Frost Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-        petName = "Frost Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-        petName = "Frost Dracadet"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-        petName = "Black Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-        petName = "Black Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-        petName = "Black Dracadet"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-        petName = "Swamp Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-        petName = "Swamp Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice) == 1 then
-        petName = "Swamp Dracadet"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-        petName = "Stone Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-        petName = "Stone Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-        petName = "Stone Dracadet"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-        petName = "Fire Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-        petName = "Fire Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-        petName = "Fire Dracadet"
-      elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-        petName = "Druid Familiar"
-      else
-        petName = "Druid Familiar"
-      end
-    elseif vocation == VOCATION.ID.PALADIN or vocation == VOCATION.ID.ROYAL_PALADIN then
-      if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-        petName = "Frost Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-        petName = "Frost Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-        petName = "Frost Dracadet"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-        petName = "Black Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-        petName = "Black Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-        petName = "Black Dracadet"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-        petName = "Swamp Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-        petName = "Swamp Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice) == 1 then
-        petName = "Swamp Dracadet"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-        petName = "Stone Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-        petName = "Stone Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-        petName = "Stone Dracadet"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-        petName = "Fire Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-        petName = "Fire Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-        petName = "Fire Dracadet"
-      elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-        petName = "Paladin Familiar"
-      else
-        petName = "Paladin Familiar"
-      end
-    elseif vocation == VOCATION.ID.ILLUSIONIST or vocation == VOCATION.ID.ARCH_ILLUSIONIST then
-      if player:getStorageValue(Expeditions.FrostDracadetPetChoice3) == 1 then
-        petName = "Frost Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice2) == 1 then
-        petName = "Frost Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FrostDracadetPetChoice) == 1 then
-        petName = "Frost Dracadet"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice3) == 1 then
-        petName = "Black Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice2) == 1 then
-        petName = "Black Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.BlackDracadetPetChoice) == 1 then
-        petName = "Black Dracadet"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice3) == 1 then
-        petName = "Swamp Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice2) == 1 then
-        petName = "Swamp Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.SwampDracadetPetChoice) == 1 then
-        petName = "Swamp Dracadet"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice3) == 1 then
-        petName = "Stone Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice2) == 1 then
-        petName = "Stone Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.StoneDracadetPetChoice) == 1 then
-        petName = "Stone Dracadet"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice3) == 1 then
-        petName = "Fire Dracadet [3]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice2) == 1 then
-        petName = "Fire Dracadet [2]"
-      elseif player:getStorageValue(Expeditions.FireDracadetPetChoice) == 1 then
-        petName = "Fire Dracadet"
-      elseif player:getStorageValue(Expeditions.NormalFamiliarChoice) == 1 then
-        petName = "Illusionist Familiar"
-      else
-        petName = "Illusionist Familiar"
-      end
-    elseif vocation == VOCATION.ID.NONE then
-      player:sendTextMessage(MESSAGE_INFO_DESCR, "You need a vocation to summon a Familiar.")
-    end
+    local petName = getSelectedFamiliarName(player)
     createPet(player, petName)
     return false
   end
@@ -545,6 +262,25 @@ function showFamiliarChoiceWindow(player)
     modal:addButton(101, "Cancel")
     modal:sendToPlayer(player)
 end
+
+local familiarSummonNames = {
+  [1] = "Knight Familiar",
+  [2] = "Black Dracadet",
+  [3] = "Black Dracadet [2]",
+  [4] = "Black Dracadet [3]",
+  [5] = "Frost Dracadet",
+  [6] = "Frost Dracadet [2]",
+  [7] = "Frost Dracadet [3]",
+  [8] = "Swamp Dracadet",
+  [9] = "Swamp Dracadet [2]",
+  [10] = "Swamp Dracadet [3]",
+  [11] = "Stone Dracadet",
+  [12] = "Stone Dracadet [2]",
+  [13] = "Stone Dracadet [3]",
+  [14] = "Fire Dracadet",
+  [15] = "Fire Dracadet [2]",
+  [16] = "Fire Dracadet [3]",
+}
 
 familiarChoiceModal.onSay = function(player, words, param)
     showFamiliarChoiceWindow(player)

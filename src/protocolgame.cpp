@@ -835,6 +835,11 @@ void ProtocolGame::parseAutoWalk(NetworkMessage& msg)
 		return;
 	}
 
+	if (player->isMovementBlocked()) {
+		player->sendCancelWalk();
+		return;
+	}
+
 	addGameTask(&Game::playerAutoWalk, player->getID(), std::move(path));
 }
 

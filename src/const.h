@@ -116,7 +116,6 @@ enum ShootType_t : uint8_t {
 	CONST_ANI_DEATH = 11,
 	CONST_ANI_LARGEROCK = 12,
 	CONST_ANI_SNOWBALL = 13,
-	CONST_ANI_ROSA = 116,
 	CONST_ANI_POWERBOLT = 14,
 	CONST_ANI_POISON = 15,
 	CONST_ANI_INFERNALBOLT = 16,
@@ -167,6 +166,7 @@ enum ShootType_t : uint8_t {
 	CONST_ANI_ARCANE_ARROW = 93,
 	CONST_ANI_WATER_BOLT = 94,
 	CONST_ANI_ARCANE_BOLT = 95,
+	CONST_ANI_ROSA = 116,
 
 	// for internal use, don't send to client
 	CONST_ANI_WEAPONTYPE = 0xFE, // 254
@@ -376,7 +376,6 @@ enum Ammo_t : uint8_t {
 	AMMO_THROWINGKNIFE,
 	AMMO_STONE,
 	AMMO_SNOWBALL,
-	AMMO_ROSA,
 };
 
 enum WeaponAction_t : uint8_t {

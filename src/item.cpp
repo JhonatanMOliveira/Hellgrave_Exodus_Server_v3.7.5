@@ -183,15 +183,6 @@ bool Item::applyRarityEffects(Item* item, int rarityId) {
             {SKILL_MAGLEVEL, "rarity_maglevelSkill", "Magic"}
         };
 
-        std::vector<std::tuple<int, std::string, std::string>> specialSkillTypes = {
-            {SPECIALSKILL_CRITICALHITCHANCE, "rarity_criticalHitChance", "Critical Chance"},
-            {SPECIALSKILL_CRITICALHITAMOUNT, "rarity_criticalHitAmount", "Critical Hit"},
-            {SPECIALSKILL_MANALEECHCHANCE, "rarity_manaLeechChance", "Mana Chance"},
-            {SPECIALSKILL_MANALEECHAMOUNT, "rarity_manaLeechAmount", "Mana Amount"},
-            {SPECIALSKILL_LIFELEECHCHANCE, "rarity_lifeLeechChance", "Life Chance"},
-            {SPECIALSKILL_LIFELEECHAMOUNT, "rarity_lifeLeechAmount", "Life Amount"}
-        };
-
         std::vector<std::tuple<CombatType_t, std::string, std::string>> elementTypes = {
             {COMBAT_FIREDAMAGE,  "rarity_elementfire",  "Fire"},
             {COMBAT_ICEDAMAGE,   "rarity_elementice",   "Ice"},
@@ -232,66 +223,35 @@ bool Item::applyRarityEffects(Item* item, int rarityId) {
         }
 
         std::string specialsDesc;
-		bool criticalApplied = false;
-		bool manaApplied = false;
-		bool lifeApplied = false;
+        struct SpecialGroup {
+            const char* chanceKey;
+            const char* amountKey;
+            const char* label;
+        };
 
-		for (int i = 0; i < attrCounts.numSpecials && i < (int)specialSkillTypes.size(); ++i) {
-    		auto [specialId, key, name] = specialSkillTypes[i];
-    	if (specialId == SPECIALSKILL_CRITICALHITCHANCE || specialId == SPECIALSKILL_CRITICALHITAMOUNT) {
-        	if (!criticalApplied) {
-            	const auto& range = absorptionBonuses[rarityId - 1];
-            	int bonus = uniform_random(range.first, range.second);
-            	std::string critChanceKey = "rarity_criticalHitChance";
-            	std::string critHitKey    = "rarity_criticalHitAmount";
-            	item->setCustomAttribute(critChanceKey, static_cast<int64_t>(bonus));
-            	item->setCustomAttribute(critHitKey,    static_cast<int64_t>(bonus));
-            	specialsDesc += (specialsDesc.empty() ? "" : ", ") +
-                            std::string("Critical Chance +") + std::to_string(bonus) + "%";
-            	specialsDesc += ", " +
-                            std::string("Critical Hit +") + std::to_string(bonus) + "%";
-            	criticalApplied = true;
-        	}
-        	continue;
-    	}
-    	if (specialId == SPECIALSKILL_MANALEECHCHANCE || specialId == SPECIALSKILL_MANALEECHAMOUNT) {
-        	if (!manaApplied) {
-            	const auto& range = absorptionBonuses[rarityId - 1];
-            	int bonus = uniform_random(range.first, range.second);
-            	std::string manaChanceKey = "rarity_manaLeechChance";
-            	std::string manaAmountKey = "rarity_manaLeechAmount";
-            	item->setCustomAttribute(manaChanceKey, static_cast<int64_t>(bonus));
-            	item->setCustomAttribute(manaAmountKey, static_cast<int64_t>(bonus));
-            	specialsDesc += (specialsDesc.empty() ? "" : ", ") +
-                            std::string("Mana Chance +") + std::to_string(bonus) + "%";
-            	specialsDesc += ", " +
-                            std::string("Mana Amount +") + std::to_string(bonus) + "%";
-            	manaApplied = true;
-        	}
-        	continue;
-    	}
-    	if (specialId == SPECIALSKILL_LIFELEECHCHANCE || specialId == SPECIALSKILL_LIFELEECHAMOUNT) {
-        	if (!lifeApplied) {
-            	const auto& range = absorptionBonuses[rarityId - 1];
-            	int bonus = uniform_random(range.first, range.second);
-            	std::string lifeChanceKey = "rarity_lifeLeechChance";
-            	std::string lifeAmountKey = "rarity_lifeLeechAmount";
-            	item->setCustomAttribute(lifeChanceKey, static_cast<int64_t>(bonus));
-            	item->setCustomAttribute(lifeAmountKey, static_cast<int64_t>(bonus));
-            	specialsDesc += (specialsDesc.empty() ? "" : ", ") +
-                            std::string("Life Chance +") + std::to_string(bonus) + "%";
-            	specialsDesc += ", " +
-                            std::string("Life Amount +") + std::to_string(bonus) + "%";
-            	lifeApplied = true;
-        	}
-        	continue;
-    	}
-    	const auto& range = absorptionBonuses[rarityId - 1];
-    	int bonus = uniform_random(range.first, range.second);
-    	std::string attrKey = key;
-    	item->setCustomAttribute(attrKey, static_cast<int64_t>(bonus));
-    	specialsDesc += (specialsDesc.empty() ? "" : ", ") + name + " +" + std::to_string(bonus) + "%";
-		}
+        std::vector<SpecialGroup> specialGroups = {
+            {"rarity_criticalHitChance", "rarity_criticalHitAmount", "Critical"},
+            {"rarity_manaLeechChance", "rarity_manaLeechAmount", "Mana"},
+            {"rarity_lifeLeechChance", "rarity_lifeLeechAmount", "Life"}
+        };
+
+        std::mt19937 specialSkills(std::random_device{}());
+        std::shuffle(specialGroups.begin(), specialGroups.end(), specialSkills);
+
+        const auto& range = absorptionBonuses[rarityId - 1];
+        for (int i = 0; i < attrCounts.numSpecials && i < static_cast<int>(specialGroups.size()); ++i) {
+            const auto& group = specialGroups[i];
+            int bonus = uniform_random(range.first, range.second);
+            std::string chanceKey = group.chanceKey;
+            std::string amountKey = group.amountKey;
+            item->setCustomAttribute(chanceKey, static_cast<int64_t>(bonus));
+            item->setCustomAttribute(amountKey, static_cast<int64_t>(bonus));
+
+            specialsDesc += (specialsDesc.empty() ? "" : ", ");
+            specialsDesc += std::string(group.label) + " Chance +" + std::to_string(bonus) + "%";
+            specialsDesc += ", ";
+            specialsDesc += std::string(group.label) + " Amount +" + std::to_string(bonus) + "%";
+        }
 
         std::string elementDesc;
 		if (isWeapon && it.attack > 0 && attrCounts.numElements > 0) {

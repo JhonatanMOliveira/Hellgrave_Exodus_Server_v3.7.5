@@ -145,7 +145,7 @@ function gameUpgradesInitialize()
 	addUpgrade("Skills", "Club Fighting", "Increases your club fighting skill progress.", "club", 141284)
 	addUpgrade("Skills", "Distance Fighting", "Increases your distance fighting skill progress.", "distance", 141285)
 	addUpgrade("Skills", "Shielding", "Increases your shielding skill progress.", "shield", 141286)
-	addUpgrade("Skills", "Magic Level", "Increases your magic level progress.", "magic", 141287)
+	-- addUpgrade("Skills", "Magic Level", "Increases your magic level progress.", "magic", 141287)
 	addUpgrade("Skills", "Fist Fighting", "Increases your fist fighting skill progress.", "fist", 141288)
 	addUpgrade("Skills", "Fishing", "Increases your fishing skill progress.", "fishing", 141289)
 	addUpgrade("Skills", "Crafting", "Increases your crafting skill progress.", "crafting", 141290)
@@ -237,16 +237,15 @@ local upgradeCostRules = {
         { minLevel = 12, maxLevel = 15, itemId = 29859, initialCount = 1, doublingInterval = 99, basePrice = 3000 },
       }
     },
-    magic = {
-      basePrice = 1000,
-      itemRules = {
-        { minLevel = 1, maxLevel = 2, itemId = 29855, initialCount = 10, doublingInterval = 99, basePrice = 1000 },
-        { minLevel = 3, maxLevel = 4, itemId = 29856, initialCount = 8, doublingInterval = 99, basePrice = 1200 },
-        { minLevel = 5, maxLevel = 7, itemId = 29857, initialCount = 5, doublingInterval = 99, basePrice = 1500 },
-        { minLevel = 8, maxLevel = 11, itemId = 29858, initialCount = 2, doublingInterval = 99, basePrice = 2000 },
-        { minLevel = 12, maxLevel = 15, itemId = 29859, initialCount = 1, doublingInterval = 99, basePrice = 3000 },
-      }
-    },
+    -- magic = {
+    --   basePrice = 1000,
+    --   itemRules = {
+    --     { minLevel = 1, maxLevel = 4, itemId = 29855, initialCount = 10, doublingInterval = 99, basePrice = 1000 },
+    --     { minLevel = 5, maxLevel = 8, itemId = 29856, initialCount = 10, doublingInterval = 99, basePrice = 1500 },
+    --     { minLevel = 9, maxLevel = 12, itemId = 29857, initialCount = 10, doublingInterval = 99, basePrice = 2000 },
+    --     { minLevel = 13, maxLevel = 15, itemId = 29858, initialCount = 10, doublingInterval = 99, basePrice = 3000 },
+    --   }
+    -- },
     fist = {
       basePrice = 1000,
       itemRules = {
@@ -564,7 +563,7 @@ local skillConditionParamMap = {
   club = CONDITION_PARAM_SKILL_CLUB,
   distance = CONDITION_PARAM_SKILL_DISTANCE,
   shield = CONDITION_PARAM_SKILL_SHIELD,
-  magic = CONDITION_PARAM_STAT_MAGICPOINTS,
+  -- magic = CONDITION_PARAM_STAT_MAGICPOINTS,
   fist = CONDITION_PARAM_SKILL_FIST,
   crafting = CONDITION_PARAM_SKILL_CRAFTING,
   woodcutting = CONDITION_PARAM_SKILL_WOODCUTTING,
@@ -626,7 +625,7 @@ local skillMessageNames = {
   club = "Club Fighting",
   distance = "Distance Fighting",
   shield = "Shielding",
-  magic = "Magic Level",
+  -- magic = "Magic Level",
   fist = "Fist Fighting",
   crafting = "Crafting",
   woodcutting = "Woodcutting",

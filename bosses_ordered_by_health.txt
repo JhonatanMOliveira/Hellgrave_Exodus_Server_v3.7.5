@@ -1,0 +1,169 @@
+﻿
+Name                     Experience Health Armor Defense Attack
+----                     ---------- ------ ----- ------- ------
+Munster                          35     58     2       4    -15
+Rottie The Rotworm               40     65     8      11    -60
+Teleskor                         70     80    15      15    -30
+Kraknaknork                     300     80     1       2      0
+Apprentice Sheng                150     95    12      13    -13
+Rotworm Queen                    75    105    10      15    -80
+Kraknaknork's Demon               0    120     0       0   -499
+Big Boss Trolliver              105    150    10      12    -90
+Xenia                           255    200    12      14    -50
+The Horned Fox                  300    265    16      26   -122
+Smuggler Baron Silvertoe        170    280    15      26    -50
+Zomba                           300    300     6      13    -40
+The Big Bad One                 170    300    18      18   -100
+The Snapper                     150    300    13       5    -60
+The Collector                   100    340    25      26   -220
+Barbaria                        355    345    10      13    -70
+Dharalion                       570    380    15      10    -30
+Rukor Zad                       380    380    15      15   -170
+Groam                           180    400    12      20    -99
+Fernfang                        600    400    15      19    -50
+The Blightfather                600    400    25      18   -200
+High Templar Cobrass            515    410    26      26    -80
+Mephiles                        415    415    30      19    -35
+Man in the Cave                 777    485    14      10   -105
+Hide                            240    500    25      20   -140
+Deathbine                       340    525    26      10   -200
+Armenius                        500    550    25      13   -210
+General Murius                  450    550    16      55   -220
+Captain Jones                   620    555     0      50   -100
+Foreman Kneebiter               445    570    15      22   -200
+Inky                            250    600    15      15   -741
+The Bloodtusk                   300    600    40      57   -120
+Hairman The Huge                335    600    25      20   -110
+Yaga The Crone                  375    620    15      14    -90
+Dirtbeard                       375    630    30      35   -125
+The Weakened Count              450    740    30       5   -190
+Necropharus                    1050    750    25       4   -102
+The Old Whopper                 750    785    25      25   -175
+Shardhead                       650    800    25      26   -275
+Diseased Dan                    300    800    20      35   -100
+Esmeralda                       600    800    30      30   -175
+Heoni                           515    900    25      20   -120
+Boogey                          475    930    50      12   -120
+Monstor                         575    960    15      19   -167
+Diseased Bill                   300   1000    20      35   -240
+Glitterscale                    700   1000    25      18   -120
+Diseased Fred                   300   1100    20      35   -150
+The Evil Eye                    750   1200    19      26    -90
+Morik The Gladiator             160   1235    20      19   -200
+The Count                       450   1250    30      26   -945
+Evil Mastermind                 675   1295    30      30    -77
+Zevelon Duskbringer            1800   1400    30      14   -282
+Lethal Lissy                    500   1450    35      45   -250
+Deadeye Devious                 750   1450    35      26   -550
+Ron the Ripper                  500   1500    35      50   -250
+Diblis The Fair                1800   1500    30      10   -380
+Brutus Bloodbeard               795   1555    35      50   -500
+Arachir The Ancient One        1800   1600    30      13   -380
+Sir Valorcrest                 1800   1600    38      26   -380
+Splasher                        500   1700    15      35   -382
+The Bloodweb                   1450   1750    25      57   -250
+Tiquandas Revenge              2635   1800    30      15   -160
+Mad Technomancer                 55   1800    15      46   -120
+Grandfather Tridian            1400   1800    25      54   -100
+Grand Mother Foulscale         1400   1850    27      54   -170
+Sharptooth                     1600   2500    20      26  -1000
+mad mage                       1800   2500    20      46    -78
+Warlord Ruzad                  1700   2500    32      35   -300
+Thul                           2700   2950    15      15  -1354
+Grorlam                        2400   3000    15      20   -300
+Koshei The Deathless              0   3000    20      15   -170
+Gravelord Oshuran              2400   3100    25      54   -250
+The Old Widow                  4200   3200    45      25   -700
+Energized Raging Mage             0   3500    35      30    -78
+Raging Mage                    3250   3500    25      25    -78
+Minishabaal                    4000   3500    25      19   -380
+Battlemaster Zunzu             2500   4000    45      35   -300
+Demodras                       6000   4500    45      10   -235
+Fluffy                         3550   4500    25      35   -648
+The Many                       4000   5000    25      26   -270
+The Axeorcist                  3000   5000    15      12   -275
+Baron Brute                    3000   5025    22      35   -475
+Zarabustor                     8000   5100    20      14   -130
+Fleshslicer                    5500   5700    30      19   -300
+Yakchal                        4400   5750    15      14   -389
+Fatality                       3250   6000    16      19   -205
+Leviathan                      5000   6000    20      45   -298
+Menace                         3250   6000    16      19   -215
+Horestis                       3500   6000    25      26   -592
+Stonecracker                   3500   6500    40      35   -500
+Countess Sorrow               13000   6500    25      26   -360
+Incineron                      3500   7000    25      25      0
+Coldheart                      3500   7000    25      26   -220
+The Plasmother                12000   7500    30      75   -100
+Scorn of the Emperor           4600   7800    45      35   -374
+Spite of the Emperor           5600   8000    45      35   -374
+Lord of the Elements           8000   8000    30      60   -690
+Ungreez                         500   8200    55      19   -480
+Haunter                        4000   8500    25      20   -150
+Dreadwing                      3750   8500    30      30   -250
+Doomhowl                       3750   8500    50      35   -400
+The Dreadorian                 4000   9000    25      26   -370
+The Noxious Spawn              6000   9500    18      26   -250
+Bones                          3750   9500    50      12   -845
+Pythius The Rotten             7000   9500    40      45   -210
+Tremorak                       1300  10000    30      19   -115
+Spider Queen                    120  10000     0       0     -1
+Rocko                          3400  10000    10      18   -190
+The Imperor                    8000  15000    15      26   -660
+Zushuka                        9000  15000    20      13   -560
+Chizzoron The Distorter        4000  16000    70      85   -455
+Dracola                       11000  16200    40      39   -404
+The Handmaiden                 7500  19500    25      26   -800
+Snake God Essence              1350  20000    70      65   -800
+Lizard Abomination             1350  20000    55      60   -550
+Snake Thing                    4600  20000    45      30   -400
+Mr. Punish                     9000  22000    64      72  -1280
+Orshabaal                     10000  22500    90       4  -1990
+Tirecz                         6000  25000    16      19   -410
+Latrivan                      10000  25000    35      45   -878
+Hellgorak                     10000  25850    70      20   -910
+Azerus                         6000  26000    40      13   -900
+Zulazza the Corruptor          9800  28000    96      13  -2100
+Fury of the Emperor           26600  28800    65      55   -689
+Horadron                      18000  30000    55      26      0
+Tanjis                        15000  30000    40      35   -600
+Ushuriel                      10500  31500    50      19  -1088
+Massacre                      20000  32000    15      10  -1200
+Obujos                        20000  35000    40       4  -1200
+Zavarash                      21000  35000    55      14   -600
+Terofar                       24000  40000    55      15      0
+Golgordan                     10000  40000    48      54   -575
+Mawhawk                       14000  45000    55      55   -450
+Annihilon                     15000  46500    60      13  -1707
+Ferumbras                     12000  50000   100      19   -350
+The Pale Count                28000  50000    75      75   -540
+Zoralurk                      30000  55000    55      13  -1013
+Wrath of the Emperor            600  55000    45      35   -374
+Morgaroth                     15000  55000    55      19  -2000
+Glooth Fairy                  19000  59000    30      18  -1900
+Ghazbaran                     15000  60000    55      55  -2191
+Madareth                      10000  75000    48      46      0
+Freegoiz                      35000  80000   188      22  -2520
+Verminor                      35000  80000   188      19  -2520
+Professor Maxxen              15500  90000    30       4  -1000
+Jaul                          30000  90000    40      15  -2000
+Zugurosh                      10000  90500    45      13   -715
+Versperoth                    20000 100000    55      55   -650
+Deep Terror                   35000 100000    30      10   -945
+Bazir                         30000 110000   160      35  -2625
+Apocalypse                    30000 125000   188      13  -2520
+Deathstrike                   40000 200000    25      10   -540
+The Fettered Shatterer        58000 220000    55      26  -3000
+Gnomevil                      45000 250000    25      18   -630
+Infernatil                    85000 270000   165      25  -2860
+The Abomination                8500 285000    25      15   -600
+Mazoran                       50000 290000    25      55  -2500
+Plagirath                     50000 290000    55       4  -1350
+Abyssador                     50000 300000    15      13   -960
+Ferumbras Mortal Shell       100000 300000   100      19      0
+Omrafir                       50000 322000   155       4  -1900
+Prince Drazzak               210000 330000    55       4      0
+Gaz'haragoth                1000000 350000    55      55  -5000
+The Mutated Pumpkin           30000 500000    30      26   -300
+
+

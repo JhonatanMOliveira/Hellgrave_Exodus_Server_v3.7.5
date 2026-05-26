@@ -3411,6 +3411,14 @@ void Player::onAddCondition(ConditionType_t type)
 		dismount();
 	}
 
+	if (type == CONDITION_STUN || type == CONDITION_ROOT) {
+		if (client) {
+			client->sendCancelWalk();
+			client->sendCancelWalk();
+			client->sendCancelWalk();
+		}
+	}
+
 	sendIcons();
 }
 

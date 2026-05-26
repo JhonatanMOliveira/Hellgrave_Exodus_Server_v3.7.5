@@ -377,6 +377,8 @@ enum ConditionType_t {
 	CONDITION_SPELLGROUPCOOLDOWN = 1 << 27,
 	CONDITION_SPLASHED = 1 << 28,
 	CONDITION_BEWITCHED = 1 << 29,
+	CONDITION_STUN = 1U << 30,
+	CONDITION_ROOT = 1U << 31,
 };
 
 enum ConditionId_t : int8_t {

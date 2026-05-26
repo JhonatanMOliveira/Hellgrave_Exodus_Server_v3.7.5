@@ -4,6 +4,13 @@
 	<look type="146" head="100" body="100" legs="119" feet="115" addons="2" />
 	<parameters>
 		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+		simple arrow, 23839, 5;
+		sniper arrow, 7364, 10;
+		spectral bolt, 28140, 15;
+		water bolt, 29493, 20;
+		arcane arrow, 29492, 25 " />
+
 		<parameter key="shop_sellable" value="
 		    RiftLance, 25383, 30000;
 			oriental Shoes, 24637, 15000;

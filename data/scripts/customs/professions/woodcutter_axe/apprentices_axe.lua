@@ -2,29 +2,6 @@ local woodcutterSystem = Action()
 local COOLDOWN_SECONDS = 4
 
 local config = {
-    [26604] = {text = {"Ash Tree is regenerating"}}, 
-    [26605] = {break_chance = 75, loot_chance = 80, lower_tier = 26604, requiredSkill = 5, 
-        normal_loot_table = { -- 80%
-            [1] = {item_id = 26595, count = 1}, 
-        },
-        semi_rare_loot_table = { -- 15%
-            [1] = {item_id = 26595, count = 2}, 
-        },
-        rare_loot_table = { -- 5%
-            [1] = {item_id = 26595, count = 4},
-        },
-    },
-    [26606] = {break_chance = 75, loot_chance = 80, lower_tier = 26605, requiredSkill = 5, 
-        normal_loot_table = { -- 80%
-            [1] = {item_id = 26595, count = 1}, 
-        },
-        semi_rare_loot_table = { -- 15%
-            [1] = {item_id = 26595, count = 2}, 
-        },
-        rare_loot_table = { -- 5%
-            [1] = {item_id = 26595, count = 4},
-        },
-    },
     [26636] = {text = {"Small Tree is regenerating"}}, 
     [26635] = {break_chance = 75, loot_chance = 80, lower_tier = 26636, requiredSkill = 0, 
         normal_loot_table = { -- 80%
@@ -48,6 +25,30 @@ local config = {
             [1] = {item_id = 26593, count = 4},
         },
     },
+    [26604] = {text = {"Ash Tree is regenerating"}}, 
+    [26605] = {break_chance = 75, loot_chance = 80, lower_tier = 26604, requiredSkill = 5, 
+        normal_loot_table = { -- 80%
+            [1] = {item_id = 26595, count = 1}, 
+        },
+        semi_rare_loot_table = { -- 15%
+            [1] = {item_id = 26595, count = 2}, 
+        },
+        rare_loot_table = { -- 5%
+            [1] = {item_id = 26595, count = 4},
+        },
+    },
+    [26606] = {break_chance = 75, loot_chance = 80, lower_tier = 26605, requiredSkill = 5, 
+        normal_loot_table = { -- 80%
+            [1] = {item_id = 26595, count = 1}, 
+        },
+        semi_rare_loot_table = { -- 15%
+            [1] = {item_id = 26595, count = 2}, 
+        },
+        rare_loot_table = { -- 5%
+            [1] = {item_id = 26595, count = 4},
+        },
+    },
+
 
 
 }
@@ -83,6 +84,11 @@ local skillsStages = {
 function woodcutterSystem.onUse(cid, item, fromPosition, itemEx, toPosition)
     local player = Player(cid)
     if not player then
+        return true
+    end
+
+    if not ProfessionSystem:canUseTool(player, 3) then
+        player:popupFYI(ProfessionSystem:getToolRestrictedMessage(player))
         return true
     end
     

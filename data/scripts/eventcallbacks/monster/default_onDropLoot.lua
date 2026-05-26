@@ -107,21 +107,21 @@ local function hasRelevantStats(item)
 end
 
 local rarities = {
-    { id = 1,  chance = 15.0, name = "Common" },
-    { id = 2,  chance = 14.0, name = "Uncommon" },
-    { id = 3,  chance = 12.0, name = "Rare" },
+    { id = 1,  chance = 32.0, name = "Common" },
+    { id = 2,  chance = 25.0, name = "Uncommon" },
+    { id = 3,  chance = 15.0, name = "Rare" },
     { id = 4,  chance = 10.0, name = "Epic" },
-    { id = 5,  chance =  8.5, name = "Legendary" },
-    { id = 6,  chance =  7.0, name = "Exotic" },
-    { id = 7,  chance =  6.0, name = "Mythic" },
-    { id = 8,  chance =  4.5, name = "Chaos" },
-    { id = 9,  chance =  3.8, name = "Eternal" },
-    { id = 10, chance =  3.0, name = "Divine" },
-    { id = 11, chance =  2.3, name = "Phantasmal" },
-    { id = 12, chance =  1.7, name = "Celestial" },
-    { id = 13, chance =  1.2, name = "Cosmic" },
-    { id = 14, chance =  0.8, name = "Abyssal" },
-    { id = 15, chance =  0.5, name = "Transcendent" }
+    { id = 5,  chance =  7.0, name = "Legendary" },
+    { id = 6,  chance =  4.0, name = "Exotic" },
+    { id = 7,  chance =  3.0, name = "Mythic" },
+    { id = 8,  chance =  2.0, name = "Chaos" },
+    { id = 9,  chance =  1.0, name = "Eternal" },
+    { id = 10, chance =  0.5, name = "Divine" },
+    { id = 11, chance =  0.3, name = "Phantasmal" },
+    { id = 12, chance =  0.2, name = "Celestial" },
+    { id = 13, chance =  0.1, name = "Cosmic" },
+    { id = 14, chance =  0.05, name = "Abyssal" },
+    { id = 15, chance =  0.05, name = "Transcendent" }
 }
 
 local function rollRarity()

@@ -4,12 +4,7 @@
 	<look type="80" />
 	<parameters>
 		<parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="
-			bonelord shield, 2518, 7000;
-			noble armor, 2486, 8000;
-			obsidian lance, 2425, 3000;
-			spike sword, 2383, 8000;
-			war hammer, 2391, 10000 " />
+
 		<parameter key="shop_sellable" value="
 			angelic axe, 7436, 5000;
 			blue robe, 2656, 10000;

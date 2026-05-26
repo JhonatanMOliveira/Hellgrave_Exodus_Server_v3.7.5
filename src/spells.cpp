@@ -556,6 +556,12 @@ bool Spell::playerSpellCheck(Player* player) const
 		return false;
 	}
 
+	if (player->hasCondition(CONDITION_STUN)) {
+		player->sendCancelMessage(RETURNVALUE_NOTPOSSIBLE);
+		g_game.addMagicEffect(player->getPosition(), CONST_ME_POFF);
+		return false;
+	}
+
 	if (player->hasFlag(PlayerFlag_IgnoreSpellCheck)) {
 		return true;
 	}

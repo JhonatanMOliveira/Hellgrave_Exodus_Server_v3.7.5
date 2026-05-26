@@ -2241,15 +2241,6 @@ void Monster::dropLoot(Container* corpse, Creature* mostDamageCreature)
             {SKILL_MAGLEVEL, "rarity_maglevelSkill", "Magic"}
         };
 
-        std::vector<std::tuple<int, std::string, std::string>> specialSkillTypes = {
-            {SPECIALSKILL_CRITICALHITCHANCE, "rarity_criticalHitChance", "Critical Chance"},
-            {SPECIALSKILL_CRITICALHITAMOUNT, "rarity_criticalHitAmount", "Critical Hit"},
-            {SPECIALSKILL_MANALEECHCHANCE, "rarity_manaLeechChance", "Mana Chance"},
-            {SPECIALSKILL_MANALEECHAMOUNT, "rarity_manaLeechAmount", "Mana Amount"},
-            {SPECIALSKILL_LIFELEECHCHANCE, "rarity_lifeLeechChance", "Life Chance"},
-            {SPECIALSKILL_LIFELEECHAMOUNT, "rarity_lifeLeechAmount", "Life Amount"}
-        };
-
         std::vector<std::tuple<CombatType_t, std::string, std::string>> elementTypes = {
             {COMBAT_FIREDAMAGE,  "rarity_elementfire",  "Fire"},
             {COMBAT_ICEDAMAGE,   "rarity_elementice",   "Ice"},
@@ -2290,70 +2281,36 @@ void Monster::dropLoot(Container* corpse, Creature* mostDamageCreature)
         }
 
         std::string specialsDesc;
-		bool criticalApplied = false;
-		bool manaApplied = false;
-		bool lifeApplied = false;
-		
-		std::mt19937 specialSkills(std::random_device{}());
-		std::uniform_int_distribution<int> dist(1, 3);
-		int randomPick = dist(specialSkills);
-		
-		switch (randomPick) {
-			case 1: {
-				if (!criticalApplied) {
-					const auto& range = absorptionBonuses[rarityId - 1];
-					int bonus = uniform_random(range.first, range.second);
-					std::string keyChance = "rarity_criticalHitChance";
-					std::string keyAmount = "rarity_criticalHitAmount";
-		
-					item->setCustomAttribute(keyChance, static_cast<int64_t>(bonus));
-					item->setCustomAttribute(keyAmount, static_cast<int64_t>(bonus));
-		
-					specialsDesc += (specialsDesc.empty() ? "" : ", ")
-								  + std::string("Critical Chance +") + std::to_string(bonus) + "%";
-					specialsDesc += ", Critical Hit +" + std::to_string(bonus) + "%";
-		
-					criticalApplied = true;
-				}
-				break;
-			}
-			case 2: {
-				if (!manaApplied) {
-					const auto& range = absorptionBonuses[rarityId - 1];
-					int bonus = uniform_random(range.first, range.second);
-					std::string keyChance = "rarity_manaLeechChance";
-					std::string keyAmount = "rarity_manaLeechAmount";
-		
-					item->setCustomAttribute(keyChance, static_cast<int64_t>(bonus));
-					item->setCustomAttribute(keyAmount, static_cast<int64_t>(bonus));
-		
-					specialsDesc += (specialsDesc.empty() ? "" : ", ")
-								  + std::string("Mana Chance +") + std::to_string(bonus) + "%";
-					specialsDesc += ", Mana Amount +" + std::to_string(bonus) + "%";
-		
-					manaApplied = true;
-				}
-				break;
-			}
-			case 3: {
-				if (!lifeApplied) {
-					const auto& range = absorptionBonuses[rarityId - 1];
-					int bonus = uniform_random(range.first, range.second);
-					std::string keyChance = "rarity_lifeLeechChance";
-					std::string keyAmount = "rarity_lifeLeechAmount";
-		
-					item->setCustomAttribute(keyChance, static_cast<int64_t>(bonus));
-					item->setCustomAttribute(keyAmount, static_cast<int64_t>(bonus));
-		
-					specialsDesc += (specialsDesc.empty() ? "" : ", ")
-								  + std::string("Life Chance +") + std::to_string(bonus) + "%";
-					specialsDesc += ", Life Amount +" + std::to_string(bonus) + "%";
-		
-					lifeApplied = true;
-				}
-				break;
-			}
-		}
+        struct SpecialGroup {
+            const char* chanceKey;
+            const char* amountKey;
+            const char* label;
+        };
+
+        std::vector<SpecialGroup> specialGroups = {
+            {"rarity_criticalHitChance", "rarity_criticalHitAmount", "Critical"},
+            {"rarity_manaLeechChance", "rarity_manaLeechAmount", "Mana"},
+            {"rarity_lifeLeechChance", "rarity_lifeLeechAmount", "Life"}
+        };
+
+        std::mt19937 specialSkills(std::random_device{}());
+        std::shuffle(specialGroups.begin(), specialGroups.end(), specialSkills);
+
+        const auto& range = absorptionBonuses[rarityId - 1];
+        for (int i = 0; i < attrCounts.numSpecials && i < static_cast<int>(specialGroups.size()); ++i) {
+            const auto& group = specialGroups[i];
+            int bonus = uniform_random(range.first, range.second);
+
+            std::string chanceKey = group.chanceKey;
+            std::string amountKey = group.amountKey;
+            item->setCustomAttribute(chanceKey, static_cast<int64_t>(bonus));
+            item->setCustomAttribute(amountKey, static_cast<int64_t>(bonus));
+
+            specialsDesc += (specialsDesc.empty() ? "" : ", ");
+            specialsDesc += std::string(group.label) + " Chance +" + std::to_string(bonus) + "%";
+            specialsDesc += ", ";
+            specialsDesc += std::string(group.label) + " Amount +" + std::to_string(bonus) + "%";
+        }
 
         std::string elementDesc;
 		if (isWeapon && it.attack > 0 && attrCounts.numElements > 0) {

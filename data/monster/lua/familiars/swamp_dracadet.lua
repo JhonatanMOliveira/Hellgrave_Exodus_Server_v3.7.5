@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -70,6 +70,7 @@ monster.loot = {
 }
 
 monster.attacks = {
+	{name ="swamp dracadet pacify", interval = 8000, chance = 100, target = true},
 	{name ="melee", type= COMBAT_EARTHDAMAGE, interval = 2000, chance = 100, minDamage = -100, maxDamage = -230},
 	{name ="combat", interval = 2000, chance = 30, type = COMBAT_EARTHDAMAGE, minDamage = -130, maxDamage = -300, range = 7, radius = 4, shootEffect = 83, effect = 342, target = true},
 	{name ="combat", interval = 2000, chance = 22, type = COMBAT_EARTHDAMAGE, minDamage = -150, maxDamage = -350, length = 8, spread = 3, effect = 304, target = false}

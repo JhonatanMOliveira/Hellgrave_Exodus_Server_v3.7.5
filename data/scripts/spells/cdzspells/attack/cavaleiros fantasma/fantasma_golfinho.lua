@@ -1,14 +1,14 @@
 local combat = Combat()
-combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_EARTHDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_GROUNDSHAKER)
+combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
+combat:setParameter(COMBAT_PARAM_EFFECT, 417)
 combat:setParameter(COMBAT_PARAM_BLOCKARMOR, true)
 combat:setParameter(COMBAT_PARAM_BLOCKSHIELD, true)
 
 function onGetFormulaValues(player, skill, attack, factor)
     local level = player:getLevel()
     local magiclevel = player:getMagicLevel()
-    local min = (level / 5) + (magiclevel * 0.1) + (skill * attack * 0.01) * 3
-    local max = (level / 5) + (magiclevel * 0.1) + (skill * attack * 0.02) * 3
+    local min = (level / 3) + (skill + attack) * (magiclevel / 3)
+    local max = (level / 3) + (skill + attack) * (magiclevel / 3)
     return -min, -max
 end
 
@@ -24,11 +24,10 @@ spell:name("Golpe de Golfinho")
 spell:words("golpe golfinho")
 spell:group("attack")
 spell:vocation("Fantasma Golfinho")
-spell:id(7)
-spell:cooldown(1000)
-spell:groupCooldown(1000)
+spell:id(31)
+spell:cooldown(3000)
 spell:level(50)
-spell:mana(110)
+spell:mana(150)
 spell:isSelfTarget(false)  -- Evita que a magia ataque o próprio jogador
 spell:needTarget(true) 
 spell:isPremium(true)

@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -49,7 +49,7 @@ monster.flags = {
 	targetDistance = 1,
 	runHealth = 0,
 	healthHidden = false,
-	isBlockable = false,
+	isBlockable = true,
 	canWalkOnEnergy = true,
 	canWalkOnFire = true,
 	canWalkOnPoison = true,
@@ -70,16 +70,10 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{name ="melee", type= COMBAT_PHYSICALDAMAGE, interval = 2000, chance = 100, minDamage = -100, maxDamage = -230},
-	{name ="combat", interval = 2000, chance = 30, type = COMBAT_ICEDAMAGE, minDamage = -130, maxDamage = -300, range = 7, radius = 4, shootEffect = 29, effect = 282, target = true},
-	{name ="combat", interval = 2000, chance = 22, type = COMBAT_ICEDAMAGE, minDamage = -150, maxDamage = -350, length = 8, spread = 3, effect = 308, target = false}
+	{name ="frost dracadet paralyze", interval = 8000, chance = 100, target = true},
 }
 
-monster.defenses = {
-	defense = 55,
-	armor = 55,
-	{name ="combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 400, maxDamage = 400, effect = 185, target = false}
-}
+
 
 monster.elements = {
 	{type = COMBAT_PHYSICALDAMAGE, percent = 0},

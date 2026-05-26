@@ -37,7 +37,7 @@ monster.events = {
 }
 monster.flags = {
 	summonable = false,
-	attackable = true,
+	attackable = false,
 	hostile = false,
 	convinceable = true,
 	pushable = false,
@@ -70,6 +70,7 @@ monster.loot = {
 }
 
 monster.attacks = {
+	{name ="drunk", interval = 8000, chance = 100, target = true, range = 7, effect = CONST_ME_MAGIC_RED, duration = 10000},
 	{name ="melee", type= COMBAT_FIREDAMAGE, interval = 2000, chance = 100, minDamage = -100, maxDamage = -230},
 	{name ="combat", interval = 2000, chance = 30, type = COMBAT_FIREDAMAGE, minDamage = -130, maxDamage = -300, range = 7, radius = 4, shootEffect = 84, effect = 276, target = true},
 	{name ="combat", interval = 2000, chance = 22, type = COMBAT_FIREDAMAGE, minDamage = -150, maxDamage = -350, length = 8, spread = 3, effect = 279, target = false}
