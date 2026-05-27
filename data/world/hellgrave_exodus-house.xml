@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<houses>
+	<house name="Mordragor Church" houseid="1" entryx="1089" entryy="380" entryz="5" rent="0" townid="2" size="71" />
+	<house name="Mordragor Castle" houseid="2" entryx="1057" entryy="392" entryz="7" rent="0" townid="2" size="429" />
+	<house name="Mordragor Flat 1" houseid="3" entryx="1107" entryy="408" entryz="7" rent="0" townid="2" size="4" />
+	<house name="Mordragor Flat 2" houseid="4" entryx="1108" entryy="408" entryz="7" rent="0" townid="2" size="4" />
+	<house name="Mordragor Flat 3" houseid="5" entryx="1106" entryy="404" entryz="7" rent="0" townid="2" size="6" />
+	<house name="Mordragor Flat 4" houseid="6" entryx="1107" entryy="402" entryz="7" rent="0" townid="2" size="8" />
+	<house name="Mordragor Flat 5" houseid="7" entryx="1109" entryy="402" entryz="7" rent="0" townid="2" size="6" />
+	<house name="Mordragor Flat 6" houseid="8" entryx="1109" entryy="405" entryz="7" rent="0" townid="2" size="6" />
+	<house name="Mordragor Flat 7" houseid="9" entryx="1107" entryy="402" entryz="6" rent="0" townid="2" size="8" />
+	<house name="Mordragor Flat 8" houseid="10" entryx="1109" entryy="402" entryz="6" rent="0" townid="2" size="6" />
+	<house name="Mordragor Flat 9" houseid="11" entryx="1106" entryy="405" entryz="6" rent="0" townid="2" size="6" />
+	<house name="Mordragor Flat 10" houseid="12" entryx="1106" entryy="405" entryz="6" rent="0" townid="2" size="6" />
+	<house name="Mordragor Flat 11" houseid="13" entryx="1109" entryy="405" entryz="6" rent="0" townid="2" size="8" />
+	<house name="Mordragor Flat 12" houseid="14" entryx="1109" entryy="405" entryz="6" rent="0" townid="2" size="6" />
+	<house name="Mordragor Street 1" houseid="15" entryx="1107" entryy="432" entryz="7" rent="0" townid="2" size="64" />
+	<house name="Mordragor Street 2" houseid="16" entryx="1104" entryy="441" entryz="7" rent="0" townid="2" size="26" />
+	<house name="Mordragor Street 3" houseid="17" entryx="1095" entryy="443" entryz="7" rent="0" townid="2" size="33" />
+	<house name="Mordragor Street 4" houseid="18" entryx="1101" entryy="443" entryz="7" rent="0" townid="2" size="33" />
+	<house name="Mordragor Street 5" houseid="19" entryx="1078" entryy="443" entryz="7" rent="0" townid="2" size="33" />
+	<house name="Mordragor Street 6" houseid="20" entryx="1084" entryy="443" entryz="7" rent="0" townid="2" size="33" />
+	<house name="Mordragor Street 7" houseid="21" entryx="1076" entryy="438" entryz="7" rent="0" townid="2" size="54" />
+	<house name="Mordragor Street 8" houseid="22" entryx="1076" entryy="419" entryz="7" rent="0" townid="2" size="70" />
+	<house name="Mordragor Street 9" houseid="23" entryx="1064" entryy="419" entryz="7" rent="0" townid="2" size="70" />
+	<house name="Mordragor Street 10" houseid="24" entryx="1054" entryy="425" entryz="7" rent="0" townid="2" size="68" />
+	<house name="Mordragor Melenthil House 1" houseid="25" entryx="1082" entryy="410" entryz="7" rent="0" townid="2" size="17" />
+	<house name="Mordragor Melenthil House 2" houseid="26" entryx="1081" entryy="410" entryz="7" rent="0" townid="2" size="14" />
+	<house name="Mordragor Melenthil House 3" houseid="27" entryx="1078" entryy="408" entryz="6" rent="0" townid="2" size="16" />
+	<house name="Mordragor Melenthil House 4" houseid="28" entryx="1078" entryy="413" entryz="6" rent="0" townid="2" size="16" />
+	<house name="Mordragor Melenthil House 5" houseid="29" entryx="1074" entryy="412" entryz="7" rent="0" townid="2" size="77" />
+	<house name="Mordragor Melenthil House 6" houseid="30" entryx="1060" entryy="407" entryz="7" rent="0" townid="2" size="47" />
+	<house name="Mordragor Melenthil House 7" houseid="31" entryx="1079" entryy="403" entryz="7" rent="0" townid="2" size="56" />
+	<house name="Mordragor Melenthil House 8" houseid="32" entryx="1068" entryy="404" entryz="7" rent="0" townid="2" size="86" />
+	<house name="Mordragor Melenthil House 9" houseid="33" entryx="1059" entryy="405" entryz="7" rent="0" townid="2" size="34" />
+	<house name="Mordragor Melenthil House 10" houseid="34" entryx="1049" entryy="413" entryz="7" rent="0" townid="2" size="26" />
+	<house name="Mordragor Melenthil House 11" houseid="35" entryx="1049" entryy="408" entryz="7" rent="0" townid="2" size="26" />
+	<house name="Mordragor Melenthil House 12" houseid="36" entryx="1046" entryy="395" entryz="7" rent="0" townid="2" size="23" />
+	<house name="Mordragor Melenthil House 13" houseid="37" entryx="1063" entryy="412" entryz="6" rent="0" townid="2" size="35" />
+	<house name="Mordragor Melenthil House 14" houseid="38" entryx="1049" entryy="411" entryz="6" rent="0" townid="2" size="22" />
+	<house name="Mordragor Melenthil House 15" houseid="39" entryx="1049" entryy="404" entryz="6" rent="0" townid="2" size="25" />
+	<house name="Mordragor Melenthil House 16" houseid="40" entryx="1049" entryy="397" entryz="6" rent="0" townid="2" size="23" />
+	<house name="Mordragor Lake 1" houseid="41" entryx="1064" entryy="436" entryz="7" rent="0" townid="2" size="21" />
+	<house name="Mordragor Lake 2" houseid="42" entryx="1048" entryy="436" entryz="7" rent="0" townid="2" size="19" />
+	<house name="Mordragor Lake 3" houseid="43" entryx="1046" entryy="436" entryz="7" rent="0" townid="2" size="16" />
+	<house name="Mordragor Lake 4" houseid="44" entryx="1040" entryy="438" entryz="6" rent="0" townid="2" size="19" />
+	<house name="Mordragor Lake 5" houseid="45" entryx="1051" entryy="439" entryz="6" rent="0" townid="2" size="34" />
+	<house name="Mordragor Lake 6" houseid="46" entryx="1059" entryy="438" entryz="6" rent="0" townid="2" size="22" />
+	<house name="Mordragor Lake 7" houseid="47" entryx="1068" entryy="435" entryz="6" rent="0" townid="2" size="7" />
+	<house name="Mordragor Lake 8" houseid="48" entryx="1043" entryy="436" entryz="5" rent="0" townid="2" size="14" />
+	<house name="Mordragor Lake 9" houseid="49" entryx="1055" entryy="436" entryz="5" rent="0" townid="2" size="22" />
+	<house name="Mordragor Hunter Hut" houseid="50" entryx="1141" entryy="463" entryz="7" rent="0" townid="2" size="7" />
+	<house name="Falanaar Forest 1" houseid="51" entryx="684" entryy="463" entryz="7" rent="0" townid="4" size="22" />
+	<house name="Falanaar Forest 2" houseid="52" entryx="677" entryy="460" entryz="7" rent="0" townid="4" size="14" />
+	<house name="Falanaar Forest 3" houseid="53" entryx="678" entryy="460" entryz="6" rent="0" townid="4" size="14" />
+	<house name="Falanaar Forest 4" houseid="54" entryx="673" entryy="457" entryz="6" rent="0" townid="4" size="7" />
+	<house name="Falanaar Forest 5" houseid="55" entryx="675" entryy="457" entryz="7" rent="0" townid="4" size="15" />
+	<house name="Falanaar Tower 1" houseid="56" entryx="677" entryy="450" entryz="7" rent="0" townid="4" size="136" />
+	<house name="Falanaar Forest 6" houseid="57" entryx="677" entryy="440" entryz="7" rent="0" townid="4" size="74" />
+	<house name="Falanaar Castle" houseid="58" entryx="650" entryy="455" entryz="7" rent="0" townid="4" size="475" />
+	<house name="Falanaar Forest 7" houseid="59" entryx="645" entryy="457" entryz="7" rent="0" townid="4" size="90" />
+	<house name="Falanaar Forest 8" houseid="60" entryx="641" entryy="452" entryz="7" rent="0" townid="4" size="117" />
+	<house name="Falanaar Forest 9" houseid="61" entryx="640" entryy="427" entryz="7" rent="0" townid="4" size="68" />
+	<house name="Falanaar Forest 10" houseid="62" entryx="645" entryy="424" entryz="7" rent="0" townid="4" size="50" />
+	<house name="Falanaar Forest 11" houseid="63" entryx="649" entryy="427" entryz="7" rent="0" townid="4" size="104" />
+	<house name="Falanaar Forest Mansion" houseid="64" entryx="577" entryy="411" entryz="7" rent="0" townid="4" size="506" />
+	<house name="Dolwatha Sands Avenue 1" houseid="65" entryx="430" entryy="275" entryz="7" rent="0" townid="3" size="35" />
+	<house name="Dolwatha Sands Avenue 2" houseid="66" entryx="432" entryy="273" entryz="7" rent="0" townid="3" size="48" />
+	<house name="Dolwatha Sands Avenue 3" houseid="67" entryx="432" entryy="278" entryz="7" rent="0" townid="3" size="12" />
+	<house name="Dolwatha Sands Avenue 4" houseid="68" entryx="413" entryy="285" entryz="7" rent="0" townid="3" size="93" />
+	<house name="Dolwatha Sands Avenue 5" houseid="69" entryx="408" entryy="277" entryz="7" rent="0" townid="3" size="22" />
+	<house name="Dolwatha Sands Avenue 6" houseid="70" entryx="404" entryy="277" entryz="7" rent="0" townid="3" size="8" />
+	<house name="Dolwatha Sands Avenue 7" houseid="71" entryx="405" entryy="285" entryz="7" rent="0" townid="3" size="8" />
+	<house name="Dolwatha Sands Avenue 8" houseid="72" entryx="406" entryy="276" entryz="7" rent="0" townid="3" size="102" />
+	<house name="Dolwatha Sands Avenue 9" houseid="73" entryx="395" entryy="275" entryz="7" rent="0" townid="3" size="14" />
+	<house name="Dolwatha Sands Avenue 10" houseid="74" entryx="395" entryy="279" entryz="7" rent="0" townid="3" size="123" />
+	<house name="Dolwatha Peace Avenue 1" houseid="75" entryx="373" entryy="289" entryz="7" rent="0" townid="3" size="105" />
+	<house name="Dolwatha Peace Mansion" houseid="76" entryx="355" entryy="291" entryz="7" rent="0" townid="3" size="117" />
+	<house name="Dolwatha Peace Avenue 2" houseid="77" entryx="364" entryy="299" entryz="7" rent="0" townid="3" size="108" />
+	<house name="Dolwatha Peace Avenue 3" houseid="78" entryx="356" entryy="305" entryz="7" rent="0" townid="3" size="221" />
+	<house name="Dolwatha Peace Avenue 4" houseid="79" entryx="358" entryy="314" entryz="7" rent="0" townid="3" size="70" />
+	<house name="Dolwatha Peace Avenue 5" houseid="80" entryx="366" entryy="315" entryz="7" rent="0" townid="3" size="16" />
+	<house name="Dolwatha Peace Avenue 6" houseid="81" entryx="367" entryy="308" entryz="6" rent="0" townid="3" size="64" />
+	<house name="Dolwatha Main Avenue 1" houseid="82" entryx="419" entryy="303" entryz="6" rent="0" townid="3" size="27" />
+	<house name="Dolwatha Main Avenue 2" houseid="83" entryx="417" entryy="307" entryz="7" rent="0" townid="3" size="213" />
+	<house name="Dolwatha Main Avenue 3" houseid="84" entryx="395" entryy="306" entryz="7" rent="0" townid="3" size="10" />
+	<house name="Dolwatha Main Avenue 4" houseid="85" entryx="397" entryy="316" entryz="7" rent="0" townid="3" size="39" />
+	<house name="Dolwatha Main Avenue 5" houseid="86" entryx="401" entryy="308" entryz="7" rent="0" townid="3" size="40" />
+	<house name="Dolwatha Main Avenue 6" houseid="87" entryx="422" entryy="319" entryz="7" rent="0" townid="3" size="86" />
+	<house name="Dolwatha Main Avenue 7" houseid="88" entryx="404" entryy="319" entryz="7" rent="0" townid="3" size="24" />
+	<house name="Dolwatha Main Avenue 8" houseid="89" entryx="395" entryy="319" entryz="7" rent="0" townid="3" size="76" />
+	<house name="Dolwatha Main Avenue 9" houseid="90" entryx="382" entryy="321" entryz="7" rent="0" townid="3" size="32" />
+	<house name="Dolwatha Main Avenue 10" houseid="91" entryx="384" entryy="328" entryz="7" rent="0" townid="3" size="49" />
+	<house name="Dolwatha Main Avenue 11" houseid="92" entryx="399" entryy="335" entryz="7" rent="0" townid="3" size="11" />
+	<house name="Dolwatha Main Avenue 12" houseid="93" entryx="400" entryy="338" entryz="7" rent="0" townid="3" size="27" />
+	<house name="Dolwatha Main Avenue 13" houseid="94" entryx="391" entryy="336" entryz="7" rent="0" townid="3" size="162" />
+	<house name="Dolwatha Main Avenue 14" houseid="95" entryx="382" entryy="334" entryz="7" rent="0" townid="3" size="31" />
+	<house name="Dolwatha Main Avenue 15" houseid="96" entryx="377" entryy="333" entryz="7" rent="0" townid="3" size="39" />
+	<house name="Mansion Valley" houseid="97" entryx="1414" entryy="430" entryz="5" rent="0" townid="7" size="159" />
+	<house name="Freewind Ice House 1" houseid="98" entryx="1277" entryy="1056" entryz="6" rent="0" townid="5" size="63" />
+	<house name="Freewind Ice House 2" houseid="99" entryx="1219" entryy="1055" entryz="6" rent="0" townid="5" size="45" />
+	<house name="Freewind Ice House 3" houseid="100" entryx="1207" entryy="1050" entryz="6" rent="0" townid="5" size="62" />
+	<house name="Freewind Ice House 4" houseid="101" entryx="1208" entryy="1043" entryz="6" rent="0" townid="5" size="69" />
+	<house name="Freewind Ice House 5" houseid="102" entryx="1229" entryy="1034" entryz="6" rent="0" townid="5" size="40" />
+	<house name="Freewind Ice House 6" houseid="103" entryx="1203" entryy="1041" entryz="5" rent="0" townid="5" size="37" />
+	<house name="Freewind Ice House 7" houseid="104" entryx="1220" entryy="1077" entryz="7" rent="0" townid="5" size="46" />
+	<house name="Freewind Ice House 8" houseid="105" entryx="1223" entryy="1078" entryz="7" rent="0" townid="5" size="24" />
+	<house name="Freewind Ice House 9" houseid="106" entryx="1227" entryy="1053" entryz="7" rent="0" townid="5" size="22" />
+	<house name="Freewind Ice House 10" houseid="107" entryx="1210" entryy="1048" entryz="7" rent="0" townid="5" size="41" />
+	<house name="Freewind Ice House 11" houseid="108" entryx="1231" entryy="1045" entryz="7" rent="0" townid="5" size="21" />
+	<house name="Arkeron Crab Island" houseid="109" entryx="1510" entryy="1149" entryz="7" rent="0" townid="6" size="41" />
+	<house name="Arkeron Bassin 1" houseid="110" entryx="1435" entryy="1309" entryz="6" rent="0" townid="6" size="35" />
+	<house name="Arkeron Bassin 2" houseid="111" entryx="1443" entryy="1309" entryz="6" rent="0" townid="6" size="35" />
+	<house name="Arkeron Bassin 3" houseid="112" entryx="1449" entryy="1307" entryz="6" rent="0" townid="6" size="16" />
+	<house name="Arkeron Bassin 4" houseid="113" entryx="1451" entryy="1309" entryz="6" rent="0" townid="6" size="36" />
+	<house name="Arkeron Bassin 5" houseid="114" entryx="1463" entryy="1305" entryz="6" rent="0" townid="6" size="14" />
+	<house name="Arkeron Bassin 6" houseid="115" entryx="1475" entryy="1305" entryz="6" rent="0" townid="6" size="14" />
+	<house name="Arkeron Bassin 7" houseid="116" entryx="1441" entryy="1289" entryz="6" rent="0" townid="6" size="26" />
+	<house name="Arkeron Bassin 8" houseid="117" entryx="1442" entryy="1280" entryz="6" rent="0" townid="6" size="27" />
+	<house name="Arkeron Cascade 1" houseid="118" entryx="1395" entryy="1302" entryz="5" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 2" houseid="119" entryx="1407" entryy="1302" entryz="5" rent="0" townid="6" size="16" />
+	<house name="Arkeron Cascade 3" houseid="120" entryx="1414" entryy="1303" entryz="5" rent="0" townid="6" size="16" />
+	<house name="Arkeron Cascade 4" houseid="121" entryx="1400" entryy="1304" entryz="5" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 5" houseid="122" entryx="1409" entryy="1307" entryz="5" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 6" houseid="123" entryx="1393" entryy="1305" entryz="4" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 7" houseid="124" entryx="1403" entryy="1309" entryz="4" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 8" houseid="125" entryx="1412" entryy="1310" entryz="4" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 9" houseid="126" entryx="1391" entryy="1305" entryz="3" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 10" houseid="127" entryx="1403" entryy="1307" entryz="3" rent="0" townid="6" size="14" />
+	<house name="Arkeron Cascade 11" houseid="128" entryx="1412" entryy="1312" entryz="3" rent="0" townid="6" size="14" />
+	<house name="Arkeron Avenue 1" houseid="129" entryx="1386" entryy="1283" entryz="5" rent="0" townid="6" size="32" />
+	<house name="Arkeron Avenue 2" houseid="130" entryx="1393" entryy="1283" entryz="5" rent="0" townid="6" size="32" />
+	<house name="Arkeron Avenue 3" houseid="131" entryx="1415" entryy="1285" entryz="5" rent="0" townid="6" size="34" />
+	<house name="Arkeron Avenue 4" houseid="132" entryx="1422" entryy="1285" entryz="5" rent="0" townid="6" size="34" />
+	<house name="Arkeron Bridge 1" houseid="133" entryx="1466" entryy="1302" entryz="5" rent="0" townid="6" size="14" />
+	<house name="Arkeron Bridge 2" houseid="134" entryx="1471" entryy="1302" entryz="5" rent="0" townid="6" size="14" />
+	<house name="Arkeron Bridge 3" houseid="135" entryx="1468" entryy="1297" entryz="5" rent="0" townid="6" size="10" />
+	<house name="Arkeron Bridge 4" houseid="136" entryx="1469" entryy="1297" entryz="5" rent="0" townid="6" size="10" />
+	<house name="Arkeron Bridge 5" houseid="137" entryx="1466" entryy="1290" entryz="5" rent="0" townid="6" size="58" />
+	<house name="Arkeron Bridge 6" houseid="138" entryx="1475" entryy="1291" entryz="5" rent="0" townid="6" size="56" />
+	<house name="Arkeron Bridge 7" houseid="139" entryx="1465" entryy="1279" entryz="5" rent="0" townid="6" size="46" />
+	<house name="Arkeron Bridge 8" houseid="140" entryx="1477" entryy="1277" entryz="5" rent="0" townid="6" size="44" />
+	<house name="Arkeron Coast" houseid="141" entryx="1403" entryy="1204" entryz="6" rent="0" townid="6" size="36" />
+	<house name="Mordragor Mountain" houseid="142" entryx="1089" entryy="517" entryz="7" rent="0" townid="2" size="46" />
+	<house name="Arkeron Rivendell" houseid="143" entryx="1836" entryy="1097" entryz="7" rent="0" townid="6" size="325" />
+	<house name="Boat House 1" houseid="144" entryx="1028" entryy="447" entryz="6" rent="0" townid="2" size="149" />
+	<house name="Boat House 2" houseid="145" entryx="1013" entryy="441" entryz="6" rent="0" townid="2" size="74" />
+	<house name="Boat House 3" houseid="146" entryx="1014" entryy="429" entryz="7" rent="0" townid="2" size="34" />
+</houses>
