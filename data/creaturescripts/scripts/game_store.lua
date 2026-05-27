@@ -264,9 +264,9 @@ end
 
 function getStorePoints(player)
   local points = 0
-  local resultId = db.storeQuery("SELECT `premium_points` FROM `accounts` WHERE `id` = " .. player:getAccountId())
+  local resultId = db.storeQuery("SELECT `points` FROM `znote_accounts` WHERE `account_id` = " .. player:getAccountId())
   if resultId ~= false then
-    points = result.getDataInt(resultId, "premium_points")
+    points = result.getDataInt(resultId, "points")
     result.free(resultId)
   end
   return points
@@ -385,8 +385,8 @@ function onExtendedOpcode(player, opcode, buffer)
   if recipientAccountId == senderAccountId then
     return sendMessage(player, "Error!", "You cannot send coins to yourself.")
   end
-  db.query("UPDATE `accounts` SET `premium_points` = `premium_points` - " .. amount .. " WHERE `id` = " .. senderAccountId)
-  db.query("UPDATE `accounts` SET `premium_points` = `premium_points` + " .. amount .. " WHERE `id` = " .. recipientAccountId)
+  db.query("UPDATE `znote_accounts` SET `points` = `points` - " .. amount .. " WHERE `account_id` = " .. senderAccountId)
+  db.query("UPDATE `znote_accounts` SET `points` = `points` + " .. amount .. " WHERE `account_id` = " .. recipientAccountId)
 
   local senderAccountId = player:getAccountId()
   local senderGuid = tostring(player:getGuid())
@@ -460,9 +460,9 @@ function processBuy(player, data)
 
   local status = callback(player, offer)
   if status == true then
-    db.query("UPDATE `accounts` " ..
-         "SET `premium_points` = `premium_points` - " .. offer.cost ..
-         " WHERE `id` = " .. player:getAccountId())
+    db.query("UPDATE `znote_accounts` " ..
+         "SET `points` = `points` - " .. offer.cost ..
+         " WHERE `account_id` = " .. player:getAccountId())
 
     local accountId = player:getAccountId()
     local rawGuid   = tostring(player:getGuid())

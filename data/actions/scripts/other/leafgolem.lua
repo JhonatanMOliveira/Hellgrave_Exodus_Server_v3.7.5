@@ -1,5 +1,5 @@
 local function doPlayerAddPremiumPoints(cid, count)
-		db.query('UPDATE accounts SET premium_points = premium_points+'.. count ..' WHERE id = ' .. getAccountNumberByPlayerName(getCreatureName(cid)))
+		db.query('UPDATE znote_accounts SET points = points+'.. count ..' WHERE account_id = ' .. getAccountNumberByPlayerName(getCreatureName(cid)))
 end
 
 function onUse(cid, item, fromPosition, itemEx, toPosition) 

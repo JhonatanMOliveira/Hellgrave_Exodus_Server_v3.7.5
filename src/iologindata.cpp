@@ -1012,27 +1012,27 @@ void IOLoginData::updatePremiumTime(uint32_t accountId, time_t endTime)
 
 uint64_t IOLoginData::getPremiumPoints(uint32_t accountId)
 {
-	DBResult_ptr result = Database::getInstance().storeQuery(fmt::format("SELECT `premium_points` FROM `accounts` WHERE `id` = {:d} LIMIT 1", accountId));
+	DBResult_ptr result = Database::getInstance().storeQuery(fmt::format("SELECT `points` FROM `znote_accounts` WHERE `account_id` = {:d} LIMIT 1", accountId));
 	if (result) {
-		return result->getNumber<uint64_t>("premium_points");
+		return result->getNumber<uint64_t>("points");
 	}
 	return 0;
 }
 
 void IOLoginData::addPremiumPoints(uint32_t accountId, uint32_t amount)
 {
-	Database::getInstance().executeQuery(fmt::format("UPDATE `accounts` SET `premium_points` = `premium_points` + {:d} WHERE `id` = {:d}", amount, accountId));
+	Database::getInstance().executeQuery(fmt::format("UPDATE `znote_accounts` SET `points` = `points` + {:d} WHERE `account_id` = {:d}", amount, accountId));
 }
 
 bool IOLoginData::removePremiumPoints(uint32_t accountId, uint32_t amount)
 {
-	DBResult_ptr result = Database::getInstance().storeQuery(fmt::format("SELECT `premium_points` FROM `accounts` WHERE `id` = {:d} LIMIT 1", accountId));
+	DBResult_ptr result = Database::getInstance().storeQuery(fmt::format("SELECT `points` FROM `znote_accounts` WHERE `account_id` = {:d} LIMIT 1", accountId));
 	if (!result) {
 		return false;
 	}
-	uint64_t points = result->getNumber<uint64_t>("premium_points");
+	uint64_t points = result->getNumber<uint64_t>("points");
 	if (points < amount) {
 		return false;
 	}
-	return Database::getInstance().executeQuery(fmt::format("UPDATE `accounts` SET `premium_points` = `premium_points` - {:d} WHERE `id` = {:d}", amount, accountId));
+	return Database::getInstance().executeQuery(fmt::format("UPDATE `znote_accounts` SET `points` = `points` - {:d} WHERE `account_id` = {:d}", amount, accountId));
 }
